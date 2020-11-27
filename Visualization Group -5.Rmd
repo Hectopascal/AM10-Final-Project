@@ -25,10 +25,13 @@ library(purrr)
 library(gridExtra)
 library(data.table)
 library(reshape2)
-library(recommenderlab)
 library(ggplot2)  
-library(Hmisc)
 library(dplyr)
+library(readxl)
+library(kableExtra)
+library(janitor)
+library(ggrepel)
+library(scales)
 ```
 
 **Stock Market Analysis**
@@ -44,14 +47,21 @@ Additionally, we intend to compare the above to the market’s performance durin
 For the purpose of this visualization we use Financial market data sourced from Capital IQ.
 
 (1)	A statement of the question or purpose. What problems or questions did you set out to analyse? What were the key issues raised?
+#Loading and Investigating the data
 
 ```{r}
 
 #Loading the data 
-library(readxl)
-indeces <- read_excel("data/Charting Excel Export - Nov 21st 2020 11_15_53 am.xls")
+
+indeces <- read_excel("Data/indices_data.xls")
+
 
 ```
+
+
+
+
+
 
 ```{r}
 
@@ -85,10 +95,15 @@ originalData_process <- originalData_process %>%
   rename(c("FTSE100" = 'FTSE 100 Index (^UKX) - Index Value', "S&P500" = 'S&P 500 (^SPX) - Index Value',"BSE Sensex" = "S&P BSE Sensex (^SENSEX) - Index Value",  "DAX" = 'Germany DAX Index (Performance) (^DAX) - Index Value'), "SSE" = "Shanghai Stock Exchange Composite Index (^000001) - Index Value", "TOPIX" = "TOPIX INDEX (^TOPIX) - Index Value","PX" = "Paris CAC 40 Index (^PX1) - Index Value","Euronext" = "Euronext 150 Index - Index Value")
 
 #cleaning the variable names
-library(janitor) 
 originalData_process<-clean_names(originalData_process)  
 
 ```
+
+
+
+
+
+
 
 ### Initial data cleaning
 
@@ -108,11 +123,121 @@ dupes<-originalData_process%>%get_dupes(dates)
 As evident from the below, we have several missing values across the different indexes throughout our data frame, however, for the most part, these are on days where the stock exchange is closed eg. New Years (01/01) and other bank holidays and hence we can ignore them and proceed. 
 
 
-```{r investigate data, message=FALSE}
-describe(originalData_process)    
+```{r check for na, message=FALSE}
+#chekcing for nas accross the columns
+nas <- sapply(originalData_process , function(x) sum(is.na(x)))
+data.frame(nas) %>% 
+  rename('Number of NAa' = 'nas') %>% 
+  kbl() %>% 
+  kable_styling()
+
 ```
 
 
 
+# Plot 1 
+```{r}
+### USA , ftse , germany during covid 
+#limit data to 2020 jan, feb march 
+early_covid <- originalData_process %>% 
+  filter(year(dates) == 2020 , month(dates) %in% c(1,2,3))
+
+#removing first row which is new years 
+early_covid <- early_covid[-1,]
+
+
+#transforming each column to a percentage change from initial value 
+for (i in c(2:9)){
+inital_val <- unlist(early_covid[1,i[[1]]])
+early_covid[,i] <- (early_covid[ ,i]/inital_val)- 1
+
+}
+
+
+
+#plotting 
+
+early_covid %>% 
+  pivot_longer(cols  = c(5,6,4), names_to = 'market' , values_to = 'pct_change') %>% 
+  ggplot() +
+  geom_line(aes(x = dates, y=pct_change, color = market) , size = 1.5 , alpha = 0.5) + 
+  geom_hline(yintercept = 0 , size = 2 ) + 
+  scale_y_continuous(labels =  scales::percent) + 
+  theme_minimal() + 
+  theme(panel.grid.major.x =  element_blank() , 
+        panel.grid.minor =  element_blank() , 
+        panel.grid.major.y = element_line(size = 1),
+        legend.position = 'bottom') + 
+  labs(y = '' , x = '' ) 
+
+
+
+```
+put lines maybe to describe various events 
+
+
+highlight sections of the graph 
+
+maybe attach it to the recovery graph. 
+
+# Plot 2 comparing feb mar apr from perivous years for different markets
+
+```{r}
+
+quarters <- originalData_process %>% 
+  filter(month(dates) %in% c(1,2,3)) %>% 
+  mutate(year = year(dates))
+  
+
+plot_df1 <- quarters %>% 
+  select(1,5,6,4 ,10) %>% 
+  pivot_longer(cols = c(2,3,4),  names_to = 'market' , values_to = 'price' ) %>% 
+  filter(is.na(price) == FALSE) %>% 
+  group_by(year, market) %>% 
+  mutate(first_val = first(price) , last_val = last(price)) %>% 
+  mutate(perc_drop =(last_val/first_val ) - 1 ) %>% 
+  select(year, market, perc_drop) 
+
+
+plot_df1 %>%
+  distinct() %>% 
+  filter(year %in% c(2000, 2001 , 2003 , 2007 , 2008 ,2009 ,2010 , 2018 ,2020)) %>% 
+  ggplot() + 
+  geom_col(aes(x = year , y = perc_drop , fill = market) , position = 'dodge' , alpha = 0.8) + 
+  theme_minimal() 
+ 
+```
+
+# plot 3  volatility vs drop wiht size of the stock market being the size of the circle/the total value lost 
+
+
+```{r}
+
+plot_df2 <- quarters %>% 
+  filter(year == 2020) %>%
+  pivot_longer(cols = c(2:9),  names_to = 'market' , values_to = 'price' ) %>% 
+  filter(is.na(price) == FALSE) %>% 
+  group_by(market) %>% 
+  mutate(per_change = (price/lag(price))  - 1) %>% 
+  summarise(.groups = "keep" , first_val = first(price) , last_val = last(price) , std = sd(per_change , na.rm = TRUE)) %>% 
+  mutate(perc_drop =(last_val/first_val ) - 1) %>% 
+  select(market, perc_drop , std , last_val) 
+
+
+plot_df2 %>% 
+  ggplot() +
+  geom_point(aes(x = perc_drop , y = std , size = last_val,  fill = market), shape = 21 , alpha = 0.5) + 
+  theme_minimal() + 
+  scale_size(range = c(6,25)) + 
+  geom_label_repel(mapping = aes(x = perc_drop , y = std ,  label = market) , 
+                   force = 20 , direction = "both" , face = 'bold' , )+
+  scale_x_continuous(labels = scales::percent) + 
+  scale_y_continuous(labels = scales::percent) + 
+  theme(panel.grid.minor =  element_blank() , 
+        panel.grid.major = element_blank(),
+        legend.position =  'bottom') + 
+   guides(color=guide_legend("market"), fill = FALSE)
+
+```
 
 
