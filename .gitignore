@@ -2,9 +2,7 @@
 *.png
 *.metadata
 *.csv
-*.json
 *.snapshot
-*.json
 *.pper
 *.rdf
 .Rproj.user/487562FC/sources/s-88C07837/lock_file
