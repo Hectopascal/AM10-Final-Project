@@ -29,6 +29,9 @@ library(recommenderlab)
 library(ggplot2)  
 library(Hmisc)
 library(dplyr)
+library(readxl)
+library(janitor) 
+library(skimr)
 ```
 
 **Stock Market Analysis**
@@ -48,21 +51,22 @@ For the purpose of this visualization we use Financial market data sourced from 
 ```{r}
 
 #Loading the data 
-library(readxl)
-indeces <- read_excel("data/Charting Excel Export - Nov 21st 2020 11_15_53 am.xls")
+indices <- read_excel("data/Charting Excel Export - Nov 21st 2020 11_15_53 am.xls")
+spx <- read_csv("data/spx.csv")
+
 
 ```
 
 ```{r}
 
 #Having a first look at what the data includes
-head(indeces)
+head(indices)
 #Using the summary functions to have a more general idea about what is in the data
-glimpse(indeces) 
+glimpse(indices) 
 #Using the describe function for more detailed information about data.
-describe(indeces) 
+describe(indices) 
 #Copying the data into a new data frame we can process
-originalData_process <- indeces
+originalData_process <- indices
 
 ```
 
@@ -85,7 +89,6 @@ originalData_process <- originalData_process %>%
   rename(c("FTSE100" = 'FTSE 100 Index (^UKX) - Index Value', "S&P500" = 'S&P 500 (^SPX) - Index Value',"BSE Sensex" = "S&P BSE Sensex (^SENSEX) - Index Value",  "DAX" = 'Germany DAX Index (Performance) (^DAX) - Index Value'), "SSE" = "Shanghai Stock Exchange Composite Index (^000001) - Index Value", "TOPIX" = "TOPIX INDEX (^TOPIX) - Index Value","PX" = "Paris CAC 40 Index (^PX1) - Index Value","Euronext" = "Euronext 150 Index - Index Value")
 
 #cleaning the variable names
-library(janitor) 
 originalData_process<-clean_names(originalData_process)  
 
 ```
@@ -96,10 +99,12 @@ Before we start looking at the contents of the data we remove empty columns and 
 
 ```{r remove_empty}
 #Removing empty columns and rows
-originalData_process<-remove_empty(originalData_process, which = c("rows","cols"))
+originalData_process<-remove_empty(originalData_process, which = c("rows","cols"))  %>% 
+                          mutate(dates = as.Date(dates))
 
 #Checking for duplicates
 dupes<-originalData_process%>%get_dupes(dates)
+
 
 ```
 
@@ -109,7 +114,18 @@ As evident from the below, we have several missing values across the different i
 
 
 ```{r investigate data, message=FALSE}
-describe(originalData_process)    
+skim(originalData_process)    
+
+```
+```{r}
+data2020 <-originalData_process %>% 
+  filter(year(dates) > 2019)%>%
+  pivot_longer(cols = c(ftse100, s_p500,bse_sensex,dax,sse,topix,px,euronext) ,names_to ='index' , values_to = 'change' ) 
+
+data2020 %>% 
+  ggplot(aes(x=dates,y=change,color=index))+
+  geom_line()
+
 ```
 
 
