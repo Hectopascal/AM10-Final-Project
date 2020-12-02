@@ -374,7 +374,9 @@ df<- quarters %>%
 
 for (col in colnames(df[,-1])) {
 print(col)
-temp_df <- df[is.na(df[,col]) == FALSE, col ]
+temp_df <- df[is.na(df[,col]) == FALSE, col]
+temp_df <- temp_df %>% arrange(col)
+
   
 }
 
