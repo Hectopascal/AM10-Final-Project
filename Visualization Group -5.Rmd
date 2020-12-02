@@ -1,3 +1,4 @@
+
 ---
 title: "Data Visualization Group Project"
 author: "Study Group 5: Etra Bianco, Vasu Dev Puri, Himanshu Singh, Yi Yan Ng, Mengze Sun, Christian Gonder"
@@ -482,5 +483,4 @@ map_100k  %>%
        subtitle = "Covid Cases Worldwide ")
 
 ```
-
 
