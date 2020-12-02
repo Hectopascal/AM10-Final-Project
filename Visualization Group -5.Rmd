@@ -277,6 +277,56 @@ plot_df1 %>%
   
 ```
 
+```{r}
+plot_df1 %>%
+  distinct() %>% 
+  filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>%
+  filter(market == 's_p500') %>% 
+  ggplot() + 
+  geom_col(aes(x = as.factor(year) , y = perc_drop , fill = market) , position = 'dodge' , alpha = 0.6, size = 1) + 
+  theme_minimal() +
+  geom_hline(yintercept = 0)+
+  scale_fill_brewer(palette = 'Dark2') + 
+  theme(panel.grid.minor = element_blank() ,
+        panel.grid.major.x  = element_blank(), 
+        legend.position = 'bottom') + 
+  scale_y_continuous(label = scales::percent)  
+
+
+```
+
+
+```{r}
+
+
+draw_plot <- quarters %>% 
+  select(1,10,6 ) %>%
+  filter(is.na(s_p500) == FALSE) %>% 
+  group_by(year) %>% 
+  mutate(month = month(dates))
+
+
+draw_plot %>% 
+  filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>%
+  group_by(year) %>% 
+  
+    ggplot() + 
+  geom_line(aes(x = dates, y = s_p500) , alpha = 0.6) + 
+  theme_minimal() +
+  scale_fill_brewer(palette = 'Dark2') + 
+  theme(panel.grid.minor = element_blank() ,
+        panel.grid.major.x  = element_blank(), 
+        legend.position = 'bottom') + 
+  scale_y_continuous(label = scales::percent)  
+  
+  
+ 
+
+
+```
+
+
+
 
 # plot 3  volatility vs drop wiht size of the stock market being the size of the circle/the total value lost 
 
@@ -461,6 +511,8 @@ map_covid  %>%
 
 ```
 
+
+
 ```{r}
 map_covid  %>%
   ggplot() +
@@ -489,6 +541,8 @@ map_covid  %>%
 
 ```
 
+
+
 ```{r}
 
 #extracting populatuion
@@ -497,7 +551,8 @@ library(wpp2019)
 #get 2020 pop and country code
 data(pop)
 pop_2020 <- pop %>% 
-  select(c(1,17))
+  select(c(1,17)) %>% 
+  mutate(`2020` = `2020` * 1000)
 
 
 #getting geometrty and isocodes 
@@ -509,16 +564,16 @@ pop_2020 <- pop %>%
  
  
  map_100k <- left_join(pop_2020, iso_un , by = c('country_code' = 'iso_n3')) %>% 
-   filter(is.na(iso_a3) == FALSE) %>% 
+   filter(is.na(iso_a3) == FALSE) %>%
    select(`2020`, iso_a3, geometry) %>% 
    left_join(covid %>% 
-   select(iso_a3 , total) , by = 'iso_a3')
+   select(iso_a3 , total) , by = 'iso_a3') %>% 
+  mutate(cases_per100 = (total/`2020`)*1e5) 
  
  
  
 
 map_100k <- map_100k %>% 
-  mutate(cases_per100 = (total/`2020`)*1e5)  %>% 
   sf::st_as_sf() 
   
 
@@ -533,7 +588,7 @@ map_100k  %>%
                     guide = guide_colorbar(
                       title = "Number of cases per 100k",
                       title.hjust = 0.5,
-                      labels = unit_format(unit = "M", scale = 1e-6) , 
+                      labels = unit_format(unit = "K", scale = 1e-3) , 
                       direction = "vertical",
                       nrow = 1,
                       keyheight = unit(3, units = "mm"),
