@@ -261,7 +261,7 @@ map_100k  %>%
   theme(legend.direction = "horizontal",
         legend.position = "right" , 
         panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank(),  plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13)) +
-  labs(title = "title here",
+  labs(title = "Covid Map",
        subtitle = "Covid Cases Worldwide per 100k population")
 
 
