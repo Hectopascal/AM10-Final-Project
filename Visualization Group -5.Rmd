@@ -299,6 +299,26 @@ plot_df2 %>%
 
 ```
 
+
+
+```{r}
+
+#S&P throughout the years
+originalData_process
+
+plot_raw <- ggplot(originalData_process, aes(y = s_p500, x = dates)) +
+  geom_line()
+
+plot_raw
+
+
+```
+
+
+
+
+
+
 # covid world map 
 
 ```{r}
