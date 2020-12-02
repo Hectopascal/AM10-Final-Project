@@ -1,0 +1,134 @@
+---
+title: "Data Visualization Group Project"
+author: "Study Group 5: Etra Bianco, Vasu Dev Puri, Himanshu Singh, Yi Yan Ng, Mengze Sun, Christian Gonder"
+date: "`r Sys.Date()`"
+output: 
+    html_document:
+      number_sections: true
+      highlight: haddock
+      theme: spacelab
+      toc: yes
+      toc_depth: 2
+      toc_float:
+        collapsed: false
+      fontzize: 10pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lubridate)
+library(cluster)
+library(Hmisc)
+library(factoextra)
+library(purrr)
+library(gridExtra)
+library(data.table)
+library(reshape2)
+library(recommenderlab)
+library(ggplot2)  
+library(Hmisc)
+library(dplyr)
+library(readxl)
+library(janitor) 
+library(skimr)
+```
+
+**Stock Market Analysis**
+
+Our agenda is to portray the impact COVID-19 has had on financial markets in 2020, visualizing the performance of different stock market indeces (SP500, FTSE100, HSI…) throughout the year and identifying the most significant shocks as well as drawing parallels with the events and world news that might have been the cause.
+
+We intend also to conduct an analysis across geographies by creating a geospatial map of major indices around the world and compare the performance in those markets using a heat map.
+
+Furthermore, we intend to analyze the performance across industries and ascertain sectors that were counter-cyclical / robust. 
+
+Additionally, we intend to compare the above to the market’s performance during the 2008 economic crisis and their respective revivals.
+
+For the purpose of this visualization we use Financial market data sourced from Capital IQ.
+
+(1)	A statement of the question or purpose. What problems or questions did you set out to analyse? What were the key issues raised?
+
+```{r}
+
+#Loading the data 
+indices <- read_excel("data/Charting Excel Export - Nov 21st 2020 11_15_53 am.xls")
+spx <- read_csv("data/spx.csv")
+
+
+```
+
+```{r}
+
+#Having a first look at what the data includes
+head(indices)
+#Using the summary functions to have a more general idea about what is in the data
+glimpse(indices) 
+#Using the describe function for more detailed information about data.
+describe(indices) 
+#Copying the data into a new data frame we can process
+originalData_process <- indices
+
+```
+
+The data file “Charting Excel Export - Nov 21st 2020 11_15_53 am.xls” contains information extracted from the Capital IQ library that outlines the performance at the close of day of different stock market indeces (SP500, FTSE100, HSI…) from 2007 till today. 
+
+# Cleaning the data 
+
+To clean the data we need to check:
+- duplicates
+- missing values (NAs)
+- empty values
+- cross column consistency 
+
+### Cleaning column names
+We first shorten the names of the columns in our data frame. Moreover, we run the clean names function to remove capital letters and add underscores to separate words. 
+```{r clean names}
+
+#we shorten the names of our variables (columns)
+originalData_process <- originalData_process %>%
+  rename(c("FTSE100" = 'FTSE 100 Index (^UKX) - Index Value', "S&P500" = 'S&P 500 (^SPX) - Index Value',"BSE Sensex" = "S&P BSE Sensex (^SENSEX) - Index Value",  "DAX" = 'Germany DAX Index (Performance) (^DAX) - Index Value'), "SSE" = "Shanghai Stock Exchange Composite Index (^000001) - Index Value", "TOPIX" = "TOPIX INDEX (^TOPIX) - Index Value","PX" = "Paris CAC 40 Index (^PX1) - Index Value","Euronext" = "Euronext 150 Index - Index Value")
+
+#cleaning the variable names
+originalData_process<-clean_names(originalData_process)  
+
+```
+
+### Initial data cleaning
+
+Before we start looking at the contents of the data we remove empty columns and rows and want to remove duplicates if any.
+
+```{r remove_empty}
+#Removing empty columns and rows
+originalData_process<-remove_empty(originalData_process, which = c("rows","cols"))  %>% 
+                          mutate(dates = as.Date(dates))
+
+#Checking for duplicates
+dupes<-originalData_process%>%get_dupes(dates)
+
+
+```
+
+### Missing data 
+
+As evident from the below, we have several missing values across the different indexes throughout our data frame, however, for the most part, these are on days where the stock exchange is closed eg. New Years (01/01) and other bank holidays and hence we can ignore them and proceed. 
+
+
+```{r investigate data, message=FALSE}
+skim(originalData_process)    
+
+```
+```{r}
+data2020 <-originalData_process %>% 
+  filter(year(dates) > 2019)%>%
+  pivot_longer(cols = c(ftse100, s_p500,bse_sensex,dax,sse,topix,px,euronext) ,names_to ='index' , values_to = 'change' ) 
+
+data2020 %>% 
+  ggplot(aes(x=dates,y=change,color=index))+
+  geom_line()
+
+```
+
+
+
+
+
