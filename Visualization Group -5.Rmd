@@ -267,6 +267,56 @@ plot_df1 %>%
   
 ```
 
+```{r}
+plot_df1 %>%
+  distinct() %>% 
+  filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>%
+  filter(market == 's_p500') %>% 
+  ggplot() + 
+  geom_col(aes(x = as.factor(year) , y = perc_drop , fill = market) , position = 'dodge' , alpha = 0.6, size = 1) + 
+  theme_minimal() +
+  geom_hline(yintercept = 0)+
+  scale_fill_brewer(palette = 'Dark2') + 
+  theme(panel.grid.minor = element_blank() ,
+        panel.grid.major.x  = element_blank(), 
+        legend.position = 'bottom') + 
+  scale_y_continuous(label = scales::percent)  
+
+
+```
+
+
+```{r}
+
+
+draw_plot <- quarters %>% 
+  select(1,10,6 ) %>%
+  filter(is.na(s_p500) == FALSE) %>% 
+  group_by(year) %>% 
+  mutate(month = month(dates))
+
+
+draw_plot %>% 
+  filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>%
+  group_by(year) %>% 
+  
+    ggplot() + 
+  geom_line(aes(x = dates, y = s_p500) , alpha = 0.6) + 
+  theme_minimal() +
+  scale_fill_brewer(palette = 'Dark2') + 
+  theme(panel.grid.minor = element_blank() ,
+        panel.grid.major.x  = element_blank(), 
+        legend.position = 'bottom') + 
+  scale_y_continuous(label = scales::percent)  
+  
+  
+ 
+
+
+```
+
+
+
 
 # plot 3  volatility vs drop wiht size of the stock market being the size of the circle/the total value lost 
 
@@ -451,6 +501,8 @@ map_covid  %>%
 
 ```
 
+
+
 ```{r}
 map_covid  %>%
   ggplot() +
@@ -478,7 +530,6 @@ map_covid  %>%
 
 
 ```
-
 
 
 
