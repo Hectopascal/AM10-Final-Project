@@ -432,7 +432,8 @@ library(wpp2019)
 #get 2020 pop and country code
 data(pop)
 pop_2020 <- pop %>% 
-  select(c(1,17))
+  select(c(1,17)) %>% 
+  mutate(`2020` = `2020` * 1000)
 
 
 #getting geometrty and isocodes 
@@ -444,16 +445,16 @@ pop_2020 <- pop %>%
  
  
  map_100k <- left_join(pop_2020, iso_un , by = c('country_code' = 'iso_n3')) %>% 
-   filter(is.na(iso_a3) == FALSE) %>% 
+   filter(is.na(iso_a3) == FALSE) %>%
    select(`2020`, iso_a3, geometry) %>% 
    left_join(covid %>% 
-   select(iso_a3 , total) , by = 'iso_a3')
+   select(iso_a3 , total) , by = 'iso_a3') %>% 
+  mutate(cases_per100 = (total/`2020`)*1e5) 
  
  
  
 
 map_100k <- map_100k %>% 
-  mutate(cases_per100 = (total/`2020`)*1e5)  %>% 
   sf::st_as_sf() 
   
 
@@ -468,7 +469,7 @@ map_100k  %>%
                     guide = guide_colorbar(
                       title = "Number of cases per 100k",
                       title.hjust = 0.5,
-                      labels = unit_format(unit = "M", scale = 1e-6) , 
+                      labels = unit_format(unit = "K", scale = 1e-3) , 
                       direction = "vertical",
                       nrow = 1,
                       keyheight = unit(3, units = "mm"),
@@ -481,6 +482,7 @@ map_100k  %>%
         panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank()) +
   labs(title = "",
        subtitle = "Covid Cases Worldwide ")
+
 
 ```
 
