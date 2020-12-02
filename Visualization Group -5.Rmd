@@ -404,11 +404,46 @@ pop_2020 <- pop %>%
    mutate(un_a3 = as.integer(un_a3) , iso_n3 = as.integer(iso_n3))
  
  
- View(left_join(pop_2020, iso_un , by = c('country_code' = 'un_a3')))
  
  
- left_join(pop_2020, iso_un , by = c('country_code' = 'iso_n3'))
+ map_100k <- left_join(pop_2020, iso_un , by = c('country_code' = 'iso_n3')) %>% 
+   filter(is.na(iso_a3) == FALSE) %>% 
+   select(`2020`, iso_a3, geometry) %>% 
+   left_join(covid %>% 
+   select(iso_a3 , total) , by = 'iso_a3')
+ 
+ 
+ 
 
+map_100k <- map_100k %>% 
+  mutate(cases_per100 = (total/`2020`)*1e5)  %>% 
+  sf::st_as_sf() 
+  
+
+options(scipen = 999)
+
+map_100k  %>%
+  ggplot() +
+  geom_sf(aes(fill = cases_per100), size = 0.1, color = "white") +
+  coord_sf(crs = "+proj=longlat") + 
+  scale_fill_distiller( palette = "Blues", 
+                    direction = 1 , 
+                    guide = guide_colorbar(
+                      title = "Number of cases per 100k",
+                      title.hjust = 0.5,
+                      labels = unit_format(unit = "M", scale = 1e-6) , 
+                      direction = "horizontal",
+                      nrow = 1,
+                      keyheight = unit(3, units = "mm"),
+                      keywidth = unit(3, units = "mm"),
+                      title.position = "top"  ,
+                      barheight =  1.25 , barwidth = 15)) +
+  theme_minimal() +
+  theme(legend.direction = "horizontal",
+        legend.position = "bottom" , 
+        panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank()) +
+  labs(title = "",
+       subtitle = "Covid Cases Worldwide ")
 
 ```
 
