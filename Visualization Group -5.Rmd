@@ -479,6 +479,9 @@ map_covid  %>%
 
 ```
 
+
+
+
 ```{r}
 
 #extracting populatuion
