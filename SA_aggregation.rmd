@@ -26,7 +26,7 @@ U
 ```{r}
 
 data<-read.csv("data/scores/scores.csv")
-fed_data <- read.csv("data/fed2020.txt")
+fed_data <- read.csv("data/fed_sent.txt")
 
 
 graphdata<-data%>% mutate(date=as.Date(date)) %>% 
