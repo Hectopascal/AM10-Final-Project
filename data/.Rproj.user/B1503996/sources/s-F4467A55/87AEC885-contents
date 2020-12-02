@@ -1,0 +1,42 @@
+---
+title: "Untitled"
+author: "Christian"
+date: "12/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lubridate)
+library(cluster)
+library(Hmisc)
+library(factoextra)
+library(purrr)
+library(gridExtra)
+library(data.table)
+library(reshape2)
+library(recommenderlab)
+library(ggplot2)  
+library(Hmisc)
+library(dplyr)
+library(readxl)
+library(janitor) 
+library(skimr)
+library(readxl)
+```
+
+
+
+```{r}
+comp_data <- read_xls('Company_Data_3.xls')
+comp_data
+
+comp_data_1 <- read_csv('Company_Data.csv')
+
+```
+

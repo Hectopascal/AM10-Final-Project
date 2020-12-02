@@ -1,0 +1,4 @@
+"0","comp_data_1 <- read_csv('Company_Data.csv')
+"
+"2","Error in make.names(x) : invalid multibyte string 1
+"

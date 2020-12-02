@@ -1,0 +1,519 @@
+﻿Company Name;Exchange:Ticker;Currency;Market Cap (mm) [Latest]*†;Revenue (mm);% Price Change [Last Day];% Price Change [30 Day];% Price Change [YTD];% Price Change [12 Month];Price Close;P/E*†;P/BV*†;Primary Industry;cap_01012020;cap_11212020;% Change between Jan and Nov 2020
+3M Company;NYSE:MMM;USD;99726,73;31712;0.75%;2.20%;(2.00%);3.05%;172,89;20.27x;8.33x;Industrial Conglomerates; 101.450 ; 99.727 ;-1,7%
+A. O. Smith Corporation;NYSE:AOS;USD;9051,88;2811,7;(0.95%);2.28%;17.67%;16.57%;56,06;28.88x;5.23x;Building Products; 7.771 ; 9.052 ;16,5%
+Abbott Laboratories;NYSE:ABT;USD;196537,18;32221;(0.10%);4.68%;27.67%;32.19%;110,89;58.99x;6.27x;Health Care Equipment; 153.608 ; 196.537 ;27,9%
+AbbVie Inc.;NYSE:ABBV;USD;178030,39;40650;1.17%;21.66%;13.89%;15.64%;100,84;22.06x;11.52x;Biotechnology; 130.935 ; 178.030 ;36,0%
+Abiomed, Inc.;NasdaqGS:ABMD;USD;12120,38;802,86;(0.89%);(1.61%);57.22%;44.78%;268,21;58.95x;10.34x;Health Care Equipment; 7.703 ; 12.120 ;57,3%
+Accenture plc;NYSE:ACN;USD;154235,29;44327,04;0.10%;4.44%;15.61%;23.13%;243,44;30.84x;9.07x;IT Consulting and Other Services; 133.711 ; 154.235 ;15,3%
+Activision Blizzard, Inc.;NasdaqGS:ATVI;USD;59363,16;7660;1.16%;(6.26%);29.27%;42.02%;76,81;26.96x;4.08x;Interactive Home Entertainment; 45.650 ; 59.363 ;30,0%
+Adobe Inc.;NasdaqGS:ADBE;USD;222071,51;12436,3;(0.75%);(6.66%);40.36%;54.26%;462,92;58.30x;19.11x;Application Software; 159.080 ; 222.072 ;39,6%
+Advance Auto Parts, Inc.;NYSE:AAP;USD;9727,05;9853,8;(1.20%);(6.51%);(9.88%);(10.76%);144,33;21.01x;2.64x;Automotive Retail; 11.027 ; 9.727 ;-11,8%
+Advanced Micro Devices, Inc.;NasdaqGS:AMD;USD;101797,51;8646;(1.05%);6.87%;84.56%;106.54%;84,64;114.63x;26.59x;Semiconductors; 52.216 ; 101.798 ;95,0%
+Aflac Incorporated;NYSE:AFL;USD;30802,22;21837;0.30%;19.65%;(17.11%);(18.99%);43,85;6.90x;0.95x;Life and Health Insurance; 38.830 ; 30.802 ;-20,7%
+Agilent Technologies, Inc.;NYSE:A;USD;34188,46;5223;2.03%;5.78%;29.98%;41.23%;110,89;50.07x;6.73x;Life Sciences Tools and Services; 26.462 ; 34.188 ;29,2%
+Air Products and Chemicals, Inc.;NYSE:APD;USD;59783,27;8856,3;0.04%;(7.77%);15.10%;13.69%;270,48;31.64x;4.95x;Industrial Gases; 51.812 ; 59.783 ;15,4%
+Akamai Technologies, Inc.;NasdaqGS:AKAM;USD;16657,08;3123,99;0.81%;(6.15%);18.45%;17.80%;102,32;30.00x;4.02x;Internet Services and Infrastructure; 13.959 ; 16.657 ;19,3%
+Alaska Air Group, Inc.;NYSE:ALK;USD;5901,24;4986;(1.59%);20.23%;(29.56%);(30.27%);47,72;NM;1.74x;Airlines; 8.345 ; 5.901 ;-29,3%
+Albemarle Corporation;NYSE:ALB;USD;13614,81;3242,33;1.66%;33.40%;75.10%;96.60%;127,89;35.62x;3.25x;Specialty Chemicals; 7.745 ; 13.615 ;75,8%
+Alexandria Real Estate Equities, Inc.;NYSE:ARE;USD;22149,65;1847,01;0.24%;2.54%;1.58%;2.57%;164,14;38.14x;2.04x;Office REITs; 18.606 ; 22.150 ;19,0%
+Alexion Pharmaceuticals, Inc.;NasdaqGS:ALXN;USD;26563,46;5862,4;(0.55%);2.70%;12.23%;11.84%;121,38;28.17x;2.41x;Biotechnology; 23.933 ; 26.563 ;11,0%
+Align Technology, Inc.;NasdaqGS:ALGN;USD;35202,76;2287,21;1.16%;32.95%;60.00%;66.11%;446,45;20.32x;11.47x;Health Care Supplies; 21.992 ; 35.203 ;60,1%
+Allegion plc;NYSE:ALLE;USD;10400,41;2712,1;(0.99%);8.76%;(9.27%);(3.83%);113;34.89x;12.77x;Building Products; 11.572 ; 10.400 ;-10,1%
+Alliant Energy Corporation;NasdaqGS:LNT;USD;13204,85;3478,7;0.76%;(4.98%);(3.38%);(0.51%);52,87;19.68x;2.30x;Electric Utilities; 13.152 ; 13.205 ;0,4%
+Alphabet Inc.;NasdaqGS:GOOG.L;USD;1176449,58;171704;(1.26%);9.48%;29.64%;33.38%;1736,38;33.55x;5.60x;Interactive Media and Services; 922.946 ; 1.176.450 ;27,5%
+Alphabet Inc.;NasdaqGS:GOOG;USD;1176449,58;171704;(1.23%);9.34%;30.30%;33.70%;1742,19;33.66x;5.60x;Interactive Media and Services; 922.946 ; 1.176.450 ;27,5%
+Altria Group, Inc.;NYSE:MO;USD;74225,26;20588;(0.30%);3.71%;(19.98%);(17.56%);39,94;103.93x;23.72x;Tobacco; 93.238 ; 74.225 ;-20,4%
+Amazon.com, Inc.;NasdaqGS:AMZN;USD;1555127,62;347945;(0.57%);(2.69%);67.73%;77.56%;3099,4;90.62x;18.90x;Internet and Direct Marketing Retail; 916.154 ; 1.555.128 ;69,7%
+Amcor plc;NYSE:AMCR;USD;18461,31;12423,5;0.08%;7.67%;10.06%;21.36%;11,93;18.61x;3.93x;Paper Packaging; 17.559 ; 18.461 ;5,1%
+Ameren Corporation;NYSE:AEE;USD;19393,39;5529;0.13%;(4.67%);2.15%;3.95%;78,45;22.92x;2.28x;Multi-Utilities; 18.895 ; 19.393 ;2,6%
+American Airlines Group Inc.;NasdaqGS:AAL;USD;6855,56;24622;(2.03%);(1.69%);(56.31%);(55.61%);12,53;NM;NM;Airlines; 12.564 ; 6.856 ;-45,4%
+American Electric Power Company, Inc.;NasdaqGS:AEP;USD;40947,17;14923,9;0.05%;(8.75%);(12.72%);(9.81%);82,49;21.36x;2.01x;Electric Utilities; 46.683 ; 40.947 ;-12,3%
+American Express Company;NYSE:AXP;USD;90649,64;32236;(1.37%);10.99%;(9.57%);(5.63%);112,58;27.71x;4.20x;Consumer Finance; 101.867 ; 90.650 ;-11,0%
+American International Group, Inc.;NYSE:AIG;USD;33263,51;45654;0.18%;21.91%;(24.78%);(27.05%);38,61;NM;0.52x;Multi-line Insurance; 44.655 ; 33.264 ;-25,5%
+American Tower Corporation (REIT);NYSE:AMT;USD;103350,68;7842,7;(2.42%);(3.76%);1.24%;6.77%;232,66;55.01x;28.38x;Specialized REITs; 101.797 ; 103.351 ;1,5%
+American Water Works Company, Inc.;NYSE:AWK;USD;28588,41;3756;0.68%;3.59%;28.38%;30.80%;157,71;43.21x;4.36x;Water Utilities; 22.208 ; 28.588 ;28,7%
+Ameriprise Financial, Inc.;NYSE:AMP;USD;21212,41;11873;(2.09%);7.83%;7.94%;13.52%;179,8;12.62x;3.59x;Asset Management and Custody Banks; 21.105 ; 21.212 ;0,5%
+AmerisourceBergen Corporation;NYSE:ABC;USD;20518,93;189893,93;(1.41%);2.79%;18.16%;14.75%;100,46;NM;-;Health Care Distributors; 17.508 ; 20.519 ;17,2%
+AMETEK, Inc.;NYSE:AME;USD;27014,22;4645,9;(0.64%);9.58%;17.73%;19.22%;117,42;31.06x;4.77x;Electrical Components and Equipment; 22.800 ; 27.014 ;18,5%
+Amgen Inc.;NasdaqGS:AMGN;USD;129922,57;24987;(0.67%);(2.53%);(7.43%);(1.04%);223,17;18.00x;11.96x;Biotechnology; 143.240 ; 129.923 ;-9,3%
+Amphenol Corporation;NYSE:APH;USD;38109,32;8323,9;0.15%;10.83%;17.70%;24.62%;127,39;33.61x;7.53x;Electronic Components; 32.089 ; 38.109 ;18,8%
+Analog Devices, Inc.;NasdaqGS:ADI;USD;49846,22;5519,98;(0.95%);8.11%;13.50%;24.22%;134,88;45.11x;4.27x;Semiconductors; 43.769 ; 49.846 ;13,9%
+ANSYS, Inc.;NasdaqGS:ANSS;USD;27333,48;1543,84;(1.81%);(2.93%);23.64%;29.64%;318,26;72.36x;7.75x;Application Software; 22.029 ; 27.333 ;24,1%
+Anthem, Inc.;NYSE:ANTM;USD;76009,01;117449;(2.00%);3.19%;1.19%;4.41%;305,62;15.78x;2.29x;Managed Health Care; 76.584 ; 76.009 ;-0,8%
+Aon Plc;NYSE:AON;USD;45334,75;10986;(2.09%);(3.76%);(4.62%);(1.42%);198,67;25.62x;13.13x;Insurance Brokers; 48.768 ; 45.335 ;-7,0%
+Apache Corporation;NasdaqGS:APA;USD;4318,35;4675;0.79%;25.71%;(55.30%);(49.98%);11,44;NM;NM;Oil and Gas Exploration and Production; 9.623 ; 4.318 ;-55,1%
+Apartment Investment & Mgmt - placeholder;AIV_z;-;-;-;-;-;-;-;-;-;-;-; (Invalid Identifier) ; (Invalid Identifier) ;#VALUE!
+Apartment Investment and Management Company;NYSE:AIV;USD;4561,25;889,69;(0.65%);(9.86%);(40.68%);(43.87%);30,64;29.76x;2.16x;Residential REITs; 7.690 ; 4.561 ;-40,7%
+Apple Inc.;NasdaqGS:AAPL;USD;1994991,45;274515;(1.10%);0.40%;59.84%;78.34%;117,34;35.77x;30.83x;Technology Hardware, Storage and Peripherals; 1.304.765 ; 1.994.991 ;52,9%
+Applied Materials, Inc.;NasdaqGS:AMAT;USD;70071,62;17202;(0.68%);23.53%;25.70%;28.63%;76,73;19.57x;6.67x;Semiconductor Equipment; 55.870 ; 70.072 ;25,4%
+Aptiv PLC;NYSE:APTV;USD;30869,3;12450;(0.90%);15.00%;20.37%;27.73%;114,32;17.42x;4.23x;Auto Parts and Equipment; 24.245 ; 30.869 ;27,3%
+Archer-Daniels-Midland Company;NYSE:ADM;USD;27046,07;62706;(0.63%);(4.33%);4.88%;14.38%;48,61;17.23x;1.41x;Agricultural Products; 25.802 ; 27.046 ;4,8%
+Arista Networks, Inc.;NYSE:ANET;USD;20315,1;2221,58;(1.60%);25.29%;32.01%;38.37%;268,5;30.04x;6.69x;Communications Equipment; 15.540 ; 20.315 ;30,7%
+Arthur J. Gallagher & Co.;NYSE:AJG;USD;22222,81;6776,1;(0.42%);7.37%;21.34%;24.11%;115,55;28.88x;3.87x;Insurance Brokers; 17.763 ; 22.223 ;25,1%
+Assurant, Inc.;NYSE:AIZ;USD;7867,27;10107,7;(0.76%);8.91%;2.14%;1.08%;133,89;19.83x;1.34x;Multi-line Insurance; 7.948 ; 7.867 ;-1,0%
+AT&T Inc.;NYSE:T;USD;201781,28;172890;0.14%;5.99%;(27.53%);(23.83%);28,32;18.63x;1.15x;Integrated Telecommunication Services; 285.479 ; 201.781 ;-29,3%
+Atmos Energy Corporation;NYSE:ATO;USD;12043,84;2821,14;0.60%;0.14%;(14.47%);(12.06%);95,67;19.56x;1.76x;Gas Utilities; 13.676 ; 12.044 ;-11,9%
+Autodesk, Inc.;NasdaqGS:ADSK;USD;55892,07;3540,8;(0.77%);0.35%;38.93%;54.17%;254,89;156.42x;NM;Application Software; 40.367 ; 55.892 ;38,5%
+Automatic Data Processing, Inc.;NasdaqGS:ADP;USD;73442,97;14564,8;(1.36%);16.63%;0.45%;0.40%;171,27;29.73x;12.83x;Data Processing and Outsourced Services; 73.775 ; 73.443 ;-0,5%
+AutoZone, Inc.;NYSE:AZO;USD;25822,2;12631,97;(1.73%);(5.43%);(6.47%);(3.92%);1114,2;15.49x;NM;Automotive Retail; 28.106 ; 25.822 ;-8,1%
+AvalonBay Communities, Inc.;NYSE:AVB;USD;23949,75;2347,87;0.94%;17.76%;(18.03%);(20.55%);171,9;36.92x;2.22x;Residential REITs; 29.222 ; 23.950 ;-18,0%
+Avery Dennison Corporation;NYSE:AVY;USD;12304,11;6753,5;0.32%;3.47%;12.75%;11.94%;147,5;23.57x;9.19x;Paper Packaging; 10.924 ; 12.304 ;12,6%
+Baker Hughes Company;NYSE:BKR;USD;12488,73;21558;(0.55%);29.70%;(28.95%);(18.78%);18,21;NM;1.08x;Oil and Gas Equipment and Services; 16.656 ; 12.489 ;-25,0%
+Ball Corporation;NYSE:BLL;USD;31811,61;11398;(0.67%);4.82%;50.38%;44.20%;97,25;62.67x;11.09x;Metal and Glass Containers; 21.155 ; 31.812 ;50,4%
+Bank of America Corporation;NYSE:BAC;USD;231927,67;75570;(0.63%);11.48%;(23.88%);(17.99%);26,81;13.21x;0.95x;Diversified Banks; 316.808 ; 231.928 ;-26,8%
+Baxter International Inc.;NYSE:BAX;USD;39343,23;11531;(2.36%);(5.77%);(7.89%);(6.07%);77,02;43.59x;4.70x;Health Care Equipment; 42.693 ; 39.343 ;-7,8%
+Becton, Dickinson and Company;NYSE:BDX;USD;67211,82;17117;(0.44%);(1.92%);(14.74%);(6.04%);231,87;85.56x;2.84x;Health Care Equipment; 73.707 ; 67.212 ;-8,8%
+Berkshire Hathaway Inc.;NYSE:BRK.B;USD;532811,57;247981;(1.10%);8.01%;0.23%;4.38%;227,01;0.01x;1.31x;Multi-Sector Holdings; 553.690 ; 532.812 ;-3,8%
+Best Buy Co., Inc.;NYSE:BBY;USD;30837,26;43432;0.26%;0.38%;35.69%;60.67%;119,14;19.27x;8.11x;Computer and Electronics Retail; 22.721 ; 30.837 ;35,7%
+Biogen Inc.;NasdaqGS:BIIB;USD;37570,19;14263,3;0.06%;(9.21%);(17.72%);(14.45%);244,15;8.04x;3.49x;Biotechnology; 53.543 ; 37.570 ;-29,8%
+Bio-Rad Laboratories, Inc.;NYSE:BIO;USD;17004,93;2380,22;(0.77%);1.89%;54.04%;57.09%;569,98;4.88x;1.94x;Life Sciences Tools and Services; 11.075 ; 17.005 ;53,5%
+BlackRock, Inc.;NYSE:BLK;USD;102595,48;15704;(0.11%);5.94%;33.82%;37.62%;672,71;22.34x;3.03x;Asset Management and Custody Banks; 78.006 ; 102.595 ;31,5%
+Booking Holdings Inc.;NasdaqGS:BKNG;USD;81613,72;8897;(0.91%);17.08%;(2.97%);7.61%;1992,77;59.16x;16.76x;Internet and Direct Marketing Retail; 85.960 ; 81.614 ;-5,1%
+BorgWarner Inc.;NYSE:BWA;USD;9184,12;8798;(0.40%);(5.20%);(13.42%);(10.61%);37,56;21.34x;1.94x;Auto Parts and Equipment; 8.958 ; 9.184 ;2,5%
+Boston Properties, Inc.;NYSE:BXP;USD;15313,79;2801,01;0.99%;29.36%;(28.64%);(28.74%);98,38;15.37x;2.56x;Office REITs; 21.316 ; 15.314 ;-28,2%
+Boston Scientific Corporation;NYSE:BSX;USD;48255,75;10108;(1.49%);(9.29%);(25.48%);(20.91%);33,7;12.93x;3.15x;Health Care Equipment; 63.029 ; 48.256 ;-23,4%
+Bristol-Myers Squibb Company;NYSE:BMY;USD;139223,29;39395;(0.77%);2.63%;(4.02%);9.22%;61,61;NM;2.80x;Pharmaceuticals; 150.473 ; 139.223 ;-7,5%
+Broadcom Inc.;NasdaqGS:AVGO;USD;155057,5;23197;(0.26%);3.03%;21.30%;22.99%;383,33;71.96x;6.59x;Semiconductors; 125.710 ; 155.057 ;23,3%
+Broadridge Financial Solutions, Inc.;NYSE:BR;USD;16755,57;4597,8;(1.15%);0.28%;17.31%;18.36%;144,92;35.97x;11.99x;Data Processing and Outsourced Services; 14.163 ; 16.756 ;18,3%
+Brown-Forman Corporation;NYSE:BF.B;USD;36942,14;3350;(0.47%);6.72%;17.99%;19.04%;79,76;39.88x;17.83x;Distillers and Vintners; 31.486 ; 36.942 ;17,3%
+C.H. Robinson Worldwide, Inc.;NasdaqGS:CHRW;USD;12587,25;15450,98;(1.26%);(8.12%);18.40%;22.54%;92,59;27.52x;6.80x;Air Freight and Logistics; 10.577 ; 12.587 ;19,0%
+Cabot Oil & Gas Corporation;NYSE:COG;USD;6803,76;1455,59;(0.64%);(11.00%);(1.95%);4.15%;17,07;32.11x;3.23x;Oil and Gas Exploration and Production; 7.102 ; 6.804 ;-4,2%
+Cadence Design Systems, Inc.;NasdaqGS:CDNS;USD;31460,63;2522,54;0.17%;1.40%;62.62%;66.60%;112,79;29.24x;13.11x;Application Software; 19.462 ; 31.461 ;61,7%
+Campbell Soup Company;NYSE:CPB;USD;14805,24;8691;(0.69%);2.58%;(0.89%);1.45%;48,98;25.12x;5.81x;Packaged Foods and Meats; 14.908 ; 14.805 ;-0,7%
+Capital One Financial Corporation;NYSE:COF;USD;38229,25;16795;(1.66%);13.37%;(18.78%);(13.40%);83,58;40.32x;0.73x;Consumer Finance; 47.927 ; 38.229 ;-20,2%
+Cardinal Health, Inc.;NYSE:CAH;USD;15216,79;154646;(0.82%);8.43%;2.53%;(6.41%);51,86;15.58x;10.81x;Health Care Distributors; 14.794 ; 15.217 ;2,9%
+CarMax, Inc.;NYSE:KMX;USD;15514,41;19478,27;0.02%;5.28%;7.85%;(5.04%);94,55;22.67x;3.90x;Automotive Retail; 14.360 ; 15.514 ;8,0%
+Carnival Corporation & Plc;NYSE:CCL;USD;18104,35;10342;(4.51%);19.96%;(65.83%);(60.22%);17,37;NM;0.80x;Hotels, Resorts and Cruise Lines; 34.358 ; 18.104 ;-47,3%
+Carrier Global Corporation;NYSE:CARR;USD;33402,13;17363;(1.51%);15.56%;221.17%;221.17%;38,54;21.82x;6.65x;Building Products; -   ; 33.402 ;#DIV/0!
+Catalent, Inc.;NYSE:CTLT;USD;17018,2;3275,3;(0.80%);11.82%;83.53%;100.25%;103,33;65.32x;5.58x;Pharmaceuticals; 8.237 ; 17.018 ;106,6%
+Caterpillar Inc.;NYSE:CAT;USD;93565,37;43657;(0.39%);2.89%;16.62%;21.70%;172,23;28.55x;6.28x;Construction Machinery and Heavy Trucks; 81.617 ; 93.565 ;14,6%
+Cboe Global Markets, Inc.;BATS:CBOE;USD;9717,29;3181,5;0.03%;12.28%;(25.05%);(27.07%);89,94;21.23x;2.91x;Financial Exchanges and Data; 13.293 ; 9.717 ;-26,9%
+CBRE Group, Inc.;NYSE:CBRE;USD;19107,62;24035,1;(0.29%);23.91%;(4.88%);5.05%;58,3;18.29x;2.92x;Real Estate Services; 20.077 ; 19.108 ;-4,8%
+CDW Corporation;NasdaqGS:CDW;USD;18867,29;18048,2;(0.63%);2.41%;(7.62%);(4.18%);131,95;26.02x;15.31x;Technology Distributors; 20.523 ; 18.867 ;-8,1%
+Celanese Corporation;NYSE:CE;USD;15419,62;5496;(1.23%);13.52%;7.14%;6.17%;131,91;26.90x;6.24x;Specialty Chemicals; 14.882 ; 15.420 ;3,6%
+Centene Corporation;NYSE:CNC;USD;36504,06;95748;(1.02%);(4.58%);0.14%;5.89%;62,96;16.69x;1.43x;Managed Health Care; 26.015 ; 36.504 ;40,3%
+CenterPoint Energy, Inc.;NYSE:CNP;USD;12781,5;12120;0.13%;8.96%;(13.97%);(4.05%);23,46;NM;2.15x;Multi-Utilities; 13.696 ; 12.782 ;-6,7%
+Cerner Corporation;NasdaqGS:CERN;USD;22457,71;5553;0.52%;0.95%;(0.19%);8.25%;73,25;28.62x;5.07x;Health Care Technology; 23.052 ; 22.458 ;-2,6%
+CF Industries Holdings, Inc.;NYSE:CF;USD;7166,19;4071;4.20%;22.94%;(29.83%);(25.72%);33,5;25.34x;2.43x;Fertilizers and Agricultural Chemicals; 10.380 ; 7.166 ;-31,0%
+Charter Communications, Inc.;NasdaqGS:CHTR;USD;131000,16;47234;0.75%;8.27%;35.11%;36.81%;655,41;51.97x;5.46x;Cable and Satellite; 104.186 ; 131.000 ;25,7%
+Chevron Corporation;NYSE:CVX;USD;165173,5;104202;0.07%;21.05%;(28.81%);(26.89%);85,79;NM;1.21x;Integrated Oil and Gas; 227.869 ; 165.173 ;-27,5%
+Chipotle Mexican Grill, Inc.;NYSE:CMG;USD;36166,56;5817,15;(1.37%);(5.42%);54.41%;66.58%;1292,57;154.57x;20.31x;Restaurants; 23.268 ; 36.167 ;55,4%
+Chubb Limited;NYSE:CB;USD;67192,23;34916;1.02%;16.11%;(4.36%);(2.38%);148,88;29.49x;1.18x;Property and Casualty Insurance; 70.545 ; 67.192 ;-4,8%
+Church & Dwight Co., Inc.;NYSE:CHD;USD;21356,79;4744,7;(0.28%);(6.76%);22.21%;23.36%;85,96;27.81x;6.67x;Household Products; 17.262 ; 21.357 ;23,7%
+Cigna Corporation;NYSE:CI;USD;73994,76;157009;0.04%;17.34%;0.16%;2.46%;204,82;14.38x;1.54x;Health Care Services; 76.362 ; 73.995 ;-3,1%
+Cincinnati Financial Corporation;NasdaqGS:CINF;USD;12453,42;6994;(1.21%);(8.17%);(26.39%);(28.29%);77,4;15.89x;1.29x;Property and Casualty Insurance; 17.179 ; 12.453 ;-27,5%
+Cintas Corporation;NasdaqGS:CTAS;USD;37858,7;7020,56;(1.64%);6.84%;34.48%;39.46%;361,85;42.22x;10.67x;Diversified Support Services; 27.904 ; 37.859 ;35,7%
+Cisco Systems, Inc.;NasdaqGS:CSCO;USD;173119,33;48071;(0.49%);4.89%;(14.57%);(9.12%);40,97;16.59x;4.56x;Communications Equipment; 203.459 ; 173.119 ;-14,9%
+Citigroup Inc.;NYSE:C;USD;107533,22;58084;(0.94%);20.09%;(35.35%);(30.12%);51,65;10.03x;0.62x;Diversified Banks; 174.415 ; 107.533 ;-38,3%
+Citizens Financial Group, Inc.;NYSE:CFG;USD;13785,92;5233;(1.62%);17.17%;(20.51%);(15.05%);32,28;14.55x;0.68x;Regional Banks; 17.654 ; 13.786 ;-21,9%
+Citrix Systems, Inc.;NasdaqGS:CTXS;USD;14833,93;3236,87;(0.24%);(11.65%);8.64%;6.70%;120,48;25.76x;215.89x;Application Software; 14.441 ; 14.834 ;2,7%
+CME Group Inc.;NasdaqGS:CME;USD;60120,16;4910,5;0.93%;1.75%;(16.57%);(18.96%);167,47;27.91x;2.20x;Financial Exchanges and Data; 71.931 ; 60.120 ;-16,4%
+CMS Energy Corporation;NYSE:CMS;USD;17537,23;6677;1.11%;(6.03%);(2.53%);(0.73%);61,25;22.94x;3.26x;Multi-Utilities; 17.835 ; 17.537 ;-1,7%
+Cognizant Technology Solutions Corporation;NasdaqGS:CTSH;USD;40579,25;16752;(0.39%);4.13%;22.38%;19.51%;75,9;28.13x;3.69x;IT Consulting and Other Services; 33.960 ; 40.579 ;19,5%
+Colgate-Palmolive Company;NYSE:CL;USD;72996,5;16162;(0.26%);6.18%;23.71%;26.71%;85,16;27.20x;112.08x;Household Products; 58.999 ; 72.996 ;23,7%
+Comcast Corporation;NasdaqGS:CMCS.A;USD;224968,64;104254;(0.63%);10.44%;9.34%;11.21%;49,17;22.05x;2.63x;Cable and Satellite; 204.580 ; 224.969 ;10,0%
+Comerica Incorporated;NYSE:CMA;USD;7015,59;2426;(0.96%);18.93%;(29.70%);(27.20%);50,44;13.88x;0.95x;Regional Banks; 10.343 ; 7.016 ;-32,2%
+Conagra Brands, Inc.;NYSE:CAG;USD;17518,26;11342,6;(0.91%);(3.32%);4.73%;21.60%;35,86;17.66x;2.18x;Packaged Foods and Meats; 16.663 ; 17.518 ;5,1%
+Concho Resources Inc.;NYSE:CXO;USD;11174,99;3260;0.37%;29.74%;(34.40%);(20.24%);57,45;NM;1.43x;Oil and Gas Exploration and Production; 17.467 ; 11.175 ;-36,0%
+ConocoPhillips;NYSE:COP;USD;42344,5;21475;0.46%;29.41%;(39.03%);(33.20%);39,65;NM;1.38x;Oil and Gas Exploration and Production; 71.355 ; 42.345 ;-40,7%
+Consolidated Edison, Inc.;NYSE:ED;USD;25914,73;12237;0.38%;(3.66%);(14.46%);(11.36%);77,39;19.10x;1.39x;Multi-Utilities; 30.075 ; 25.915 ;-13,8%
+Constellation Brands, Inc.;NYSE:STZ;USD;38633,84;8126,1;(1.78%);11.65%;5.70%;7.91%;200,57;35.51x;3.37x;Distillers and Vintners; 36.184 ; 38.634 ;6,8%
+Copart, Inc.;NasdaqGS:CPRT;USD;27024,45;2244,1;0.56%;(0.11%);25.87%;34.80%;114,47;40.16x;-;Diversified Support Services; 21.139 ; 27.024 ;27,8%
+Corning Incorporated;NYSE:GLW;USD;27733,56;10770;(0.08%);3.71%;24.70%;26.83%;36,3;142.39x;2.67x;Electronic Components; 22.389 ; 27.734 ;23,9%
+Corteva, Inc.;NYSE:CTVA;USD;27684,79;13993;0.54%;12.95%;25.71%;48.76%;37,16;46.99x;1.15x;Fertilizers and Agricultural Chemicals; 22.123 ; 27.685 ;25,1%
+Costco Wholesale Corporation;NasdaqGS:COST;USD;168160,83;166761;(0.63%);0.87%;29.67%;26.80%;381,12;42.25x;9.26x;Hypermarkets and Super Centers; 129.841 ; 168.161 ;29,5%
+Crown Castle International Corp. (REIT);NYSE:CCI;USD;72013,8;5773;(0.67%);1.94%;17.46%;21.97%;166,97;104.37x;7.62x;Specialized REITs; 59.101 ; 72.014 ;21,8%
+CSX Corporation;NasdaqGS:CSX;USD;70007,5;10643;(0.17%);16.29%;26.51%;31.60%;91,54;25.43x;5.52x;Railroads; 56.270 ; 70.007 ;24,4%
+Cummins Inc.;NYSE:CMI;USD;34137,72;19559;(1.07%);3.78%;28.88%;27.70%;230,65;21.74x;4.48x;Construction Machinery and Heavy Trucks; 27.077 ; 34.138 ;26,1%
+CVS Health Corporation;NYSE:CVS;USD;86898,77;265285;0.50%;12.09%;(10.63%);(11.39%);66,39;10.97x;1.26x;Health Care Services; 96.649 ; 86.899 ;-10,1%
+D.R. Horton, Inc.;NYSE:DHI;USD;27300;20311,1;(0.13%);2.59%;42.18%;37.44%;75;11.70x;2.31x;Homebuilding; 19.456 ; 27.300 ;40,3%
+Danaher Corporation;NYSE:DHR;USD;160374,82;20392,1;(0.03%);(0.35%);47.09%;57.92%;225,76;52.63x;4.62x;Health Care Equipment; 110.521 ; 160.375 ;45,1%
+Darden Restaurants, Inc.;NYSE:DRI;USD;14120,18;7200,4;(1.23%);11.01%;(0.51%);(5.49%);108,45;NM;6.02x;Restaurants; 13.365 ; 14.120 ;5,7%
+DaVita Inc.;NYSE:DVA;USD;12303,2;11543,87;2.06%;22.59%;46.41%;51.52%;109,85;16.70x;7.78x;Health Care Services; 9.612 ; 12.303 ;28,0%
+Deere & Company;NYSE:DE;USD;81026,18;35679;1.16%;9.37%;49.23%;50.26%;258,56;30.14x;6.21x;Agricultural and Farm Machinery; 54.278 ; 81.026 ;49,3%
+Delta Air Lines, Inc.;NYSE:DAL;USD;23582,89;24561;(2.06%);17.87%;(36.51%);(33.30%);37,13;NM;7.17x;Airlines; 37.681 ; 23.583 ;-37,4%
+DENTSPLY SIRONA Inc.;NasdaqGS:XRAY;USD;10796,63;3371,2;1.08%;8.17%;(12.71%);(12.77%);49,4;NM;2.24x;Health Care Supplies; 12.586 ; 10.797 ;-14,2%
+Devon Energy Corporation;NYSE:DVN;USD;5033,7;4335;(2.95%);52.49%;(49.33%);(40.05%);13,16;NM;1.72x;Oil and Gas Exploration and Production; 9.975 ; 5.034 ;-49,5%
+DexCom, Inc.;NasdaqGS:DXCM;USD;30332,24;1820,6;(4.47%);(18.56%);44.40%;42.71%;315,87;130.58x;21.17x;Health Care Equipment; 20.021 ; 30.332 ;51,5%
+Diamondback Energy, Inc.;NasdaqGS:FANG;USD;6293,63;2992;1.01%;43.77%;(57.10%);(47.08%);39,84;NM;0.65x;Oil and Gas Exploration and Production; 14.899 ; 6.294 ;-57,8%
+Digital Realty Trust, Inc.;NYSE:DLR;USD;39979,57;3550,94;(0.21%);(7.86%);19.17%;17.60%;142,7;65.63x;2.39x;Specialized REITs; 24.992 ; 39.980 ;60,0%
+Discover Financial Services;NYSE:DFS;USD;22925,93;5769;(2.55%);23.43%;(11.81%);(9.73%);74,8;22.82x;2.56x;Consumer Finance; 26.588 ; 22.926 ;-13,8%
+Discovery, Inc.;NasdaqGS:DISC.A;USD;16414,41;10659;1.86%;23.02%;(22.14%);(20.39%);25,49;14.12x;1.69x;Broadcasting; 21.834 ; 16.414 ;-24,8%
+Discovery, Inc.;NasdaqGS:DISC.K;USD;16414,41;10659;1.60%;21.47%;(24.94%);(22.71%);22,89;12.68x;1.69x;Broadcasting; 21.834 ; 16.414 ;-24,8%
+DISH Network Corporation;NasdaqGS:DISH;USD;17877,58;14176,94;0.09%;26.69%;(4.17%);(4.20%);33,99;13.84x;1.41x;Cable and Satellite; 18.547 ; 17.878 ;-3,6%
+Dollar General Corporation;NYSE:DG;USD;52354,35;31281,73;(0.46%);(4.38%);34.78%;30.62%;210,23;22.88x;7.15x;General Merchandise Stores; 39.713 ; 52.354 ;31,8%
+Dollar Tree, Inc.;NasdaqGS:DLTR;USD;22537,11;24625,9;0.44%;0.14%;0.98%;(11.46%);94,97;25.47x;3.29x;General Merchandise Stores; 22.258 ; 22.537 ;1,3%
+Dominion Energy, Inc.;NYSE:D;USD;64164,17;16717;(1.39%);(1.97%);(5.04%);(5.13%);78,65;31.32x;2.72x;Multi-Utilities; 68.169 ; 64.164 ;-5,9%
+Domino's Pizza, Inc.;NYSE:DPZ;USD;15326,9;3911,2;1.17%;(0.10%);32.60%;35.15%;389,56;33.34x;NM;Restaurants; 12.016 ; 15.327 ;27,6%
+Dover Corporation;NYSE:DOV;USD;17793,88;6678,96;(0.96%);8.57%;7.13%;13.73%;123,48;26.90x;5.53x;Industrial Machinery; 16.743 ; 17.794 ;6,3%
+Dow Inc.;NYSE:DOW;USD;40596,07;38040;(1.10%);12.73%;-;3.91%;54,73;NM;3.32x;Commodity Chemicals; 40.582 ; 40.596 ;0,0%
+DTE Energy Company;NYSE:DTE;USD;25135,65;12037;0.15%;6.92%;(0.01%);4.64%;129,86;18.38x;2.04x;Multi-Utilities; 24.949 ; 25.136 ;0,7%
+Duke Energy Corporation;NYSE:DUK;USD;68135,04;23773;0.96%;0.08%;1.50%;6.26%;92,58;33.81x;1.53x;Electric Utilities; 66.495 ; 68.135 ;2,5%
+Duke Realty Corporation;NYSE:DRE;USD;14286,64;968,53;(0.72%);(0.31%);10.79%;9.15%;38,41;65.59x;2.86x;Industrial REITs; 12.744 ; 14.287 ;12,1%
+DuPont de Nemours, Inc.;NYSE:DD;USD;45902,29;20349;0.81%;6.63%;(2.57%);(3.84%);62,55;NM;1.21x;Specialty Chemicals; 47.560 ; 45.902 ;-3,5%
+DXC Technology Company;NYSE:DXC;USD;5459,68;18892;(2.59%);8.17%;(42.91%);(40.21%);21,46;NM;1.27x;IT Consulting and Other Services; 9.623 ; 5.460 ;-43,3%
+Eastman Chemical Company;NYSE:EMN;USD;13082,53;8492;0.04%;13.12%;21.81%;25.60%;96,55;27.89x;2.15x;Diversified Chemicals; 10.779 ; 13.083 ;21,4%
+Eaton Corporation plc;NYSE:ETN;USD;46995,22;18409;(0.61%);8.42%;23.94%;30.71%;117,4;34.50x;3.25x;Electrical Components and Equipment; 39.157 ; 46.995 ;20,0%
+eBay Inc.;NasdaqGS:EBAY;USD;33770,69;11803;(1.59%);(7.25%);35.67%;40.53%;48,99;14.55x;11.75x;Internet and Direct Marketing Retail; 29.376 ; 33.771 ;15,0%
+Ecolab Inc.;NYSE:ECL;USD;60131,88;14313,4;(0.13%);3.67%;9.16%;13.12%;210,66;50.72x;10.01x;Specialty Chemicals; 55.628 ; 60.132 ;8,1%
+Edison International;NYSE:EIX;USD;23990,21;13391;(0.38%);7.33%;(15.95%);(10.63%);63,38;65.91x;1.75x;Electric Utilities; 27.042 ; 23.990 ;-11,3%
+Edwards Lifesciences Corporation;NYSE:EW;USD;52683,18;4368,7;(0.83%);1.10%;8.70%;3.83%;84,53;66.82x;12.61x;Health Care Equipment; 48.657 ; 52.683 ;8,3%
+Electronic Arts Inc.;NasdaqGS:EA;USD;35351,74;5590;1.44%;(4.53%);13.36%;24.21%;121,87;27.16x;4.31x;Interactive Home Entertainment; 31.391 ; 35.352 ;12,6%
+Eli Lilly and Company;NYSE:LLY;USD;131898,56;23213,8;1.45%;2.96%;10.70%;26.94%;145,49;23.80x;26.93x;Pharmaceuticals; 126.190 ; 131.899 ;4,5%
+Emerson Electric Co.;NYSE:EMR;USD;45427,08;16785;(1.66%);9.75%;(0.39%);4.41%;75,96;23.44x;5.50x;Electrical Components and Equipment; 46.588 ; 45.427 ;-2,5%
+Entergy Corporation;NYSE:ETR;USD;21821,34;10205,84;0.01%;1.98%;(9.03%);(6.90%);108,98;15.81x;2.03x;Electric Utilities; 23.852 ; 21.821 ;-8,5%
+EOG Resources, Inc.;NYSE:EOG;USD;26479,55;11295,03;(0.15%);29.24%;(45.81%);(37.01%);45,39;NM;1.32x;Oil and Gas Exploration and Production; 48.729 ; 26.480 ;-45,7%
+Equifax Inc.;NYSE:EFX;USD;20878,8;3914,9;(1.13%);5.72%;22.50%;22.69%;171,64;47.47x;7.21x;Research and Consulting Services; 16.966 ; 20.879 ;23,1%
+Equinix, Inc. (REIT);NasdaqGS:EQIX;USD;64876,75;5785,21;(0.34%);(9.34%);24.74%;28.02%;728,12;143.41x;6.17x;Specialized REITs; 49.777 ; 64.877 ;30,3%
+Equity Residential;NYSE:EQR;USD;22543,66;2642,55;1.17%;19.90%;(25.16%);(30.12%);60,56;23.80x;2.13x;Residential REITs; 30.050 ; 22.544 ;-25,0%
+Essex Property Trust, Inc.;NYSE:ESS;USD;16568,49;1626,84;(0.02%);27.09%;(15.54%);(20.27%);254,1;27.74x;2.72x;Residential REITs; 19.881 ; 16.568 ;-16,7%
+Etsy, Inc.;NasdaqGS:ETSY;USD;17660,3;1378,27;4.13%;5.30%;216.16%;244.64%;140,06;75.23x;25.35x;Internet and Direct Marketing Retail; 5.249 ; 17.660 ;236,4%
+Everest Re Group, Ltd.;NYSE:RE;USD;9236,07;8961,7;(1.17%);12.47%;(16.52%);(13.68%);231,1;13.99x;0.97x;Reinsurance; 11.290 ; 9.236 ;-18,2%
+Evergy, Inc.;NYSE:EVRG;USD;12364,6;4950,6;1.53%;(2.47%);(16.25%);(16.11%);54,51;19.74x;1.38x;Electric Utilities; 14.834 ; 12.365 ;-16,6%
+Eversource Energy;NYSE:ES;USD;30384,53;8720,88;0.50%;(3.75%);4.18%;7.43%;88,63;25.16x;2.16x;Electric Utilities; 27.542 ; 30.385 ;10,3%
+Exelon Corporation;NasdaqGS:EXC;USD;40847,22;33267;(1.13%);(0.64%);(8.16%);(7.69%);41,87;17.23x;1.26x;Electric Utilities; 44.318 ; 40.847 ;-7,8%
+Expedia Group, Inc.;NasdaqGS:EXPE;USD;16961,23;7026;(3.28%);29.34%;10.87%;27.13%;119,9;NM;10.74x;Internet and Direct Marketing Retail; 15.668 ; 16.961 ;8,3%
+Expeditors International of Washington, Inc.;NasdaqGS:EXPD;USD;15062,95;8992,23;(1.43%);(5.11%);14.06%;17.90%;88,99;24.00x;6.11x;Air Freight and Logistics; 13.287 ; 15.063 ;13,4%
+Extra Space Storage Inc.;NYSE:EXR;USD;14563,53;1357,03;0.06%;(2.31%);6.69%;5.35%;112,69;33.46x;6.08x;Specialized REITs; 13.679 ; 14.564 ;6,5%
+Exxon Mobil Corporation;NYSE:XOM;USD;156190,97;195860;(1.23%);11.40%;(47.06%);(45.70%);36,94;47.51x;0.89x;Integrated Oil and Gas; 295.247 ; 156.191 ;-47,1%
+F5 Networks, Inc.;NasdaqGS:FFIV;USD;9924,88;2350,82;0.57%;26.43%;15.37%;12.22%;161,11;32.16x;-;Communications Equipment; 8.490 ; 9.925 ;16,9%
+Facebook, Inc.;NasdaqGS:FB;USD;768184,53;78975;(1.19%);(3.24%);31.40%;36.55%;269,7;30.72x;6.61x;Interactive Media and Services; 585.321 ; 768.185 ;31,2%
+Fastenal Company;NasdaqGS:FAST;USD;27152,72;5566,2;(1.42%);7.65%;28.01%;34.15%;47,3;32.40x;9.54x;Trading Companies and Distributors; 21.192 ; 27.153 ;28,1%
+Federal Realty Investment Trust;NYSE:FRT;USD;6791,6;847,76;(1.11%);21.70%;(30.26%);(31.44%);89,78;38.68x;3.17x;Retail REITs; 9.722 ; 6.792 ;-30,1%
+FedEx Corporation;NYSE:FDX;USD;72656,58;71490;(1.13%);(1.98%);82.98%;81.71%;276,69;40.74x;3.78x;Air Freight and Logistics; 39.484 ; 72.657 ;84,0%
+Fidelity National Information Services, Inc.;NYSE:FIS;USD;89458,76;12578;(2.39%);1.95%;3.65%;4.87%;144,17;NM;1.87x;Data Processing and Outsourced Services; 85.485 ; 89.459 ;4,6%
+Fifth Third Bancorp;NasdaqGS:FITB;USD;18017,1;6667;(2.28%);7.62%;(17.73%);(15.02%);25,29;12.63x;0.88x;Regional Banks; 21.815 ; 18.017 ;-17,4%
+First Republic Bank;NYSE:FRC;USD;22564,82;3582,28;(1.77%);1.45%;10.60%;19.59%;129,9;23.20x;2.35x;Regional Banks; 19.793 ; 22.565 ;14,0%
+FirstEnergy Corp.;NYSE:FE;USD;15192,53;10735;(3.58%);(13.39%);(42.39%);(40.26%);28;24.83x;-;Electric Utilities; 26.259 ; 15.193 ;-42,1%
+Fiserv, Inc.;NasdaqGS:FISV;USD;75806,42;15065;0.04%;13.80%;(2.21%);(1.98%);113,07;85.92x;2.39x;Data Processing and Outsourced Services; 78.616 ; 75.806 ;-3,6%
+FLEETCOR Technologies, Inc.;NYSE:FLT;USD;21178,17;2470,4;(2.44%);2.28%;(11.74%);(15.64%);253,93;30.56x;7.39x;Data Processing and Outsourced Services; 24.969 ; 21.178 ;-15,2%
+FLIR Systems, Inc.;NasdaqGS:FLIR;USD;4987,43;1888,4;1.17%;6.62%;(26.96%);(28.60%);38,03;36.48x;2.73x;Electronic Equipment and Instruments; 6.985 ; 4.987 ;-28,6%
+Flowserve Corporation;NYSE:FLS;USD;4286,97;3816,16;(3.35%);12.67%;(33.88%);(31.74%);32,91;29.33x;2.65x;Industrial Machinery; 6.513 ; 4.287 ;-34,2%
+FMC Corporation;NYSE:FMC;USD;14759,88;4687,2;(1.36%);6.57%;13.96%;17.17%;113,75;26.09x;5.08x;Fertilizers and Agricultural Chemicals; 12.938 ; 14.760 ;14,1%
+Ford Motor Company;NYSE:F;USD;34771,46;130907;(0.91%);11.34%;(6.02%);0.11%;8,74;NM;1.06x;Automobile Manufacturers; 36.874 ; 34.771 ;-5,7%
+Fortinet, Inc.;NasdaqGS:FTNT;USD;19174,66;2457,7;0.93%;(9.12%);10.64%;15.30%;118,12;44.10x;26.63x;Systems Software; 18.260 ; 19.175 ;5,0%
+Fortive Corporation;NYSE:FTV;USD;24048,81;7189,4;(0.01%);8.36%;(6.64%);1.74%;71,32;47.86x;3.13x;Industrial Machinery; 25.652 ; 24.049 ;-6,3%
+Fortune Brands Home & Security, Inc.;NYSE:FBHS;USD;11733,92;5901,1;(0.76%);(1.69%);29.26%;36.34%;84,46;24.00x;4.50x;Building Products; 9.092 ; 11.734 ;29,1%
+Fox Corporation;NasdaqGS:FOX;USD;16468,68;12353;0.62%;2.58%;(24.62%);(21.59%);27,44;10.44x;1.53x;Broadcasting; 22.830 ; 16.469 ;-27,9%
+Fox Corporation;NasdaqGS:FOXA;USD;16468,68;12353;0.43%;4.74%;(24.93%);(22.46%);27,83;10.59x;1.53x;Broadcasting; 22.830 ; 16.469 ;-27,9%
+Franklin Resources, Inc.;NYSE:BEN;USD;10196,78;5566,5;(1.25%);(9.53%);(20.75%);(24.66%);20,59;12.95x;1.02x;Asset Management and Custody Banks; 12.968 ; 10.197 ;-21,4%
+Freeport-McMoRan Inc.;NYSE:FCX;USD;30873,45;13614;0.66%;19.92%;61.97%;92.66%;21,25;NM;3.32x;Copper; 19.036 ; 30.873 ;62,2%
+Garmin Ltd.;NasdaqGS:GRMN;USD;21894,78;3937,4;0.18%;16.36%;17.35%;18.18%;114,49;21.49x;4.28x;Consumer Electronics; 18.546 ; 21.895 ;18,1%
+Gartner, Inc.;NYSE:IT;USD;13621,61;4190,14;0.19%;19.30%;(1.00%);(3.41%);152,56;64.33x;13.12x;IT Consulting and Other Services; 13.785 ; 13.622 ;-1,2%
+General Dynamics Corporation;NYSE:GD;USD;42477,61;38217;(1.09%);8.60%;(15.87%);(19.51%);148,36;13.44x;2.92x;Aerospace and Defense; 50.898 ; 42.478 ;-16,5%
+General Electric Company;NYSE:GE;USD;85496,36;83928;1.04%;33.33%;(12.54%);(14.31%);9,76;25.03x;2.54x;Industrial Conglomerates; 97.466 ; 85.496 ;-12,3%
+General Mills, Inc.;NYSE:GIS;USD;37511,45;17988,1;(1.03%);0.64%;14.56%;15.40%;61,36;16.40x;4.49x;Packaged Foods and Meats; 32.394 ; 37.511 ;15,8%
+General Motors Company;NYSE:GM;USD;61603,48;115793;0.51%;20.32%;17.60%;22.00%;43,04;19.30x;1.38x;Automobile Manufacturers; 52.293 ; 61.603 ;17,8%
+Genuine Parts Company;NYSE:GPC;USD;13987,86;18435,8;(1.06%);(4.96%);(8.73%);(6.15%);96,96;NM;4.69x;Distributors; 15.434 ; 13.988 ;-9,4%
+Gilead Sciences, Inc.;NasdaqGS:GILD;USD;75349,58;23147;(0.86%);(0.17%);(7.49%);(7.35%);60,11;59.71x;4.35x;Biotechnology; 82.209 ; 75.350 ;-8,3%
+Global Payments Inc.;NYSE:GPN;USD;57083,62;7481,13;0.08%;9.60%;4.46%;5.65%;190,7;113.96x;2.06x;Data Processing and Outsourced Services; 54.868 ; 57.084 ;4,0%
+Globe Life Inc.;NYSE:GL;USD;9763,92;4645,56;(0.06%);10.89%;(11.36%);(6.79%);93,29;14.15x;1.19x;Life and Health Insurance; 11.397 ; 9.764 ;-14,3%
+Halliburton Company;NYSE:HAL;USD;14055,71;16399;(0.63%);25.49%;(35.02%);(22.55%);15,9;NM;2.72x;Oil and Gas Equipment and Services; 21.480 ; 14.056 ;-34,6%
+Hanesbrands Inc.;NYSE:HBI;USD;4747,66;6614,51;0.52%;(21.03%);(8.22%);(9.50%);13,63;11.11x;4.11x;Apparel, Accessories and Luxury Goods; 5.371 ; 4.748 ;-11,6%
+Hasbro, Inc.;NasdaqGS:HAS;USD;12746,59;5170,48;1.38%;6.98%;(11.92%);(1.99%);93,02;32.98x;4.53x;Leisure Products; 14.452 ; 12.747 ;-11,8%
+HCA Healthcare, Inc.;NYSE:HCA;USD;49856,13;50763;(2.33%);8.35%;(0.32%);5.42%;147,34;14.90x;NM;Health Care Facilities; 50.134 ; 49.856 ;-0,6%
+Healthpeak Properties, Inc.;NYSE:PEAK;USD;16457,68;2303,02;(0.10%);11.53%;(11.31%);(12.88%);30,57;51.91x;2.41x;Health Care REITs; 17.061 ; 16.458 ;-3,5%
+Henry Schein, Inc.;NasdaqGS:HSIC;USD;9077,71;9622,36;0.13%;(0.06%);(4.71%);(6.98%);63,58;15.54x;2.87x;Health Care Distributors; 9.791 ; 9.078 ;-7,3%
+Hess Corporation;NYSE:HES;USD;14197,65;4885;(1.13%);25.14%;(30.34%);(30.67%);46,54;NM;2.43x;Oil and Gas Exploration and Production; 20.165 ; 14.198 ;-29,6%
+Hewlett Packard Enterprise Company;NYSE:HPE;USD;13468,44;26989;(0.19%);12.34%;(33.98%);(38.84%);10,47;NM;0.84x;Technology Hardware, Storage and Peripherals; 20.506 ; 13.468 ;-34,3%
+Hilton Worldwide Holdings Inc.;NYSE:HLT;USD;28232,94;2162;(1.01%);14.38%;(8.25%);2.52%;101,76;NM;NM;Hotels, Resorts and Cruise Lines; 31.295 ; 28.233 ;-9,8%
+HollyFrontier Corporation;NYSE:HFC;USD;3565,77;12664,76;(3.19%);15.67%;(56.32%);(57.70%);22,15;NM;0.69x;Oil and Gas Refining and Marketing; 8.124 ; 3.566 ;-56,1%
+Hologic, Inc.;NasdaqGS:HOLX;USD;17731,1;3776,4;(1.46%);4.77%;32.14%;40.25%;68,99;16.39x;6.66x;Health Care Equipment; 13.828 ; 17.731 ;28,2%
+Honeywell International Inc.;NYSE:HON;USD;141740,53;33233;(0.36%);16.85%;14.12%;13.98%;202;28.95x;7.87x;Industrial Conglomerates; 126.472 ; 141.741 ;12,1%
+Hormel Foods Corporation;NYSE:HRL;USD;27050,55;9689,87;0.28%;1.75%;11.13%;16.99%;50,13;29.49x;4.30x;Packaged Foods and Meats; 24.122 ; 27.051 ;12,1%
+Host Hotels & Resorts, Inc.;NasdaqGS:HST;USD;9980,43;2662;(2.08%);28.17%;(23.72%);(16.02%);14,15;NM;1.59x;Hotel and Resort REITs; 13.304 ; 9.980 ;-25,0%
+Howmet Aerospace Inc.;NYSE:HWM;USD;10384,81;12849;1.61%;32.03%;(22.16%);(22.32%);23,95;18.86x;2.97x;Aerospace and Defense; 13.322 ; 10.385 ;-22,0%
+HP Inc.;NYSE:HPQ;USD;28088,01;56788;(0.24%);6.40%;(0.49%);3.81%;20,45;11.58x;NM;Technology Hardware, Storage and Peripherals; 29.863 ; 28.088 ;-5,9%
+Humana Inc.;NYSE:HUM;USD;53758,42;74388;(0.24%);(7.09%);10.83%;20.26%;406,21;13.02x;3.42x;Managed Health Care; 48.537 ; 53.758 ;10,8%
+Huntington Bancshares Incorporated;NasdaqGS:HBAN;USD;11953,4;3719;(1.67%);21.26%;(22.08%);(19.85%);11,75;16.52x;1.13x;Regional Banks; 15.574 ; 11.953 ;-23,2%
+Huntington Ingalls Industries, Inc.;NYSE:HII;USD;6427,8;9016;(2.14%);6.17%;(36.73%);(37.57%);158,74;10.89x;3.49x;Aerospace and Defense; 10.261 ; 6.428 ;-37,4%
+IDEX Corporation;NYSE:IEX;USD;14684,65;2342,82;(1.07%);1.85%;12.77%;19.73%;193,97;39.58x;6.19x;Industrial Machinery; 13.082 ; 14.685 ;12,2%
+IDEXX Laboratories, Inc.;NasdaqGS:IDXX;USD;39603,89;2591,16;1.55%;10.62%;77.80%;78.23%;464,29;80.94x;88.52x;Health Care Equipment; 22.400 ; 39.604 ;76,8%
+IHS Markit Ltd.;NYSE:INFO;USD;36724,68;4301;(0.28%);12.62%;22.35%;28.02%;92,19;40.27x;4.29x;Research and Consulting Services; 30.214 ; 36.725 ;21,5%
+Illinois Tool Works Inc.;NYSE:ITW;USD;64519,49;12568;(1.47%);0.59%;13.48%;18.21%;203,84;30.91x;24.29x;Industrial Machinery; 57.734 ; 64.519 ;11,8%
+Illumina, Inc.;NasdaqGS:ILMN;USD;43916,8;3238;0.60%;(5.36%);(9.33%);(4.48%);300,8;69.73x;9.29x;Life Sciences Tools and Services; 48.766 ; 43.917 ;-9,9%
+Incyte Corporation;NasdaqGS:INCY;USD;17942,35;2456,58;0.29%;(7.53%);(6.17%);(7.84%);81,93;NM;7.48x;Biotechnology; 18.808 ; 17.942 ;-4,6%
+Ingersoll Rand Inc.;NYSE:IR;USD;18485,44;4005,3;0.14%;18.79%;20.67%;31.80%;44,26;NM;2.10x;Industrial Machinery; 7.506 ; 18.485 ;146,3%
+Intel Corporation;NasdaqGS:INTC;USD;186008,22;78098;(0.50%);(15.16%);(24.16%);(21.61%);45,39;8.88x;2.51x;Semiconductors; 260.348 ; 186.008 ;-28,6%
+Intercontinental Exchange, Inc.;NYSE:ICE;USD;56723,34;5663;0.16%;1.60%;9.20%;6.96%;101,06;27.86x;2.98x;Financial Exchanges and Data; 51.536 ; 56.723 ;10,1%
+International Business Machines Corporation;NYSE:IBM;USD;104200,22;75030;(0.20%);1.63%;(12.76%);(12.21%);116,94;13.25x;4.92x;IT Consulting and Other Services; 118.711 ; 104.200 ;-12,2%
+International Flavors & Fragrances Inc.;NYSE:IFF;USD;11982,95;5097,94;0.10%;1.46%;(13.15%);(17.84%);112,06;33.53x;1.97x;Specialty Chemicals; 13.776 ; 11.983 ;-13,0%
+International Paper Company;NYSE:IP;USD;19430,71;20839;0.41%;6.35%;7.34%;9.26%;49,43;39.62x;2.73x;Paper Packaging; 18.057 ; 19.431 ;7,6%
+Intuit Inc.;NasdaqGS:INTU;USD;91352,25;7837;(3.80%);4.48%;32.74%;27.14%;347,69;46.70x;-;Application Software; 68.182 ; 91.352 ;34,0%
+Intuitive Surgical, Inc.;NasdaqGS:ISRG;USD;85902,49;4307;(0.44%);0.31%;23.61%;27.63%;730,74;83.24x;9.32x;Health Care Equipment; 68.321 ; 85.902 ;25,7%
+Invesco Ltd.;NYSE:IVZ;USD;7220,75;6258,3;(1.50%);13.75%;(12.57%);(8.55%);15,72;14.75x;0.74x;Asset Management and Custody Banks; 8.161 ; 7.221 ;-11,5%
+IPG Photonics Corporation;NasdaqGS:IPGP;USD;10699,04;1170,72;(0.13%);4.71%;38.51%;46.37%;200,73;102.02x;4.33x;Electronic Manufacturing Services; 7.691 ; 10.699 ;39,1%
+IQVIA Holdings Inc.;NYSE:IQV;USD;32549,29;10956;0.13%;0.31%;9.88%;19.25%;169,77;187.42x;5.56x;Life Sciences Tools and Services; 29.981 ; 32.549 ;8,6%
+Iron Mountain Incorporated;NYSE:IRM;USD;7403,12;4167,21;(0.39%);(6.17%);(19.39%);(24.60%);25,69;55.83x;7.93x;Specialized REITs; 9.151 ; 7.403 ;-19,1%
+J.B. Hunt Transport Services, Inc.;NasdaqGS:JBHT;USD;14144,07;9349,25;0.04%;6.94%;14.61%;15.99%;133,84;28.77x;5.68x;Trucking; 12.446 ; 14.144 ;13,6%
+Jack Henry & Associates, Inc.;NasdaqGS:JKHY;USD;12223,56;1710,86;(0.84%);0.74%;9.95%;6.53%;160,17;41.18x;7.98x;Data Processing and Outsourced Services; 11.207 ; 12.224 ;9,1%
+Jacobs Engineering Group Inc.;NYSE:J;USD;13515,59;13440,15;(1.28%);6.29%;15.55%;10.12%;103,8;45.52x;2.35x;Construction and Engineering; 11.970 ; 13.516 ;12,9%
+Johnson & Johnson;NYSE:JNJ;USD;385298,95;80856;(0.53%);1.69%;0.34%;7.67%;146,36;23.01x;6.01x;Pharmaceuticals; 383.911 ; 385.299 ;0,4%
+Johnson Controls International plc;NYSE:JCI;USD;32785,78;22317;(0.92%);3.59%;11.25%;6.79%;45,29;53.92x;1.90x;Building Products; 31.404 ; 32.786 ;4,4%
+JPMorgan Chase & Co.;NYSE:JPM;USD;349232,62;98035;(0.86%);15.30%;(17.81%);(11.62%);114,57;14.94x;1.46x;Diversified Banks; 437.160 ; 349.233 ;-20,1%
+Juniper Networks, Inc.;NYSE:JNPR;USD;7132,2;4430,6;(1.41%);(1.01%);(12.18%);(15.38%);21,63;18.33x;1.58x;Communications Equipment; 8.244 ; 7.132 ;-13,5%
+Kansas City Southern;NYSE:KSU;USD;17639,21;2668,7;(0.32%);3.50%;23.04%;23.98%;188,45;31.24x;3.97x;Railroads; 15.181 ; 17.639 ;16,2%
+Kellogg Company;NYSE:K;USD;22344,78;13529;(0.31%);(1.46%);(6.00%);(0.57%);65,01;18.83x;7.36x;Packaged Foods and Meats; 23.590 ; 22.345 ;-5,3%
+KeyCorp;NYSE:KEY;USD;14969,32;5369;(1.86%);23.43%;(24.26%);(19.65%);15,33;13.41x;0.96x;Regional Banks; 19.936 ; 14.969 ;-24,9%
+Keysight Technologies, Inc.;NYSE:KEYS;USD;21526,3;4221;(1.52%);9.91%;13.19%;8.06%;116,17;35.10x;6.63x;Electronic Equipment and Instruments; 19.340 ; 21.526 ;11,3%
+Kimberly-Clark Corporation;NYSE:KMB;USD;47537,51;18887;(1.40%);(5.81%);1.61%;3.83%;139,76;20.29x;144.02x;Household Products; 47.153 ; 47.538 ;0,8%
+Kimco Realty Corporation;NYSE:KIM;USD;6465,85;1084,58;(0.20%);35.17%;(27.81%);(30.27%);14,95;7.41x;1.18x;Retail REITs; 8.744 ; 6.466 ;-26,1%
+Kinder Morgan, Inc.;NYSE:KMI;USD;32259,06;11937;(1.04%);13.73%;(32.69%);(28.96%);14,25;293.29x;1.03x;Oil and Gas Storage and Transportation; 47.949 ; 32.259 ;-32,7%
+KLA Corporation;NasdaqGS:KLAC;USD;37467,32;5931,63;(0.48%);17.58%;36.15%;39.67%;242,57;29.50x;13.72x;Semiconductor Equipment; 28.114 ; 37.467 ;33,3%
+L Brands, Inc.;NYSE:LB;USD;11107,22;11735,86;1.06%;24.21%;120.59%;151.54%;39,97;NM;NM;Apparel Retail; 5.010 ; 11.107 ;121,7%
+L3Harris Technologies, Inc.;NYSE:LHX;USD;40236,46;24036;(2.18%);12.77%;(3.22%);(6.50%);191,5;31.84x;1.93x;Aerospace and Defense; 43.742 ; 40.236 ;-8,0%
+Laboratory Corporation of America Holdings;NYSE:LH;USD;19745,9;12442,1;1.99%;(0.21%);19.84%;18.65%;202,73;23.51x;2.35x;Health Care Services; 16.426 ; 19.746 ;20,2%
+Lam Research Corporation;NasdaqGS:LRCX;USD;62448,16;11056,07;(0.92%);18.28%;48.30%;58.19%;433,64;24.64x;11.68x;Semiconductor Equipment; 42.421 ; 62.448 ;47,2%
+Lamb Weston Holdings, Inc.;NYSE:LW;USD;10188,13;3674,9;(2.77%);(2.41%);(19.07%);(16.61%);69,62;30.14x;31.56x;Packaged Foods and Meats; 12.566 ; 10.188 ;-18,9%
+Las Vegas Sands Corp.;NYSE:LVS;USD;42696,91;5975;(4.54%);21.68%;(19.03%);(7.89%);55,9;NM;13.99x;Casinos and Gaming; 53.022 ; 42.697 ;-19,5%
+Leggett & Platt, Incorporated;NYSE:LEG;USD;5759,27;4243,1;0.49%;(0.80%);(14.50%);(17.01%);43,46;25.56x;4.41x;Home Furnishings; 6.689 ; 5.759 ;-13,9%
+Leidos Holdings, Inc.;NYSE:LDOS;USD;14284,76;11999;0.03%;18.70%;2.53%;9.50%;100,37;23.56x;3.84x;IT Consulting and Other Services; 13.858 ; 14.285 ;3,1%
+Lennar Corporation;NYSE:LEN;USD;23132,02;22634,5;(0.71%);(5.41%);35.79%;26.84%;75,76;10.58x;1.39x;Homebuilding; 17.301 ; 23.132 ;33,7%
+Lincoln National Corporation;NYSE:LNC;USD;8534,6;17648;(1.03%);27.93%;(25.17%);(22.53%);44,16;11.28x;0.40x;Life and Health Insurance; 11.703 ; 8.535 ;-27,1%
+Linde plc;NYSE:LIN;USD;132098,64;27051;(0.40%);9.16%;18.40%;22.26%;252,07;60.34x;2.88x;Industrial Gases; 113.883 ; 132.099 ;16,0%
+Live Nation Entertainment, Inc.;NYSE:LYV;USD;14151,69;4513,24;(0.90%);19.93%;(7.22%);(2.07%);66,31;NM;NM;Movies and Entertainment; 15.061 ; 14.152 ;-6,0%
+LKQ Corporation;NasdaqGS:LKQ;USD;10676,43;11684,8;(0.71%);9.28%;(1.74%);(0.20%);35,08;17.89x;2.00x;Distributors; 10.941 ; 10.676 ;-2,4%
+Lockheed Martin Corporation;NYSE:LMT;USD;102966,01;64244;(2.24%);0.24%;(5.49%);(6.28%);368,02;15.72x;21.27x;Aerospace and Defense; 109.833 ; 102.966 ;-6,3%
+Loews Corporation;NYSE:L;USD;11657,36;12726;(0.96%);19.13%;(19.20%);(15.77%);42,41;NM;0.68x;Property and Casualty Insurance; 15.613 ; 11.657 ;-25,3%
+Lowe's Companies, Inc.;NYSE:LOW;USD;112747,36;85313;0.22%;(14.08%);25.19%;27.24%;149,93;21.21x;-;Home Improvement Retail; 91.793 ; 112.747 ;22,8%
+Lumen Technologies, Inc.;NYSE:LUMN;USD;11015,2;21836;2.24%;3.93%;(24.00%);(32.48%);10,04;8.45x;0.79x;Alternative Carriers; 14.402 ; 11.015 ;-23,5%
+LyondellBasell Industries N.V.;NYSE:LYB;USD;27264,49;27995;(0.71%);6.61%;(13.58%);(11.47%);81,65;23.34x;3.76x;Commodity Chemicals; 31.501 ; 27.264 ;-13,4%
+M&T Bank Corporation;NYSE:MTB;USD;15150,08;5165,1;(1.97%);19.25%;(30.43%);(27.54%);118,09;11.76x;1.04x;Regional Banks; 22.403 ; 15.150 ;-32,4%
+Marathon Oil Corporation;NYSE:MRO;USD;4420,59;3532;(1.58%);36.59%;(58.76%);(52.10%);5,6;NM;0.41x;Oil and Gas Exploration and Production; 10.863 ; 4.421 ;-59,3%
+Marathon Petroleum Corporation;NYSE:MPC;USD;24893,9;92755;(2.10%);32.76%;(36.50%);(38.09%);38,26;NM;1.13x;Oil and Gas Refining and Marketing; 39.122 ; 24.894 ;-36,4%
+MarketAxess Holdings Inc.;NasdaqGS:MKTX;USD;20733,38;647,55;2.23%;(2.14%);44.06%;35.02%;546,14;75.22x;22.60x;Financial Exchanges and Data; 14.377 ; 20.733 ;44,2%
+Marriott International, Inc.;NasdaqGS:MAR;USD;38686,29;2994;(1.51%);25.36%;(21.23%);(10.12%);119,28;221.61x;171.51x;Hotels, Resorts and Cruise Lines; 49.508 ; 38.686 ;-21,9%
+Marsh & McLennan Companies, Inc.;NYSE:MMC;USD;57302,39;17072;(1.31%);0.61%;1.41%;5.43%;112,98;28.39x;6.76x;Insurance Brokers; 56.225 ; 57.302 ;1,9%
+Martin Marietta Materials, Inc.;NYSE:MLM;USD;16540,03;4345,9;(1.47%);3.66%;(5.02%);0.96%;265,6;24.83x;2.92x;Construction Materials; 17.478 ; 16.540 ;-5,4%
+Masco Corporation;NYSE:MAS;USD;14223,3;6967;(1.16%);(2.69%);13.77%;19.32%;54,6;19.20x;102.06x;Building Products; 13.284 ; 14.223 ;7,1%
+Mastercard Incorporated;NYSE:MA;USD;322006,89;15595;(3.26%);(3.13%);8.18%;13.18%;323;48.48x;57.47x;Data Processing and Outsourced Services; 301.237 ; 322.007 ;6,9%
+Maxim Integrated Products, Inc.;NasdaqGS:MXIM;USD;21509,73;2277,71;(0.87%);9.51%;30.82%;45.07%;80,47;31.79x;12.68x;Semiconductors; 16.645 ; 21.510 ;29,2%
+McCormick & Company, Incorporated;NYSE:MKC;USD;24487,66;5528,2;0.23%;(5.97%);8.21%;9.36%;183,67;32.51x;6.22x;Packaged Foods and Meats; 22.572 ; 24.488 ;8,5%
+McDonald's Corporation;NYSE:MCD;USD;159520,81;19034,3;(0.47%);(6.18%);8.34%;10.28%;214,09;32.66x;NM;Restaurants; 148.819 ; 159.521 ;7,2%
+McKesson Corporation;NYSE:MCK;USD;27275,08;234194;(1.20%);11.30%;22.81%;12.72%;169,87;13.04x;4.69x;Health Care Distributors; 24.924 ; 27.275 ;9,4%
+Medtronic plc;NYSE:MDT;USD;148100,08;27927;(0.76%);0.85%;(2.90%);(1.46%);110,16;33.79x;2.96x;Health Care Equipment; 152.066 ; 148.100 ;-2,6%
+Merck & Co., Inc.;NYSE:MRK;USD;203541,27;47347;0.07%;3.05%;(11.54%);(5.65%);80,45;17.77x;6.97x;Pharmaceuticals; 231.557 ; 203.541 ;-12,1%
+MetLife, Inc.;NYSE:MET;USD;41280,64;65567;0.79%;17.22%;(10.01%);(6.27%);45,87;7.51x;0.56x;Life and Health Insurance; 46.874 ; 41.281 ;-11,9%
+Mettler-Toledo International Inc.;NYSE:MTD;USD;27306,64;2991,16;0.02%;11.21%;44.67%;59.90%;1147,6;48.24x;61.62x;Life Sciences Tools and Services; 19.320 ; 27.307 ;41,3%
+MGM Resorts International;NYSE:MGM;USD;12946,14;6600,89;(3.78%);22.42%;(21.22%);(17.63%);26,21;8.89x;1.96x;Casinos and Gaming; 17.134 ; 12.946 ;-24,4%
+Microchip Technology Incorporated;NasdaqGS:MCHP;USD;34104,07;5233;2.72%;18.56%;25.08%;43.70%;130,98;56.07x;6.10x;Semiconductors; 25.026 ; 34.104 ;36,3%
+Micron Technology, Inc.;NasdaqGS:MU;USD;68351,82;21435;(0.70%);15.18%;14.17%;34.74%;61,4;25.88x;1.76x;Semiconductors; 59.743 ; 68.352 ;14,4%
+Microsoft Corporation;NasdaqGS:MSFT;USD;1590652,75;147114;(0.96%);(2.05%);33.41%;40.62%;210,39;33.94x;13.02x;Systems Software; 1.203.063 ; 1.590.653 ;32,2%
+Mid-America Apartment Communities, Inc.;NYSE:MAA;USD;14431,18;1671,14;0.03%;7.02%;(4.31%);(8.19%);126,18;45.48x;2.44x;Residential REITs; 15.041 ; 14.431 ;-4,1%
+Mohawk Industries, Inc.;NYSE:MHK;USD;9052,9;9334,95;0.13%;27.52%;(6.77%);(9.19%);127,15;17.05x;1.11x;Home Furnishings; 9.768 ; 9.053 ;-7,3%
+Molson Coors Beverage Company;NYSE:TAP;USD;9467,94;9845,9;(1.09%);25.93%;(19.18%);(16.85%);43,56;16.19x;0.71x;Brewers; 11.691 ; 9.468 ;-19,0%
+Mondelez International, Inc.;NasdaqGS:MDLZ;USD;81719,5;26196;(0.80%);0.56%;3.74%;9.03%;57,14;26.97x;3.06x;Packaged Foods and Meats; 79.306 ; 81.720 ;3,0%
+Monster Beverage Corporation;NasdaqGS:MNST;USD;44091,61;4419,56;(0.25%);4.28%;31.42%;44.00%;83,52;37.65x;9.55x;Soft Drinks; 34.170 ; 44.092 ;29,0%
+Moody's Corporation;NYSE:MCO;USD;51268,56;5314;(0.43%);(1.52%);14.97%;21.90%;272,94;28.42x;34.40x;Financial Exchanges and Data; 44.811 ; 51.269 ;14,4%
+Morgan Stanley;NYSE:MS;USD;104589,75;45415;(1.40%);14.75%;13.09%;17.74%;57,81;9.77x;1.16x;Investment Banking and Brokerage; 82.743 ; 104.590 ;26,4%
+Motorola Solutions, Inc.;NYSE:MSI;USD;28361,17;7517;(1.10%);(1.87%);3.82%;0.57%;167,3;37.41x;NM;Communications Equipment; 27.609 ; 28.361 ;2,7%
+MSCI Inc.;NYSE:MSCI;USD;33182,88;1658,34;(0.12%);14.37%;55.05%;56.14%;400,3;59.76x;NM;Financial Exchanges and Data; 21.870 ; 33.183 ;51,7%
+Nasdaq, Inc.;NasdaqGS:NDAQ;USD;20722,87;5230;1.26%;(4.56%);17.96%;19.52%;126,33;23.14x;3.40x;Financial Exchanges and Data; 17.555 ; 20.723 ;18,0%
+National Oilwell Varco, Inc.;NYSE:NOV;USD;4779,53;7044;-;36.63%;(50.86%);(42.37%);12,31;NM;0.87x;Oil and Gas Equipment and Services; 9.665 ; 4.780 ;-50,5%
+NetApp, Inc.;NasdaqGS:NTAP;USD;11519,84;5479;(0.17%);10.88%;(16.64%);(15.54%);51,89;14.85x;40.63x;Technology Hardware, Storage and Peripherals; 14.207 ; 11.520 ;-18,9%
+Netflix, Inc.;NasdaqGS:NFLX;USD;215701,99;23819,05;0.74%;(0.17%);50.89%;59.99%;488,24;78.85x;20.72x;Movies and Entertainment; 141.805 ; 215.702 ;52,1%
+Newell Brands Inc.;NasdaqGS:NWL;USD;8642,99;9319,9;(0.10%);16.07%;5.98%;5.60%;20,37;NM;2.32x;Housewares and Specialties; 8.138 ; 8.643 ;6,2%
+Newmont Corporation;NYSE:NEM;USD;49717,54;11083;0.39%;0.28%;41.89%;60.25%;61,65;20.77x;2.18x;Gold; 35.622 ; 49.718 ;39,6%
+News Corporation;NasdaqGS:NWS;USD;10359,55;8785;(0.40%);26.70%;21.02%;33.64%;17,56;NM;1.36x;Publishing; 8.394 ; 10.360 ;23,4%
+News Corporation;NasdaqGS:NWSA;USD;10359,55;8785;(0.17%);25.59%;23.90%;37.63%;17,52;NM;1.36x;Publishing; 8.394 ; 10.360 ;23,4%
+NextEra Energy, Inc.;NYSE:NEE;USD;148008,05;18190;0.56%;1.52%;24.79%;28.48%;75,55;38.16x;3.95x;Electric Utilities; 118.362 ; 148.008 ;25,0%
+Nielsen Holdings plc;NYSE:NLSN;USD;5622,73;6309;(1.99%);14.63%;(22.41%);(21.45%);15,75;NM;2.82x;Research and Consulting Services; 7.223 ; 5.623 ;-22,2%
+NIKE, Inc.;NYSE:NKE;USD;208755,53;37337;0.81%;2.74%;31.26%;42.91%;132,98;78.74x;22.38x;Footwear; 158.150 ; 208.756 ;32,0%
+NiSource Inc.;NYSE:NI;USD;9158,77;4867,9;1.27%;1.36%;(14.15%);(8.29%);23,9;NM;1.99x;Multi-Utilities; 10.399 ; 9.159 ;-11,9%
+Norfolk Southern Corporation;NYSE:NSC;USD;61159,67;9906;(0.54%);13.29%;24.04%;26.82%;240,8;31.01x;4.12x;Railroads; 50.619 ; 61.160 ;20,8%
+Northern Trust Corporation;NasdaqGS:NTRS;USD;19020,2;6000,1;(2.11%);6.55%;(13.98%);(14.03%);91,39;15.10x;1.82x;Asset Management and Custody Banks; 22.510 ; 19.020 ;-15,5%
+Northrop Grumman Corporation;NYSE:NOC;USD;51085,11;35308;(0.99%);(0.63%);(10.92%);(13.20%);306,42;21.02x;4.93x;Aerospace and Defense; 57.970 ; 51.085 ;-11,9%
+NortonLifeLock Inc.;NasdaqGS:NLOK;USD;10813,46;2472;(2.14%);(12.21%);(28.41%);(25.61%);18,27;13.97x;NM;Systems Software; 15.905 ; 10.813 ;-32,0%
+Norwegian Cruise Line Holdings Ltd.;NYSE:NCLH;USD;6309,56;2750,95;(4.90%);17.66%;(65.78%);(62.13%);19,99;NM;1.42x;Hotels, Resorts and Cruise Lines; 12.427 ; 6.310 ;-49,2%
+NRG Energy, Inc.;NYSE:NRG;USD;7458,5;9261;(1.39%);(6.12%);(23.17%);(22.96%);30,54;1.83x;3.91x;Electric Utilities; 10.001 ; 7.459 ;-25,4%
+Nucor Corporation;NYSE:NUE;USD;15866,37;20011,35;(0.53%);8.48%;(6.63%);(2.87%);52,55;37.27x;1.55x;Steel; 17.065 ; 15.866 ;-7,0%
+NVIDIA Corporation;NasdaqGS:NVDA;USD;324052,69;14777;(2.62%);(3.23%);122.49%;147.90%;523,51;85.58x;21.70x;Semiconductors; 144.004 ; 324.053 ;125,0%
+NVR, Inc.;NYSE:NVR;USD;15477,37;7209,13;(1.31%);(1.99%);9.23%;14.53%;4160,1;19.10x;5.37x;Homebuilding; 14.072 ; 15.477 ;10,0%
+Occidental Petroleum Corporation;NYSE:OXY;USD;12562,02;19759;0.97%;39.65%;(67.27%);(64.94%);13,49;NM;1.23x;Integrated Oil and Gas; 36.814 ; 12.562 ;-65,9%
+Old Dominion Freight Line, Inc.;NasdaqGS:ODFL;USD;24125,69;3950,95;0.04%;4.76%;62.52%;61.39%;205,62;38.98x;7.61x;Trucking; 15.149 ; 24.126 ;59,3%
+Omnicom Group Inc.;NYSE:OMC;USD;12823,17;13555,3;0.44%;15.83%;(26.38%);(23.03%);59,65;13.45x;4.84x;Advertising; 17.641 ; 12.823 ;-27,3%
+ONEOK, Inc.;NYSE:OKE;USD;14647,34;8635,27;(1.02%);15.93%;(56.44%);(53.44%);32,96;22.58x;2.41x;Oil and Gas Storage and Transportation; 31.258 ; 14.647 ;-53,1%
+Oracle Corporation;NYSE:ORCL;USD;167706,46;39217;(1.33%);(6.65%);5.13%;(0.96%);55,7;17.52x;17.93x;Systems Software; 169.941 ; 167.706 ;-1,3%
+O'Reilly Automotive, Inc.;NasdaqGS:ORLY;USD;32368,5;11258,7;(1.02%);(4.12%);1.94%;1.84%;446,78;20.00x;46.63x;Automotive Retail; 33.158 ; 32.369 ;-2,4%
+Otis Worldwide Corporation;NYSE:OTIS;USD;28729,47;12616;0.24%;4.08%;46.56%;46.56%;66,32;32.91x;NM;Industrial Machinery; -   ; 28.729 ;#DIV/0!
+PACCAR Inc;NasdaqGS:PCAR;USD;30756,93;19277,1;(1.40%);(2.34%);12.24%;12.59%;88,78;21.66x;3.06x;Construction Machinery and Heavy Trucks; 27.359 ; 30.757 ;12,4%
+Packaging Corporation of America;NYSE:PKG;USD;12222,02;6664;-;10.27%;15.90%;15.77%;129,8;26.12x;3.81x;Paper Packaging; 10.520 ; 12.222 ;16,2%
+Parker-Hannifin Corporation;NYSE:PH;USD;34405,12;13591,55;(0.64%);20.11%;29.78%;36.99%;267,12;29.16x;5.30x;Industrial Machinery; 26.441 ; 34.405 ;30,1%
+Paychex, Inc.;NasdaqGS:PAYX;USD;32585,11;3980,7;(1.56%);9.71%;6.56%;5.70%;90,64;31.26x;11.91x;Data Processing and Outsourced Services; 30.484 ; 32.585 ;6,9%
+Paycom Software, Inc.;NYSE:PAYC;USD;22632,29;813,9;0.02%;4.42%;48.33%;50.50%;392,71;139.40x;35.77x;Application Software; 15.265 ; 22.632 ;48,3%
+PayPal Holdings, Inc.;NasdaqGS:PYPL;USD;225749,86;20299;0.93%;(9.57%);78.12%;85.10%;192,67;72.72x;12.10x;Data Processing and Outsourced Services; 127.012 ; 225.750 ;77,7%
+Pentair plc;NYSE:PNR;USD;8818,02;2977;(0.49%);3.58%;15.57%;22.77%;53,01;24.76x;4.32x;Industrial Machinery; 7.710 ; 8.818 ;14,4%
+People's United Financial, Inc.;NasdaqGS:PBCT;USD;5336,5;1858,6;(1.01%);20.55%;(24.67%);(22.00%);12,73;11.06x;0.71x;Regional Banks; 7.498 ; 5.336 ;-28,8%
+PepsiCo, Inc.;NasdaqGS:PEP;USD;198200,2;68557;0.07%;2.74%;4.94%;7.24%;143,42;28.40x;14.70x;Soft Drinks; 190.577 ; 198.200 ;4,0%
+PerkinElmer, Inc.;NYSE:PKI;USD;14577,96;3233,64;(0.47%);5.52%;34.08%;43.82%;130,19;35.27x;4.53x;Life Sciences Tools and Services; 10.788 ; 14.578 ;35,1%
+Perrigo Company plc;NYSE:PRGO;USD;6566,6;5096,6;(1.43%);7.27%;(6.87%);(1.19%);48,11;NM;1.14x;Pharmaceuticals; 7.031 ; 6.567 ;-6,6%
+Pfizer Inc.;NYSE:PFE;USD;203993,16;48649;1.41%;(1.02%);(6.33%);(0.94%);36,7;23.86x;3.08x;Pharmaceuticals; 216.827 ; 203.993 ;-5,9%
+Philip Morris International Inc.;NYSE:PM;USD;119492,85;28963;(1.01%);3.94%;(9.82%);(8.09%);76,73;15.55x;NM;Tobacco; 132.389 ; 119.493 ;-9,7%
+Phillips 66;NYSE:PSX;USD;26902,52;76845;0.23%;26.42%;(44.72%);(46.93%);61,59;NM;1.36x;Oil and Gas Refining and Marketing; 49.506 ; 26.903 ;-45,7%
+Pinnacle West Capital Corporation;NYSE:PNW;USD;9373,68;3516,41;(0.36%);(0.53%);(7.43%);(4.62%);83,25;14.84x;1.61x;Electric Utilities; 10.109 ; 9.374 ;-7,3%
+Pioneer Natural Resources Company;NYSE:PXD;USD;15751,83;7651;(0.85%);22.14%;(36.70%);(26.57%);95,81;92.04x;1.36x;Oil and Gas Exploration and Production; 25.074 ; 15.752 ;-37,2%
+Pool Corporation;NasdaqGS:POOL;USD;13648,7;3679,6;0.36%;(4.52%);60.03%;61.26%;339,87;42.70x;23.07x;Distributors; 8.503 ; 13.649 ;60,5%
+PPG Industries, Inc.;NYSE:PPG;USD;33786,68;13749;(0.13%);6.72%;7.15%;13.08%;143,04;31.51x;6.37x;Specialty Chemicals; 31.565 ; 33.787 ;7,0%
+PPL Corporation;NYSE:PPL;USD;22411,32;7632;(0.27%);4.48%;(18.76%);(13.71%);29,15;14.47x;1.64x;Electric Utilities; 25.942 ; 22.411 ;-13,6%
+Principal Financial Group, Inc.;NasdaqGS:PFG;USD;13461,68;15023,8;0.14%;19.26%;(10.91%);(9.73%);49;11.11x;0.86x;Life and Health Insurance; 15.272 ; 13.462 ;-11,9%
+Prologis, Inc.;NYSE:PLD;USD;74121,89;4418,65;0.28%;(2.32%);12.49%;9.52%;100,27;44.90x;2.31x;Industrial REITs; 56.316 ; 74.122 ;31,6%
+Prudential Financial, Inc.;NYSE:PRU;USD;29912,01;60169;(0.18%);14.38%;(19.30%);(18.76%);75,65;NM;0.45x;Life and Health Insurance; 37.683 ; 29.912 ;-20,6%
+Public Service Enterprise Group Incorporated;NYSE:PEG;USD;29445,41;9679;1.02%;(2.20%);(1.42%);(4.90%);58,21;15.44x;1.83x;Multi-Utilities; 29.863 ; 29.445 ;-1,4%
+Public Storage;NYSE:PSA;USD;39097,22;2950,3;(2.25%);(4.02%);5.02%;4.75%;223,64;34.46x;8.33x;Specialized REITs; 37.200 ; 39.097 ;5,1%
+PulteGroup, Inc.;NYSE:PHM;USD;11707,65;10860,63;0.09%;(3.47%);12.55%;10.17%;43,67;9.13x;1.88x;Homebuilding; 10.515 ; 11.708 ;11,3%
+PVH Corp.;NYSE:PVH;USD;5457,1;8113,2;(2.56%);24.98%;(27.00%);(21.52%);76,76;NM;1.22x;Apparel, Accessories and Luxury Goods; 7.672 ; 5.457 ;-28,9%
+Qorvo, Inc.;NasdaqGS:QRVO;USD;16810,43;3504,59;0.36%;8.97%;26.81%;44.66%;147,39;38.85x;3.80x;Semiconductors; 13.503 ; 16.810 ;24,5%
+QUALCOMM Incorporated;NasdaqGS:QCOM;USD;165159,93;23531;(1.02%);13.60%;65.51%;70.56%;146,03;32.31x;27.46x;Semiconductors; 100.745 ; 165.160 ;63,9%
+Quanta Services, Inc.;NYSE:PWR;USD;9287,02;11403,29;(1.96%);8.62%;64.28%;58.26%;66,88;24.75x;2.28x;Construction and Engineering; 5.794 ; 9.287 ;60,3%
+Quest Diagnostics Incorporated;NYSE:DGX;USD;16820,14;8361;1.63%;1.61%;16.87%;19.00%;124,81;15.39x;2.59x;Health Care Services; 14.384 ; 16.820 ;16,9%
+Ralph Lauren Corporation;NYSE:RL;USD;5718,18;4705,8;(2.94%);4.28%;(33.27%);(26.84%);78,22;NM;2.32x;Apparel, Accessories and Luxury Goods; 8.747 ; 5.718 ;-34,6%
+Raymond James Financial, Inc.;NYSE:RJF;USD;12090,47;7757;(0.77%);12.61%;(1.06%);(0.52%);88,51;15.18x;1.75x;Investment Banking and Brokerage; 12.410 ; 12.090 ;-2,6%
+Raytheon Technologies Corporation;NYSE:RTX;USD;105223,82;83559;(1.90%);15.59%;(53.42%);(52.43%);69,76;NM;1.57x;Aerospace and Defense; 127.850 ; 105.224 ;-17,7%
+Realty Income Corporation;NYSE:O;USD;21196,29;1631,08;(1.18%);1.19%;(17.98%);(22.57%);60,39;50.29x;2.05x;Retail REITs; 23.997 ; 21.196 ;-11,7%
+Regency Centers Corporation;NasdaqGS:REG;USD;7996,88;1063,27;(1.05%);27.25%;(25.09%);(26.63%);47,26;170.75x;1.34x;Retail REITs; 10.544 ; 7.997 ;-24,2%
+Regeneron Pharmaceuticals, Inc.;NasdaqGS:REGN;USD;54750,14;9243,5;0.78%;(9.37%);38.15%;50.69%;518,74;19.01x;5.36x;Biotechnology; 41.049 ; 54.750 ;33,4%
+Regions Financial Corporation;NYSE:RF;USD;14512,31;4659;(2.26%);18.14%;(11.95%);(7.92%);15,11;19.11x;0.91x;Regional Banks; 16.553 ; 14.512 ;-12,3%
+Republic Services, Inc.;NYSE:RSG;USD;31509,12;10157,1;(1.05%);7.84%;10.30%;12.71%;98,86;30.98x;3.80x;Environmental and Facilities Services; 28.605 ; 31.509 ;10,2%
+ResMed Inc.;NYSE:RMD;USD;30580;3027,9;(0.35%);17.80%;36.17%;41.02%;211,02;45.29x;11.45x;Health Care Equipment; 22.283 ; 30.580 ;37,2%
+Robert Half International Inc.;NYSE:RHI;USD;6842,41;5342,3;(2.13%);10.25%;(3.42%);4.40%;60,99;21.37x;5.87x;Human Resource and Employment Services; 7.202 ; 6.842 ;-5,0%
+Rockwell Automation, Inc.;NYSE:ROK;USD;28769,34;6329,8;(1.00%);4.56%;22.18%;26.21%;247,63;28.24x;28.28x;Electrical Components and Equipment; 23.479 ; 28.769 ;22,5%
+Rollins, Inc.;NYSE:ROL;USD;18884,9;2130,91;(1.84%);(2.69%);73.76%;57.52%;57,62;75.93x;20.63x;Environmental and Facilities Services; 10.858 ; 18.885 ;73,9%
+Roper Technologies, Inc.;NYSE:ROP;USD;42500,57;5416,6;(1.03%);(3.84%);14.41%;14.78%;405,26;27.33x;4.23x;Industrial Conglomerates; 36.860 ; 42.501 ;15,3%
+Ross Stores, Inc.;NasdaqGS:ROST;USD;38801,06;12695,34;(1.10%);18.25%;(6.38%);(1.31%);108,99;126.67x;-;Apparel Retail; 41.781 ; 38.801 ;-7,1%
+Royal Caribbean Group;NYSE:RCL;USD;16282,46;4692,08;(2.50%);19.59%;(45.64%);(37.97%);72,58;NM;1.92x;Hotels, Resorts and Cruise Lines; 27.988 ; 16.282 ;-41,8%
+S&P Global Inc.;NYSE:SPGI;USD;81390,17;7310;(0.10%);0.11%;23.89%;26.18%;338,28;33.91x;184.33x;Financial Exchanges and Data; 66.733 ; 81.390 ;22,0%
+salesforce.com, inc.;NYSE:CRM;USD;234816,4;19380;(2.50%);1.50%;58.66%;57.15%;258,04;99.60x;6.25x;Application Software; 144.262 ; 234.816 ;62,8%
+SBA Communications Corporation;NasdaqGS:SBAC;USD;32234,36;2060,89;(2.57%);(5.59%);20.38%;20.50%;290,1;NM;NM;Specialized REITs; 27.136 ; 32.234 ;18,8%
+Schlumberger Limited;NYSE:SLB;USD;28132,93;26297;(1.22%);34.64%;(49.73%);(44.08%);20,21;NM;2.39x;Oil and Gas Equipment and Services; 55.652 ; 28.133 ;-49,4%
+Seagate Technology plc;NasdaqGS:STX;USD;14288;10245;(0.55%);7.58%;(6.54%);(6.71%);55,61;14.20x;7.91x;Technology Hardware, Storage and Peripherals; 15.631 ; 14.288 ;-8,6%
+Sealed Air Corporation;NYSE:SEE;USD;7012,93;4861,2;0.89%;10.03%;13.48%;20.66%;45,2;14.97x;283.72x;Paper Packaging; 6.154 ; 7.013 ;14,0%
+Sempra Energy;NYSE:SRE;USD;37622,29;11142;0.13%;0.87%;(13.90%);(11.79%);130,42;20.28x;1.87x;Multi-Utilities; 42.702 ; 37.622 ;-11,9%
+ServiceNow, Inc.;NYSE:NOW;USD;101047,6;4220,93;0.73%;1.52%;83.50%;83.06%;518,06;149.12x;37.52x;Systems Software; 53.234 ; 101.048 ;89,8%
+Simon Property Group, Inc.;NYSE:SPG;USD;26384,15;4958,79;0.61%;26.34%;(45.54%);(45.27%);81,12;18.43x;14.42x;Retail REITs; 45.711 ; 26.384 ;-42,3%
+Skyworks Solutions, Inc.;NasdaqGS:SWKS;USD;23316,21;3355,7;0.74%;(6.65%);16.14%;46.18%;140,39;29.25x;5.54x;Semiconductors; 20.595 ; 23.316 ;13,2%
+SL Green Realty Corp.;NYSE:SLG;USD;4269,27;1035,71;1.52%;27.67%;(35.97%);(29.49%);58,83;22.40x;0.88x;Office REITs; 7.361 ; 4.269 ;-42,0%
+Snap-on Incorporated;NYSE:SNA;USD;9374,78;3813,5;0.70%;11.37%;2.08%;8.97%;172,92;16.17x;2.57x;Industrial Machinery; 9.291 ; 9.375 ;0,9%
+Southwest Airlines Co.;NYSE:LUV;USD;26881,04;12765;(1.17%);14.31%;(15.64%);(19.87%);45,54;NM;2.78x;Airlines; 28.408 ; 26.881 ;-5,4%
+Stanley Black & Decker, Inc.;NYSE:SWK;USD;29795,12;13841,2;(0.29%);6.63%;12.20%;21.01%;185,96;30.06x;3.37x;Industrial Machinery; 25.194 ; 29.795 ;18,3%
+Starbucks Corporation;NasdaqGS:SBUX;USD;113860,64;23518;(0.77%);9.90%;10.34%;16.04%;97,01;122.80x;NM;Restaurants; 103.834 ; 113.861 ;9,7%
+State Street Corporation;NYSE:STT;USD;23972,6;11699;(1.91%);6.17%;(14.10%);(6.93%);67,95;10.83x;1.06x;Asset Management and Custody Banks; 28.763 ; 23.973 ;-16,7%
+STERIS plc;NYSE:STE;USD;16727,77;3022,32;0.68%;5.43%;28.62%;29.09%;196,05;39.77x;4.55x;Health Care Equipment; 12.923 ; 16.728 ;29,4%
+Stryker Corporation;NYSE:SYK;USD;87506,61;14220;(0.30%);5.41%;10.92%;13.98%;232,86;50.51x;6.76x;Health Care Equipment; 78.602 ; 87.507 ;11,3%
+SVB Financial Group;NasdaqGS:SIVB;USD;18488,39;3333,8;0.64%;28.67%;42.18%;56.29%;356,94;17.40x;2.46x;Regional Banks; 12.946 ; 18.488 ;42,8%
+Synchrony Financial;NYSE:SYF;USD;17192,68;5908;(2.00%);9.64%;(18.22%);(19.45%);29,45;13.22x;1.54x;Consumer Finance; 23.269 ; 17.193 ;-26,1%
+Synopsys, Inc.;NasdaqGS:SNPS;USD;33161,45;3510,92;(1.25%);(3.93%);56.98%;55.15%;218,51;54.11x;7.31x;Application Software; 20.954 ; 33.161 ;58,3%
+Sysco Corporation;NYSE:SYY;USD;35655,11;49367,68;(2.76%);9.72%;(18.17%);(12.30%);70;NM;28.19x;Food Distributors; 43.645 ; 35.655 ;-18,3%
+T. Rowe Price Group, Inc.;NasdaqGS:TROW;USD;31125,45;5942,5;(1.48%);(5.82%);12.82%;13.67%;137,46;15.46x;4.43x;Asset Management and Custody Banks; 28.471 ; 31.125 ;9,3%
+Take-Two Interactive Software, Inc.;NasdaqGS:TTWO;USD;18614,46;3363,12;2.70%;3.34%;38.90%;37.80%;170,05;41.24x;6.24x;Interactive Home Entertainment; 13.134 ; 18.614 ;41,7%
+Tapestry, Inc.;NYSE:TPR;USD;7894,96;4775,7;0.21%;38.96%;5.52%;8.92%;28,46;NM;3.11x;Apparel, Accessories and Luxury Goods; 7.442 ; 7.895 ;6,1%
+Target Corporation;NYSE:TGT;USD;86285,05;88621;0.55%;5.52%;34.40%;36.29%;172,31;22.86x;6.44x;General Merchandise Stores; 64.969 ; 86.285 ;32,8%
+TE Connectivity Ltd.;NYSE:TEL;USD;36606,59;12172;(0.59%);4.51%;15.48%;20.53%;110,68;NM;3.92x;Electronic Manufacturing Services; 32.056 ; 36.607 ;14,2%
+TechnipFMC plc;NYSE:FTI;USD;3712,11;13351,3;(2.59%);14.56%;(61.47%);(57.92%);8,26;NM;0.91x;Oil and Gas Equipment and Services; 9.585 ; 3.712 ;-61,3%
+Teledyne Technologies Incorporated;NYSE:TDY;USD;14089,56;3111,1;(2.25%);16.26%;10.24%;10.26%;382,02;37.43x;4.76x;Aerospace and Defense; 12.638 ; 14.090 ;11,5%
+Teleflex Incorporated;NYSE:TFX;USD;17258,09;2506,93;(0.45%);3.22%;(1.55%);5.00%;370,61;47.76x;5.36x;Health Care Equipment; 17.428 ; 17.258 ;-1,0%
+Teradyne, Inc.;NasdaqGS:TER;USD;17656,72;3017,15;(0.13%);15.49%;55.93%;66.53%;106,33;27.20x;8.87x;Semiconductor Equipment; 11.427 ; 17.657 ;54,5%
+Texas Instruments Incorporated;NasdaqGS:TXN;USD;143951,68;13735;(0.29%);7.32%;22.24%;34.92%;156,82;29.68x;17.34x;Semiconductors; 119.922 ; 143.952 ;20,0%
+Textron Inc.;NYSE:TXT;USD;10255,89;12019;(1.41%);29.77%;0.47%;(2.57%);44,81;37.91x;1.81x;Aerospace and Defense; 10.181 ; 10.256 ;0,7%
+The AES Corporation;NYSE:AES;USD;13581,98;9531;(2.20%);1.04%;2.61%;9.78%;20,42;NM;6.93x;Independent Power Producers and Energy Traders; 13.211 ; 13.582 ;2,8%
+The Allstate Corporation;NYSE:ALL;USD;30461,53;44245;(0.19%);10.38%;(10.91%);(9.26%);100,18;7.01x;1.21x;Property and Casualty Insurance; 36.429 ; 30.462 ;-16,4%
+The Bank of New York Mellon Corporation;NYSE:BK;USD;33566,82;16430;(1.58%);2.63%;(24.74%);(22.50%);37,88;8.30x;0.84x;Asset Management and Custody Banks; 46.414 ; 33.567 ;-27,7%
+The Boeing Company;NYSE:BA;USD;112691,42;60765;(2.94%);21.82%;(38.72%);(46.18%);199,62;NM;NM;Aerospace and Defense; 183.335 ; 112.691 ;-38,5%
+The Charles Schwab Corporation;NYSE:SCHW;USD;78349,25;10121;(1.00%);19.73%;(2.00%);4.16%;46,61;21.59x;2.33x;Investment Banking and Brokerage; 61.095 ; 78.349 ;28,2%
+The Clorox Company;NYSE:CLX;USD;25594,44;7131;0.29%;(3.93%);32.25%;38.71%;203,05;22.57x;22.89x;Household Products; 19.270 ; 25.594 ;32,8%
+The Coca-Cola Company;NYSE:KO;USD;226345,88;33471;(0.87%);5.36%;(4.84%);(1.03%);52,67;27.29x;12.27x;Soft Drinks; 237.147 ; 226.346 ;-4,6%
+The Cooper Companies, Inc.;NYSE:COO;USD;16250,52;2440,9;(0.26%);(4.99%);3.14%;8.84%;331,37;59.19x;4.34x;Health Care Supplies; 15.763 ; 16.251 ;3,1%
+The Estée Lauder Companies Inc.;NYSE:EL;USD;86987,85;13961;(0.56%);3.40%;16.47%;23.19%;240,56;144.46x;19.64x;Personal Products; 74.316 ; 86.988 ;17,1%
+The Gap, Inc.;NYSE:GPS;USD;9104,46;14054;(0.12%);30.95%;37.84%;49.69%;24,37;NM;4.05x;Apparel Retail; 6.600 ; 9.104 ;37,9%
+The Goldman Sachs Group, Inc.;NYSE:GS;USD;80130,53;39633;(0.54%);10.07%;(2.86%);2.50%;223,35;12.88x;0.99x;Investment Banking and Brokerage; 81.415 ; 80.131 ;-1,6%
+The Hartford Financial Services Group, Inc.;NYSE:HIG;USD;16400,78;20534;(1.02%);13.29%;(24.68%);(26.06%);45,77;9.57x;0.95x;Multi-line Insurance; 21.903 ; 16.401 ;-25,1%
+The Hershey Company;NYSE:HSY;USD;30759,45;8032,6;(1.08%);1.51%;0.54%;(0.90%);147,78;25.94x;15.05x;Packaged Foods and Meats; 30.707 ; 30.759 ;0,2%
+The Home Depot, Inc.;NYSE:HD;USD;290438,46;125631;(0.41%);(5.17%);23.55%;22.14%;269,81;23.34x;189.39x;Home Improvement Retail; 238.216 ; 290.438 ;21,9%
+The Interpublic Group of Companies, Inc.;NYSE:IPG;USD;8444,25;8213,1;0.28%;15.78%;(6.28%);(2.17%);21,65;14.95x;3.09x;Advertising; 8.957 ; 8.444 ;-5,7%
+The J. M. Smucker Company;NYSE:SJM;USD;13258,8;7993,9;(0.70%);1.60%;11.62%;10.22%;116,23;15.38x;1.60x;Packaged Foods and Meats; 11.877 ; 13.259 ;11,6%
+The Kraft Heinz Company;NasdaqGS:KHC;USD;39441,82;25782;1.19%;2.61%;0.40%;3.76%;32,26;NM;0.79x;Packaged Foods and Meats; 39.236 ; 39.442 ;0,5%
+The Kroger Co.;NYSE:KR;USD;25141;128905;(0.98%);(2.67%);11.90%;22.00%;32,44;9.95x;2.59x;Food Retail; 23.209 ; 25.141 ;8,3%
+The Mosaic Company;NYSE:MOS;USD;7433,96;8300,6;0.15%;3.70%;(9.38%);8.16%;19,61;NM;0.87x;Fertilizers and Agricultural Chemicals; 8.196 ; 7.434 ;-9,3%
+The PNC Financial Services Group, Inc.;NYSE:PNC;USD;54615,06;14352;(1.07%);16.50%;(19.25%);(15.07%);128,9;26.60x;1.11x;Regional Banks; 69.945 ; 54.615 ;-21,9%
+The Procter & Gamble Company;NYSE:PG;USD;345409,1;72470;(0.16%);(2.76%);11.53%;13.91%;139,3;26.62x;7.32x;Household Products; 311.477 ; 345.409 ;10,9%
+The Progressive Corporation;NYSE:PGR;USD;54542,6;41962,6;(1.20%);(0.49%);28.66%;32.06%;93,14;10.79x;3.14x;Property and Casualty Insurance; 42.319 ; 54.543 ;28,9%
+The Sherwin-Williams Company;NYSE:SHW;USD;58863,53;17987,3;(0.62%);7.44%;24.11%;25.73%;724,23;35.78x;15.68x;Specialty Chemicals; 53.426 ; 58.864 ;10,2%
+The Southern Company;NYSE:SO;USD;64304,01;20172;(0.31%);3.41%;(4.43%);(3.03%);60,88;20.37x;2.28x;Electric Utilities; 66.804 ; 64.304 ;-3,7%
+The TJX Companies, Inc.;NYSE:TJX;USD;72759,03;33400,21;(1.43%);10.37%;(0.62%);2.29%;60,68;97.50x;13.43x;Apparel Retail; 73.466 ; 72.759 ;-1,0%
+The Travelers Companies, Inc.;NYSE:TRV;USD;34082,69;31647;0.51%;7.64%;(1.75%);(0.65%);134,55;15.33x;1.22x;Property and Casualty Insurance; 35.349 ; 34.083 ;-3,6%
+The Walt Disney Company;NYSE:DIS;USD;254922,43;65388;(0.46%);11.40%;(2.46%);(3.99%);141,07;NM;3.02x;Movies and Entertainment; 260.681 ; 254.922 ;-2,2%
+The Western Union Company;NYSE:WU;USD;8592,42;4870,9;(2.93%);(3.73%);(21.96%);(22.51%);20,9;12.35x;131.88x;Data Processing and Outsourced Services; 11.228 ; 8.592 ;-23,5%
+The Williams Companies, Inc.;NYSE:WMB;USD;24684,33;7734;0.89%;5.39%;(14.25%);(9.12%);20,34;107.06x;2.03x;Oil and Gas Storage and Transportation; 28.750 ; 24.684 ;-14,1%
+Thermo Fisher Scientific Inc.;NYSE:TMO;USD;178763,02;28497;(0.45%);(3.78%);38.84%;46.76%;451,04;36.99x;5.64x;Life Sciences Tools and Services; 130.270 ; 178.763 ;37,2%
+Tiffany & Co.;NYSE:TIF;USD;15957,07;3675;(0.08%);7.03%;(1.66%);6.57%;131,43;64.64x;5.00x;Specialty Stores; 16.036 ; 15.957 ;-0,5%
+T-Mobile US, Inc.;NasdaqGS:TMUS;USD;160957,1;59934;0.38%;15.35%;65.37%;67.03%;129,68;49.88x;2.49x;Wireless Telecommunication Services; 67.094 ; 160.957 ;139,9%
+Tractor Supply Company;NasdaqGS:TSCO;USD;15109,71;9933,87;(1.18%);(13.02%);38.81%;33.90%;129,7;20.16x;8.15x;Specialty Stores; 11.062 ; 15.110 ;36,6%
+Trane Technologies plc;NYSE:TT;USD;34626,01;15982,3;(1.76%);11.90%;8.49%;11.06%;144,2;30.02x;5.54x;Building Products; 31.677 ; 34.626 ;9,3%
+TransDigm Group Incorporated;NYSE:TDG;USD;31253,27;5103;(2.80%);18.89%;2.52%;(0.15%);574,13;70.44x;NM;Aerospace and Defense; 29.987 ; 31.253 ;4,2%
+Truist Financial Corporation;NYSE:TFC;USD;62296,55;18350;(1.47%);10.29%;(17.95%);(15.07%);46,21;15.81x;1.02x;Regional Banks; 75.525 ; 62.297 ;-17,5%
+Twitter, Inc.;NYSE:TWTR;USD;35446,86;3434,65;2.43%;(11.07%);39.41%;53.17%;44,68;NM;4.42x;Interactive Media and Services; 24.834 ; 35.447 ;42,7%
+Tyler Technologies, Inc.;NYSE:TYL;USD;16714,3;1122,22;0.02%;4.43%;38.15%;44.02%;414,47;91.15x;8.80x;Application Software; 11.697 ; 16.714 ;42,9%
+Tyson Foods, Inc.;NYSE:TSN;USD;22117,64;43185;(2.57%);2.65%;(33.28%);(32.97%);60,74;10.37x;1.47x;Packaged Foods and Meats; 33.264 ; 22.118 ;-33,5%
+U.S. Bancorp;NYSE:USB;USD;64264,66;19167;(1.34%);9.89%;(28.05%);(27.83%);42,66;14.12x;1.40x;Diversified Banks; 92.603 ; 64.265 ;-30,6%
+UDR, Inc.;NYSE:UDR;USD;11552,51;1246,31;1.11%;21.01%;(16.00%);(19.58%);39,23;88.54x;3.50x;Residential REITs; 13.686 ; 11.553 ;-15,6%
+Ulta Beauty, Inc.;NasdaqGS:ULTA;USD;15412,82;6389,65;(0.44%);17.52%;8.10%;16.80%;273,65;55.24x;8.74x;Specialty Stores; 14.470 ; 15.413 ;6,5%
+Under Armour, Inc.;NYSE:UAA;USD;7122,38;4512,13;0.24%;20.01%;(22.55%);(1.53%);16,73;NM;5.16x;Apparel, Accessories and Luxury Goods; 9.200 ; 7.122 ;-22,6%
+Under Armour, Inc.;NYSE:UA;USD;7122,38;4512,13;(0.34%);20.89%;(23.67%);(5.12%);14,64;NM;5.16x;Apparel, Accessories and Luxury Goods; 9.200 ; 7.122 ;-22,6%
+Union Pacific Corporation;NYSE:UNP;USD;137058,19;19604;(0.57%);1.96%;12.50%;16.83%;203,39;25.91x;8.03x;Railroads; 125.504 ; 137.058 ;9,2%
+United Airlines Holdings, Inc.;NasdaqGS:UAL;USD;11610,54;22831;(2.54%);12.27%;(54.71%);(56.49%);39,9;NM;1.70x;Airlines; 22.291 ; 11.611 ;-47,9%
+United Parcel Service, Inc.;NYSE:UPS;USD;141553,81;80300;(1.63%);(5.19%);39.89%;37.60%;163,76;31.06x;25.72x;Air Freight and Logistics; 100.417 ; 141.554 ;41,0%
+United Rentals, Inc.;NYSE:URI;USD;15855,63;8707;1.29%;17.62%;31.80%;47.99%;219,8;17.39x;3.76x;Trading Companies and Distributors; 12.534 ; 15.856 ;26,5%
+UnitedHealth Group Incorporated;NYSE:UNH;USD;317570,29;252575;(0.68%);3.69%;13.85%;21.46%;334,7;19.23x;4.90x;Managed Health Care; 278.521 ; 317.570 ;14,0%
+Universal Health Services, Inc.;NYSE:UHS;USD;11129,54;11368,21;(2.22%);17.06%;(8.71%);(6.78%);130,97;12.84x;1.91x;Health Care Facilities; 12.564 ; 11.130 ;-11,4%
+Unum Group;NYSE:UNM;USD;4360,4;11923,2;(0.14%);14.07%;(26.58%);(27.60%);21,41;4.59x;0.40x;Life and Health Insurance; 6.015 ; 4.360 ;-27,5%
+V.F. Corporation;NYSE:VFC;USD;33099,66;8942,76;(0.11%);16.66%;(14.84%);(0.74%);84,87;NM;11.25x;Apparel, Accessories and Luxury Goods; 39.802 ; 33.100 ;-16,8%
+Valero Energy Corporation;NYSE:VLO;USD;20723,85;71240;(0.76%);25.36%;(45.73%);(47.71%);50,82;NM;1.09x;Oil and Gas Refining and Marketing; 38.458 ; 20.724 ;-46,1%
+Varian Medical Systems, Inc.;NYSE:VAR;USD;15817,4;3168,2;(0.10%);0.96%;22.18%;34.49%;173,51;59.02x;7.63x;Health Care Equipment; 12.910 ; 15.817 ;22,5%
+Ventas, Inc.;NYSE:VTR;USD;18249,09;3857,36;0.21%;18.40%;(15.62%);(16.66%);48,72;53.76x;1.78x;Health Care REITs; 21.522 ; 18.249 ;-15,2%
+VeriSign, Inc.;NasdaqGS:VRSN;USD;22415,74;1255,31;(0.51%);(4.44%);1.95%;2.05%;196,44;28.34x;NM;Internet Services and Infrastructure; 22.622 ; 22.416 ;-0,9%
+Verisk Analytics, Inc.;NasdaqGS:VRSK;USD;33228,48;2748;(0.66%);8.03%;36.85%;41.59%;204,37;50.72x;13.83x;Research and Consulting Services; 24.472 ; 33.228 ;35,8%
+Verizon Communications Inc.;NYSE:VZ;USD;248451,19;128375;(0.28%);5.80%;(2.22%);0.94%;60,04;13.58x;3.83x;Integrated Telecommunication Services; 253.937 ; 248.451 ;-2,2%
+Vertex Pharmaceuticals Incorporated;NasdaqGS:VRTX;USD;55962,76;5991,13;1.53%;1.81%;(1.71%);0.07%;215,21;21.09x;6.78x;Biotechnology; 56.303 ; 55.963 ;-0,6%
+ViacomCBS Inc.;NasdaqGS:VIAC;USD;21053,37;25931;1.68%;19.39%;(19.01%);(12.87%);33,99;15.81x;1.41x;Broadcasting; 25.962 ; 21.053 ;-18,9%
+Viatris Inc.;NasdaqGS:VTRS;USD;9276,75;11514,3;(5.41%);13.14%;(14.78%);(0.64%);17,13;33.22x;0.75x;Pharmaceuticals; 10.374 ; 9.277 ;-10,6%
+Visa Inc.;NYSE:V;USD;403811,93;21846;(1.78%);2.75%;8.50%;12.23%;203,88;41.71x;-;Data Processing and Outsourced Services; 376.154 ; 403.812 ;7,4%
+Vontier Corporation;NYSE:VNT;USD;5250,05;2632,9;1.50%;9.21%;(8.29%);(8.29%);31,18;15.84x;3.27x;Electronic Equipment and Instruments; -   ; 5.250 ;#DIV/0!
+Vornado Realty Trust;NYSE:VNO;USD;7637,05;1587,86;0.23%;24.24%;(39.95%);(37.57%);39,93;142.75x;1.37x;Office REITs; 12.692 ; 7.637 ;-39,8%
+Vulcan Materials Company;NYSE:VMC;USD;18470,76;4867,86;(0.51%);(3.67%);(3.19%);(0.97%);139,39;30.24x;3.13x;Construction Materials; 19.058 ; 18.471 ;-3,1%
+W. R. Berkley Corporation;NYSE:WRB;USD;11669,9;7762,53;(2.06%);0.57%;(5.24%);(6.08%);65,48;37.14x;1.99x;Property and Casualty Insurance; 12.692 ; 11.670 ;-8,1%
+W.W. Grainger, Inc.;NYSE:GWW;USD;21966,33;11703;(3.21%);9.60%;20.91%;31.04%;409,3;35.36x;10.65x;Trading Companies and Distributors; 18.235 ; 21.966 ;20,5%
+Wabtec Corporation;NYSE:WAB;USD;13509,37;7900,8;(1.89%);14.30%;(8.77%);(10.11%);70,98;29.42x;1.37x;Construction Machinery and Heavy Trucks; 14.913 ; 13.509 ;-9,4%
+Walgreens Boots Alliance, Inc.;NasdaqGS:WBA;USD;32497,81;139537;(0.85%);0.37%;(36.35%);(38.82%);37,53;72.38x;1.59x;Drug Retail; 52.356 ; 32.498 ;-37,9%
+Walmart Inc.;NYSE:WMT;USD;425743,04;548743;(1.24%);4.04%;26.42%;26.11%;150,24;21.68x;5.29x;Hypermarkets and Super Centers; 337.170 ; 425.743 ;26,3%
+Waste Management, Inc.;NYSE:WM;USD;50860,66;14997;(0.19%);5.41%;5.61%;6.91%;120,35;33.99x;7.12x;Environmental and Facilities Services; 48.347 ; 50.861 ;5,2%
+Waters Corporation;NYSE:WAT;USD;13985,54;2295;(0.42%);4.89%;(3.53%);3.53%;225,4;28.08x;NM;Life Sciences Tools and Services; 15.055 ; 13.986 ;-7,1%
+WEC Energy Group, Inc.;NYSE:WEC;USD;30313,26;7255,8;0.58%;(4.94%);4.20%;8.96%;96,1;25.22x;2.88x;Multi-Utilities; 29.093 ; 30.313 ;4,2%
+Wells Fargo & Company;NYSE:WFC;USD;105346,79;59442;(2.60%);12.25%;(52.64%);(52.41%);25,48;66.87x;0.67x;Diversified Banks; 227.540 ; 105.347 ;-53,7%
+Welltower Inc.;NYSE:WELL;USD;26920,34;4746,77;(1.06%);20.11%;(21.12%);(23.96%);64,51;25.88x;1.69x;Health Care REITs; 33.186 ; 26.920 ;-18,9%
+West Pharmaceutical Services, Inc.;NYSE:WST;USD;21049,29;2037,3;1.25%;0.11%;89.40%;90.33%;284,73;68.95x;12.09x;Health Care Supplies; 11.123 ; 21.049 ;89,2%
+Western Digital Corporation;NasdaqGS:WDC;USD;12906,07;16618;(0.45%);0.86%;(33.17%);(12.54%);42,42;NM;1.35x;Technology Hardware, Storage and Peripherals; 18.876 ; 12.906 ;-31,6%
+WestRock Company;NYSE:WRK;USD;10959,25;17578,8;(0.89%);4.69%;(1.63%);8.96%;42,21;NM;1.04x;Paper Packaging; 11.081 ; 10.959 ;-1,1%
+Weyerhaeuser Company;NYSE:WY;USD;21459,66;7017;(0.93%);(3.72%);(4.80%);(2.58%);28,75;43.72x;2.54x;Specialized REITs; 22.503 ; 21.460 ;-4,6%
+Whirlpool Corporation;NYSE:WHR;USD;12065,92;19040;0.18%;(1.99%);30.76%;35.22%;192,91;13.99x;3.54x;Household Appliances; 9.324 ; 12.066 ;29,4%
+Willis Towers Watson Public Limited Company;NasdaqGS:WLTW;USD;25703,74;9278;(2.49%);(4.76%);(1.26%);4.86%;199,4;24.41x;2.51x;Insurance Brokers; 25.964 ; 25.704 ;-1,0%
+Wynn Resorts, Limited;NasdaqGS:WYNN;USD;10208,05;3063,33;(3.50%);30.80%;(31.38%);(18.94%);95,29;NM;NM;Casinos and Gaming; 14.835 ; 10.208 ;-31,2%
+Xcel Energy Inc.;NasdaqGS:XEL;USD;36419,48;11377;(0.06%);(3.10%);9.17%;12.35%;69,31;24.67x;2.64x;Electric Utilities; 33.293 ; 36.419 ;9,4%
+Xerox Holdings Corporation;NYSE:XRX;USD;4346,61;7536;-;12.13%;(40.58%);(42.79%);21,91;12.85x;0.83x;Technology Hardware, Storage and Peripherals; 7.971 ; 4.347 ;-45,5%
+Xilinx, Inc.;NasdaqGS:XLNX;USD;32449,21;2972,88;(0.44%);18.94%;35.40%;45.46%;132,38;54.07x;13.28x;Semiconductors; 24.586 ; 32.449 ;32,0%
+Xylem Inc.;NYSE:XYL;USD;17010,3;4874;0.01%;3.98%;19.79%;21.83%;94,38;76.70x;5.93x;Industrial Machinery; 14.188 ; 17.010 ;19,9%
+Yum! Brands, Inc.;NYSE:YUM;USD;31672,14;5603;(0.27%);5.98%;4.23%;7.00%;104,99;30.49x;NM;Restaurants; 30.467 ; 31.672 ;4,0%
+Zebra Technologies Corporation;NasdaqGS:ZBRA;USD;18926,79;4332;(0.95%);21.63%;38.97%;46.41%;354,99;40.52x;9.89x;Electronic Equipment and Instruments; 13.774 ; 18.927 ;37,4%
+Zimmer Biomet Holdings, Inc.;NYSE:ZBH;USD;30250,21;7064,9;(0.40%);2.91%;(2.50%);2.36%;145,94;NM;2.56x;Health Care Equipment; 30.787 ; 30.250 ;-1,7%
+Zions Bancorporation, National Association;NasdaqGS:ZION;USD;6279,18;2331;(0.27%);27.36%;(26.26%);(21.68%);38,29;16.19x;0.89x;Regional Banks; 8.850 ; 6.279 ;-29,1%
+Zoetis Inc.;NYSE:ZTS;USD;78989,51;6542;(0.07%);3.11%;25.58%;39.01%;166,2;47.90x;21.94x;Pharmaceuticals; 63.038 ; 78.990 ;25,3%
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+† Market Capitalization, P/E and P/BV are calculated using the company's primary security, as determined by Capital IQ.;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+Historical Equity Pricing Data supplied by Interactive Data Pricing and Reference Data LLC;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+Index Data provided by;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+Copyright © 2020, Standard & Poor’s, a division of The McGraw-Hill Companies, Inc.  Standard & Poor’s including its subsidiary corporations (“S&P”) is a division of The McGraw Hill Companies, Inc.  Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P.  Because of the possibility of human or mechanical error by S&P’s sources, S&P or others, S&P does not guarantee the accuracy, adequacy, completeness or availability of any information and is not responsible for any errors or omissions or for the results obtained from the use of such information.  S&P GIVES NO EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR USE.  In no event shall S&P be liable for any indirect, special or consequential damages in connection with subscriber’s or others’ use of S&P 500.;;;;;;;;;;;;;;;
