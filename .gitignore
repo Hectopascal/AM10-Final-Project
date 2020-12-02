@@ -1,7 +1,6 @@
 
 *.png
 *.metadata
-*.csv
 *.snapshot
 *.pper
 *.rdf
