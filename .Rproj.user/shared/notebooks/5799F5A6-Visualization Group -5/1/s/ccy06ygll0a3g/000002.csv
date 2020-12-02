@@ -1,0 +1,6 @@
+"0",""
+"0","#Loading the data "
+"0",""
+"0","indeces <- read_excel(""Data/indices_data.xls"")"
+"0",""
+"0",""
