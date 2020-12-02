@@ -314,6 +314,22 @@ plot_raw
 
 ```
 
+```{r}
+#exploring the data for drawdown graph 
+
+head(indeces)
+
+
+
+
+
+
+
+```
+
+
+
+
 
 
 
