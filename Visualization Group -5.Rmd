@@ -128,6 +128,87 @@ data2020 %>%
 
 ```
 
+```{r, top and bottom industries}
+
+#Importing company data  
+
+
+comp_data <- read.csv("data/Comp_4.csv")
+
+View(comp_data_1)
+
+# Renaming the columns
+
+comp_data_1 <- comp_data %>% 
+  rename(
+    comp_name = X1,
+    stock_market = X2,
+    currency = X3, 
+    market_cap = X4, 
+    Revenue = X5, 
+    Percent_Change_Last_Day = X6, 
+    Percent_Change_30_D = X7, 
+    Percent_Change_YTD = X8, 
+    Percent_Change_12M = X9, 
+    Price_Close = X10, 
+    PE_Ratio = X11, 
+    PBV_Ratio = X12, 
+    Industry = X13, 
+    Cap_Start = X14, 
+    Cap_Nov = X15, 
+    Percentage_Change_Cap_Jan_Nov = X16)
+
+View(comp_data_1)
+```
+
+```{r, top and bottom industries}
+#Cleaning the data 
+
+company_2 <- comp_data_1 %>% select(comp_name, Industry, Percentage_Change_Cap_Jan_Nov)  %>% 
+  mutate(Percentage_Change_Cap_Jan_Nov =as.numeric(gsub("%", "", Percentage_Change_Cap_Jan_Nov))) %>% group_by(Industry)
+
+which(is.na(company_2$Percentage_Change_Cap_Jan_Nov))
+
+gsub("%", "", comp_data_1$Percentage_Change_Cap_Jan_Nov)
+
+company_2$Percentage_Change_Cap_Jan_Nov <- as.numeric(company_2$Percentage_Change_Cap_Jan_Nov)
+
+industry_avg <- aggregate(x = comp_data_2$Percentage_Change_Cap_Jan_Nov, by = list(comp_data_2$Industry), 
+               FUN = mean)
+
+industry_avg <- company_2 %>% group_by(Industry) %>% summarise(i_avg = mean(Percentage_Change_Cap_Jan_Nov))
+
+View(industry_avg)
+
+# Getting the top and bottom performing industries
+
+top_industries <- industry_avg %>% top_n(10)
+bottom_industries <- industry_avg %>% top_n(-10)
+View(top_industries)
+View(bottom_industries)
+
+
+top_i <- data.frame(top_industries)
+bottom_i <- data.frame(bottom_industries)
+ind <- rbind(top_industries, bottom_industries)
+View(ind)
+
+ggplot(ind, aes(x = reorder(Industry, - i_avg), y = i_avg)) + geom_col() + coord_flip() + 
+  theme(
+  panel.border = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.grid.minor = element_blank(),
+axis.title.y = element_blank(),
+plot.title = element_text(hjust = 0),
+  plot.subtitle = element_text(hjust = 0)
+  ) + labs(title = 'Add title here', subtitle = '') + theme(
+  axis.ticks = element_blank()) 
+```
+
+
+
+
+
 
 
 
