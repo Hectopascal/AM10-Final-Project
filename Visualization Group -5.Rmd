@@ -309,6 +309,8 @@ early_covid %>%
 
 
 ```
+
+
 # plot 3  volatility vs drop wiht size of the stock market being the size of the circle/the total value lost 
 
 
