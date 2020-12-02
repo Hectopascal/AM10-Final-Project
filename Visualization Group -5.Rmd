@@ -37,6 +37,7 @@ library(rnaturalearth)
 library(countrycode)
 library(sf)
 library(hrbrthemes)
+library(pracma)
 ```
 
 **Stock Market Analysis**
@@ -241,6 +242,49 @@ highlight sections of the graph
 
 maybe attach it to the recovery graph. 
 
+
+```{r}
+### USA , ftse , germany during covid 
+#limit data to 2020 jan, feb march 
+early_covid <- originalData_process %>% 
+  filter(year(dates) == 2020 )
+
+#removing first row which is new years 
+early_covid <- early_covid[-1,]
+
+
+#transforming each column to a percentage change from initial value 
+for (i in c(2:9)){
+inital_val <- unlist(early_covid[1,i[[1]]])
+early_covid[,i] <- (early_covid[ ,i]/inital_val)- 1
+
+}
+
+
+
+#plotting 
+
+early_covid %>% 
+  pivot_longer( cols = c(2:9), names_to = 'market' , values_to = 'pct_change') %>% 
+  filter(is.na(pct_change) == FALSE) %>% 
+  ggplot() +
+  geom_line(aes(x = dates, y=pct_change, color = market) , size = .5 , alpha = 0.5) + 
+  geom_hline(yintercept = 0 , size = 2 ) + 
+  scale_y_continuous(labels =  scales::percent) + 
+  theme_minimal() + 
+  theme(panel.grid.major.x =  element_blank() , 
+        panel.grid.minor =  element_blank() , 
+        panel.grid.major.y = element_line(size = 1),
+        legend.position = 'bottom') + 
+  labs(y = '' , x = '' ) 
+
+
+
+```
+
+
+
+
 # Plot 2 comparing feb mar apr from perivous years for different markets
 
 ```{r}
@@ -265,7 +309,7 @@ plot_df1 %>%
   distinct() %>% 
   filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>% 
   ggplot() + 
-  geom_col(aes(x = as.factor(year) , y = perc_drop , fill = market) , position = 'dodge' , alpha = 0.6, size = 1) + 
+  geom_col(aes(x = as.factor(year) , y = perc_drop , fill = market) , position = 'dodge' , alpha = 0.6, width = .5) + 
   theme_minimal() +
   geom_hline(yintercept = 0)+
   scale_fill_brewer(palette = 'Dark2') + 
@@ -276,6 +320,8 @@ plot_df1 %>%
   
   
 ```
+
+
 
 ```{r}
 plot_df1 %>%
@@ -296,21 +342,36 @@ plot_df1 %>%
 ```
 
 
+
+#Drawdown Plot 
+
 ```{r}
 
 
-draw_plot <- quarters %>% 
-  select(1,10,6 ) %>%
+draw_plot <- originalData_process %>% 
+  select(dates, s_p500 ) %>%
   filter(is.na(s_p500) == FALSE) %>% 
-  group_by(year) %>% 
   mutate(month = month(dates))
+
+draw_plot %>% 
+    ggplot() +
+    geom_line(aes(x = dates , y = s_p500))
+  
+  
 
 
 draw_plot %>% 
   filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>%
   group_by(year) %>% 
+  mutate(max = max(s_p500))
   
-    ggplot() + 
+  
+
+findpeaks(draw_plot$s_p500 ,minpeakdistance = 150 )
+
+
+  
+ggplot(draw_plot) + 
   geom_line(aes(x = dates, y = s_p500) , alpha = 0.6) + 
   theme_minimal() +
   scale_fill_brewer(palette = 'Dark2') + 
