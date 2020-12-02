@@ -462,22 +462,22 @@ options(scipen = 999)
 map_100k  %>%
   ggplot() +
   geom_sf(aes(fill = cases_per100), size = 0.1, color = "white") +
-  coord_sf(crs = "+proj=longlat") + 
+  coord_sf(crs = "+proj=longlat" , datum = NA) + 
   scale_fill_distiller( palette = "Blues", 
                     direction = 1 , 
                     guide = guide_colorbar(
                       title = "Number of cases per 100k",
                       title.hjust = 0.5,
                       labels = unit_format(unit = "M", scale = 1e-6) , 
-                      direction = "horizontal",
+                      direction = "vertical",
                       nrow = 1,
                       keyheight = unit(3, units = "mm"),
                       keywidth = unit(3, units = "mm"),
                       title.position = "top"  ,
-                      barheight =  1.25 , barwidth = 15)) +
+                      barheight =  10 , barwidth = 1.5)) +
   theme_minimal() +
   theme(legend.direction = "horizontal",
-        legend.position = "bottom" , 
+        legend.position = "right" , 
         panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank()) +
   labs(title = "",
        subtitle = "Covid Cases Worldwide ")
