@@ -315,9 +315,11 @@ early_covid %>%
 
 
 ```{r}
+bubble_df <- originalData_process 
 
-plot_df2 <- quarters %>% 
-  filter(year == 2020) %>%
+plot_df2 <- bubble_df %>%
+  filter(month(dates) %in% c(1,2,3)) %>%
+  filter(year(dates) == 2020) %>%
   pivot_longer(cols = c(2:9),  names_to = 'market' , values_to = 'price' ) %>% 
   filter(is.na(price) == FALSE) %>% 
   group_by(market) %>% 
