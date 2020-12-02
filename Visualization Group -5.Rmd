@@ -140,6 +140,8 @@ data.frame(nas) %>%
   kable_styling()
 
 ```
+
+
 # plot 1 the aggregate performance throughout the year [average performance for the full year]
 
 ```{r}
@@ -187,17 +189,12 @@ full_year_2020 %>%
          axis.ticks.y = element_blank(), 
          plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13))
 
-#cross correlation graph 
-ccf(full_year_2020$avg_change, full_year_2020$s_p500, ylab = "Cross-correlation")
-#lag of zero we have a correlation of 0.8  so fairly high 
+
 ```
 
 
 
-
-
-
-# Plot 2
+# Plot 2 # not neeeded 
 ```{r}
 ### USA , ftse , germany during covid 
 #limit data to 2020 jan, feb march 
@@ -242,6 +239,91 @@ highlight sections of the graph
 
 maybe attach it to the recovery graph. 
 
+#Plot1:  Map for covid  
+
+```{r}
+
+#extracting populatuion
+library(wpp2019)
+
+#get 2020 pop and country code
+data(pop)
+pop_2020 <- pop %>% 
+  select(c(1,17)) %>% 
+  mutate(`2020` = `2020` * 1000)
+
+#importing covid and cleaning data set 
+
+covid_1 <- read_csv('data/covid_jh.csv')
+covid_1<- clean_names(covid_1)
+
+covid <- covid_1[-1 ,c(319:320)] %>% 
+  rename('iso_a3' = 'iso_3166_1_alpha_3_codes') %>% 
+  group_by(iso_a3) %>% 
+  summarise(total = sum(x12_1_20))
+
+
+
+#getting geometrty and isocodes 
+earth <- ne_countries(scale = 50, returnclass = "sf") %>%
+  select(admin, geometry, iso_a3)
+
+
+
+#getting geometrty and isocodes 
+iso_un <- ne_countries(scale = 50, returnclass = "sf") %>% 
+   select(iso_a3  , un_a3 , iso_n3  ) %>% 
+   mutate(un_a3 = as.integer(un_a3) , iso_n3 = as.integer(iso_n3))
+ 
+ 
+ 
+ 
+ map_100k <- left_join(pop_2020, iso_un , by = c('country_code' = 'iso_n3')) %>% 
+   filter(is.na(iso_a3) == FALSE) %>%
+   select(`2020`, iso_a3, geometry) %>% 
+   left_join(covid %>% 
+   select(iso_a3 , total) , by = 'iso_a3') %>% 
+  mutate(cases_per100 = (total/`2020`)*1e5) 
+ 
+ 
+ 
+
+map_100k <- map_100k %>% 
+  sf::st_as_sf() 
+  
+
+options(scipen = 999)
+
+map_100k  %>%
+  ggplot() +
+  geom_sf(aes(fill = cases_per100), size = 0.1, color = "white") +
+  coord_sf(crs = "+proj=longlat" , datum = NA) + 
+  scale_fill_distiller( palette = "Blues", 
+                    direction = 1 , 
+                    guide = guide_colorbar(
+                      title = "Number of cases per 100k",
+                      title.hjust = 0.5,
+                      labels = unit_format(unit = "K", scale = 1e-3) , 
+                      direction = "vertical",
+                      nrow = 1,
+                      keyheight = unit(3, units = "mm"),
+                      keywidth = unit(3, units = "mm"),
+                      title.position = "top"  ,
+                      barheight =  10 , barwidth = 1.5)) +
+  theme_minimal() +
+  theme(legend.direction = "horizontal",
+        legend.position = "right" , 
+        panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank(),  plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13)) +
+  labs(title = "title here",
+       subtitle = "Covid Cases Worldwide per 100k population")
+
+
+
+```
+
+
+
+#Plot2: Timeline of all the indices 
 
 ```{r}
 ### USA , ftse , germany during covid 
@@ -265,11 +347,11 @@ early_covid[,i] <- (early_covid[ ,i]/inital_val)- 1
 #plotting 
 
 early_covid %>% 
-  pivot_longer( cols = c(2:9), names_to = 'market' , values_to = 'pct_change') %>% 
+  pivot_longer( cols = c(`sse`, `ftse100`, `s_p500`, `euronext`, `bse_sensex` ), names_to = 'market' , values_to = 'pct_change') %>% 
   filter(is.na(pct_change) == FALSE) %>% 
   ggplot() +
-  geom_line(aes(x = dates, y=pct_change, color = market) , size = .5 , alpha = 0.5) + 
-  geom_hline(yintercept = 0 , size = 2 ) + 
+  geom_line(aes(x = dates, y=pct_change, color = market) , size = .8 , alpha = 0.5) + 
+  geom_hline(yintercept = 0 , size = 1 ) + 
   scale_y_continuous(labels =  scales::percent) + 
   theme_minimal() + 
   theme(panel.grid.major.x =  element_blank() , 
@@ -279,116 +361,7 @@ early_covid %>%
   labs(y = '' , x = '' ) 
 
 
-
 ```
-
-
-
-
-# Plot 2 comparing feb mar apr from perivous years for different markets
-
-```{r}
-library(scales)
-
-quarters <- originalData_process %>% 
-  filter(month(dates) %in% c(1,2,3)) %>% 
-  mutate(year = year(dates))
-  
-
-plot_df1 <- quarters %>% 
-  select(1,5,6,4 ,10) %>% 
-  pivot_longer(cols = c(2,3,4),  names_to = 'market' , values_to = 'price' ) %>% 
-  filter(is.na(price) == FALSE) %>% 
-  group_by(year, market) %>% 
-  mutate(first_val = first(price) , last_val = last(price)) %>% 
-  mutate(perc_drop =(last_val/first_val ) - 1 ) %>% 
-  select(year, market, perc_drop) 
-
-
-plot_df1 %>%
-  distinct() %>% 
-  filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>% 
-  ggplot() + 
-  geom_col(aes(x = as.factor(year) , y = perc_drop , fill = market) , position = 'dodge' , alpha = 0.6, width = .5) + 
-  theme_minimal() +
-  geom_hline(yintercept = 0)+
-  scale_fill_brewer(palette = 'Dark2') + 
-  theme(panel.grid.minor = element_blank() ,
-        panel.grid.major.x  = element_blank(), 
-        legend.position = 'bottom') + 
-  scale_y_continuous(label = scales::percent)  
-  
-  
-```
-
-
-
-```{r}
-plot_df1 %>%
-  distinct() %>% 
-  filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>%
-  filter(market == 's_p500') %>% 
-  ggplot() + 
-  geom_col(aes(x = as.factor(year) , y = perc_drop , fill = market) , position = 'dodge' , alpha = 0.6, size = 1) + 
-  theme_minimal() +
-  geom_hline(yintercept = 0)+
-  scale_fill_brewer(palette = 'Dark2') + 
-  theme(panel.grid.minor = element_blank() ,
-        panel.grid.major.x  = element_blank(), 
-        legend.position = 'bottom') + 
-  scale_y_continuous(label = scales::percent)  
-
-
-```
-
-
-
-#Drawdown Plot 
-
-```{r}
-
-
-draw_plot <- originalData_process %>% 
-  select(dates, s_p500 ) %>%
-  filter(is.na(s_p500) == FALSE) %>% 
-  mutate(month = month(dates))
-
-draw_plot %>% 
-    ggplot() +
-    geom_line(aes(x = dates , y = s_p500))
-  
-  
-
-
-draw_plot %>% 
-  filter(year %in% c(2000, 2001 , 2003 , 2008 ,2009 , 2018 ,2020)) %>%
-  group_by(year) %>% 
-  mutate(max = max(s_p500))
-  
-  
-
-findpeaks(draw_plot$s_p500 ,minpeakdistance = 150 )
-
-
-  
-ggplot(draw_plot) + 
-  geom_line(aes(x = dates, y = s_p500) , alpha = 0.6) + 
-  theme_minimal() +
-  scale_fill_brewer(palette = 'Dark2') + 
-  theme(panel.grid.minor = element_blank() ,
-        panel.grid.major.x  = element_blank(), 
-        legend.position = 'bottom') + 
-  scale_y_continuous(label = scales::percent)  
-  
-  
- 
-
-
-```
-
-
-
-
 # plot 3  volatility vs drop wiht size of the stock market being the size of the circle/the total value lost 
 
 
@@ -423,6 +396,53 @@ plot_df2 %>%
 
 
 
+
+# Plot 4:comparing negative quarters for each market. 
+
+```{r}
+library(scales)
+
+
+#creating the percentage drops for each quarters 
+quarters <- originalData_process %>%
+  mutate(quarter = quarter(dates) , year = year(dates) , q_y = paste0(quarter, '/' , year)) %>% 
+pivot_longer( cols = c(`sse`, `ftse100`, `s_p500`, `euronext`, `bse_sensex` , `topix`), names_to = 'market' , values_to = 'price')%>%
+  filter(is.na(price) == FALSE) %>% 
+  #groupby quarter and market 
+  group_by(year , q_y, market) %>% 
+  #finding first and last value 
+  summarise(first_val = first(price)  , last_val = last(price)) %>% 
+  
+  #calculating the percentage drop
+  mutate(perc = (last_val/first_val)  - 1)%>% 
+  #keeping only negative
+  filter(perc < 0) %>% 
+  filter
+
+
+
+quarters %>%
+  ggplot() + 
+  geom_col(aes(x = year, y = perc,))+
+  facet_wrap(.~market)+
+theme_minimal() +
+  geom_hline(yintercept = 0)+
+  scale_fill_brewer(palette = 'Dark2') + 
+  theme(panel.grid.minor = element_blank() ,
+        panel.grid.major.x  = element_blank(), 
+        legend.position = 'bottom') + 
+  scale_y_continuous(label = scales::percent)  
+  
+  
+```
+
+
+
+
+
+
+
+
 ```{r}
 
 #S&P throughout the years
@@ -435,80 +455,6 @@ plot_raw
 
 
 ```
-
-
-```{r}
-
-#S&P in 2020
-originalData_process
-
-plot_sp_2020 <- originalData_process %>%
-  mutate(year = year(dates) , month = month(dates)) %>%
-select("dates","year","month","s_p500") %>%  
-  filter(year == 2020) %>%
-  ggplot(aes(y = s_p500, x = dates)) +
-  geom_line()
-plot_sp_2020
-
-
-```
-
-```{r}
-
-#S&P throughout the years
-originalData_process
-
-plot_sp_2020 <- originalData_process %>%
-  mutate(year = year(dates) , month = month(dates)) %>%
-select("dates","year","month","s_p500") %>%  
-  filter(year == 2020) %>%
-  ggplot(aes(y = s_p500, x = dates)) +
-  geom_line()
-plot_sp_2020
-
-
-
-
-```
-
-
-
-
-```{r}
-#exploring the data for drawdown graph 
-
-head(indeces)
-
-# s_p_only <- indeces %>%
-#   select("Dates", "S&P 500 (^SPX) - Index Value")
-# 
-# s_p_only %>%
-#   mutate(year = year(Dates) , month = month(Dates))
-
-indeces_recovery <- indeces %>%
-  mutate(year = year(Dates) , month = month(Dates)) %>%
-  filter(year == 2020) 
-indeces_recovery
-
-indeces_recovery_sp <- indeces %>%
-  mutate(year = year(Dates) , month = month(Dates)) %>%
-  filter(year == 2020) %>%
-  select("Dates", "S&P 500 (^SPX) - Index Value")
-indeces_recovery_sp
-
-plot_V_2020 <-ggplot(indeces_recovery_sp, aes(y = "S&P 500 (^SPX) - Index Value", x = Dates)) +
-  geom_line()
-plot_V_2020
-
-  
-
-```
-
-
-
-
-
-
 
 
 
@@ -602,68 +548,4 @@ map_covid  %>%
 
 ```
 
-
-
-```{r}
-
-#extracting populatuion
-library(wpp2019)
-
-#get 2020 pop and country code
-data(pop)
-pop_2020 <- pop %>% 
-  select(c(1,17)) %>% 
-  mutate(`2020` = `2020` * 1000)
-
-
-#getting geometrty and isocodes 
- iso_un <- ne_countries(scale = 50, returnclass = "sf") %>% 
-   select(iso_a3  , un_a3 , iso_n3  ) %>% 
-   mutate(un_a3 = as.integer(un_a3) , iso_n3 = as.integer(iso_n3))
- 
- 
- 
- 
- map_100k <- left_join(pop_2020, iso_un , by = c('country_code' = 'iso_n3')) %>% 
-   filter(is.na(iso_a3) == FALSE) %>%
-   select(`2020`, iso_a3, geometry) %>% 
-   left_join(covid %>% 
-   select(iso_a3 , total) , by = 'iso_a3') %>% 
-  mutate(cases_per100 = (total/`2020`)*1e5) 
- 
- 
- 
-
-map_100k <- map_100k %>% 
-  sf::st_as_sf() 
-  
-
-options(scipen = 999)
-
-map_100k  %>%
-  ggplot() +
-  geom_sf(aes(fill = cases_per100), size = 0.1, color = "white") +
-  coord_sf(crs = "+proj=longlat" , datum = NA) + 
-  scale_fill_distiller( palette = "Blues", 
-                    direction = 1 , 
-                    guide = guide_colorbar(
-                      title = "Number of cases per 100k",
-                      title.hjust = 0.5,
-                      labels = unit_format(unit = "K", scale = 1e-3) , 
-                      direction = "vertical",
-                      nrow = 1,
-                      keyheight = unit(3, units = "mm"),
-                      keywidth = unit(3, units = "mm"),
-                      title.position = "top"  ,
-                      barheight =  10 , barwidth = 1.5)) +
-  theme_minimal() +
-  theme(legend.direction = "horizontal",
-        legend.position = "right" , 
-        panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank(),  plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13)) +
-  labs(title = "title here",
-       subtitle = "Covid Cases Worldwide per 100k population")
-
-
-
-```
 
