@@ -1,0 +1,12 @@
+
+*.png
+*.metadata
+*.snapshot
+*.pper
+*.rdf
+.Rproj.user/487562FC/sources/s-88C07837/lock_file
+.Rproj.user/487562FC/sources/s-88C07837/3FD9A50F
+.Rproj.user/487562FC/rmd-outputs
+.Rproj.user/487562FC/saved_source_markers
+.Rproj.user/
+.Rproj.user/shared/
