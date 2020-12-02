@@ -328,10 +328,10 @@ library(gapminder)
 covid_1 <- read_csv('data/covid_jh.csv')
 covid_1<- clean_names(covid_1)
 
-covid <- covid_1[-1 ,c(318:319)] %>% 
+covid <- covid_1[-1 ,c(319:320)] %>% 
   rename('iso_a3' = 'iso_3166_1_alpha_3_codes') %>% 
   group_by(iso_a3) %>% 
-  summarise(total = sum(x11_30_20))
+  summarise(total = sum(x12_1_20))
 
 #extracting only the iso_a3 and total 
 map_covid <- covid %>% 
