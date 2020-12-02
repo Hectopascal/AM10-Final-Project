@@ -314,16 +314,71 @@ plot_raw
 
 ```
 
+
+```{r}
+
+#S&P in 2020
+originalData_process
+
+plot_sp_2020 <- originalData_process %>%
+  mutate(year = year(dates) , month = month(dates)) %>%
+select("dates","year","month","s_p500") %>%  
+  filter(year == 2020) %>%
+  ggplot(aes(y = s_p500, x = dates)) +
+  geom_line()
+plot_sp_2020
+
+
+```
+
+```{r}
+
+#S&P throughout the years
+originalData_process
+
+plot_sp_2020 <- originalData_process %>%
+  mutate(year = year(dates) , month = month(dates)) %>%
+select("dates","year","month","s_p500") %>%  
+  filter(year == 2020) %>%
+  ggplot(aes(y = s_p500, x = dates)) +
+  geom_line()
+plot_sp_2020
+
+
+
+
+```
+
+
+
+
 ```{r}
 #exploring the data for drawdown graph 
 
 head(indeces)
 
+# s_p_only <- indeces %>%
+#   select("Dates", "S&P 500 (^SPX) - Index Value")
+# 
+# s_p_only %>%
+#   mutate(year = year(Dates) , month = month(Dates))
 
+indeces_recovery <- indeces %>%
+  mutate(year = year(Dates) , month = month(Dates)) %>%
+  filter(year == 2020) 
+indeces_recovery
 
+indeces_recovery_sp <- indeces %>%
+  mutate(year = year(Dates) , month = month(Dates)) %>%
+  filter(year == 2020) %>%
+  select("Dates", "S&P 500 (^SPX) - Index Value")
+indeces_recovery_sp
 
+plot_V_2020 <-ggplot(indeces_recovery_sp, aes(y = "S&P 500 (^SPX) - Index Value", x = Dates)) +
+  geom_line()
+plot_V_2020
 
-
+  
 
 ```
 
@@ -370,8 +425,8 @@ map_covid  %>%
   ggplot() +
   geom_sf(aes(fill = total), size = 0.1, color = "white") +
   coord_sf(crs = "+proj=longlat") + 
-  scale_fill_distiller( palette = "Spectral", 
-                    direction = -1,
+  scale_fill_distiller( palette = "Blues", 
+                    direction = 1,
                     labels = unit_format(unit = "M", scale = 1e-6),
                     guide = guide_colorbar(
                       title = "Number of cases",
@@ -400,8 +455,8 @@ map_covid  %>%
   ggplot() +
   geom_sf(aes(fill = log(total)), size = 0.1, color = "white") +
   coord_sf(crs = "+proj=longlat") + 
-  scale_fill_distiller( palette = "RdYlGn", 
-                    direction = -1,
+  scale_fill_distiller( palette = "Blues", 
+                    direction = 1,
                     guide = guide_colorbar(
                       title = "Number of cases[log]",
                       title.hjust = 0.5,
@@ -416,7 +471,7 @@ map_covid  %>%
         legend.position = "bottom" , 
         panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank()) +
   labs(title = "",
-       subtitle = "Covid Cases Worldwide ")
+       subtitle = "Total number of Covid Cases per country ")
 
 
 
@@ -479,7 +534,7 @@ map_100k  %>%
         legend.position = "bottom" , 
         panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank()) +
   labs(title = "",
-       subtitle = "Covid Cases Worldwide ")
+       subtitle = "Covid Cases Worldwide per 100k population")
 
 ```
 
