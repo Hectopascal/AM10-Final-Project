@@ -561,14 +561,15 @@ money_supp <- money_supp %>%
 library(scales)
 
 #ploting the bar chart 
-money_supp %>% 
+
+plot_6 <- money_supp %>% 
   ggplot() +
   geom_col(aes(x = name , y = usa_m1_mo_m/100 , fill = covid_time )) + 
   labs(
-    y = 'Percentage Change in Money Supply MOM' , 
+    y = 'Percentage Change' , 
     x= '' , 
-    subtitle = '' ,
-    title = ''
+    subtitle = 'Percentage Change in Money Supply MOM' ,
+    title = 'Sharp Rise in Liquidity to counteract Covid Crisis'
     
   ) +
   theme_minimal() + 
@@ -579,9 +580,9 @@ money_supp %>%
   scale_fill_manual(values = c('grey' , '#04449c'))+
   geom_hline(yintercept =  0 , size = 1.3) + 
   geom_text(
-    data = data.frame(x = as.POSIXct(as.Date(c("2019-04-30"))), y = 0.12, label = "COVID TIMES"),
+    data = data.frame(x = as.POSIXct(as.Date(c("2015-04-30"))), y = 0.12, label = "Reaction to \n Covid"),
     aes(x = x, y = y, label = label),
-    colour="#FFCA3A",
+    colour="black",
     family="Lato",
     hjust = 0.5,
     lineheight = .8,
@@ -590,16 +591,15 @@ money_supp %>%
   
   
   geom_curve(
-    data = data.frame(x =as.POSIXct(as.Date(c("2019-04-30"))) , y = 0.7, xend = as.POSIXct(as.Date(c("2020-04-30"))), yend = 0.35),
+    data = data.frame(x =as.POSIXct(as.Date(c("2015-04-30"))) , y = 0.125, xend = as.POSIXct(as.Date(c("2020-04-30"))), yend = 0.12),
     mapping = aes(x = x, y = y, xend = xend, yend = yend),
-    colour = "#FFCA3A",
+    colour = "black",
     size = 0.6,
     curvature = -0.25,
     arrow = arrow(length = unit(2, "mm"), type = "closed"),
     inherit.aes = FALSE
   )
-  
-  as.POSIXct.Date("2020")
+plot_6
 
 ```
 
