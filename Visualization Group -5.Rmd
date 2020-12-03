@@ -139,53 +139,6 @@ data.frame(nas) %>%
 
 
 
-
-
-# Plot 2 # not neeeded 
-```{r}
-### USA , ftse , germany during covid 
-#limit data to 2020 jan, feb march 
-early_covid <- originalData_process %>% 
-  filter(year(dates) == 2020 , month(dates) %in% c(1,2,3))
-
-#removing first row which is new years 
-early_covid <- early_covid[-1,]
-
-
-#transforming each column to a percentage change from initial value 
-for (i in c(2:9)){
-inital_val <- unlist(early_covid[1,i[[1]]])
-early_covid[,i] <- (early_covid[ ,i]/inital_val)- 1
-
-}
-
-
-
-#plotting 
-
-early_covid %>% 
-  pivot_longer(cols  = c(5,6,4), names_to = 'market' , values_to = 'pct_change') %>% 
-  ggplot() +
-  geom_line(aes(x = dates, y=pct_change, color = market) , size = 1.5 , alpha = 0.5) + 
-  geom_hline(yintercept = 0 , size = 2 ) + 
-  scale_y_continuous(labels =  scales::percent) + 
-  theme_minimal() + 
-  theme(panel.grid.major.x =  element_blank() , 
-        panel.grid.minor =  element_blank() , 
-        panel.grid.major.y = element_line(size = 1),
-        legend.position = 'bottom') + 
-  labs(y = '' , x = '' ) 
-
-
-
-```
-put lines maybe to describe various events 
-
-
-highlight sections of the graph 
-
-maybe attach it to the recovery graph. 
-
 #Plot1:  Map for covid  
 
 ```{r}
@@ -268,7 +221,6 @@ map_100k  %>%
 
 ```
 
-
 #Plot2: Timeline of all the indices 
 
 ```{r}
@@ -289,24 +241,109 @@ early_covid[,i] <- (early_covid[ ,i]/inital_val)- 1
 }
 
 
+ccf_df <- early_covid %>% 
+  select(`sse`, `ftse100`, `s_p500`, `euronext`, `bse_sensex` )
+
+
+
 
 #plotting 
 
-early_covid %>% 
+early_covid <- early_covid %>% 
   pivot_longer( cols = c(`sse`, `ftse100`, `s_p500`, `euronext`, `bse_sensex` ), names_to = 'market' , values_to = 'pct_change') %>% 
-  filter(is.na(pct_change) == FALSE) %>% 
-  ggplot() +
+  filter(is.na(pct_change) == FALSE) 
+  
+  
+  
+ 
+plot_3 <- ggplot(early_covid) +
   geom_line(aes(x = dates, y=pct_change, color = market) , size = .8 , alpha = 0.5) + 
-  geom_hline(yintercept = 0 , size = 1 ) + 
+#    geom_vline(xintercept=as.POSIXct(as.Date(c("2020-01-23","2020-02-19", "2020-11-05","2020-11-09"))) , #size=0.5, alpha = 0.5, style="dash")+
+   geom_rect(aes(xmin= as.POSIXct(as.Date(c("2020-03-19"))) , xmax  = as.POSIXct(as.Date(c("2020-06-13"))),
+         ymin = -0.4 , ymax = 0.1) , alpha = 0.002) +
+  
+  geom_hline(yintercept = 0 , size = 0.6 ) + 
   scale_y_continuous(labels =  scales::percent) + 
   theme_minimal() + 
   theme(panel.grid.major.x =  element_blank() , 
         panel.grid.minor =  element_blank() , 
         panel.grid.major.y = element_line(size = 1),
         legend.position = 'bottom') + 
-  labs(y = '' , x = '' ) 
+  labs(y = 'Cumulative percentage change' , x = '' ) +
+  theme(plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13)) +
+  labs(title = "Stock market reaction to the Covid19 Pandemic",
+       subtitle = "Performance of major indeces in 2020" , color = 'Index')+
+  
+  #adding lines 
+
+  annotate("text", x = as.POSIXct(as.Date(c("2020-01-10","2020-02-14","2020-05-09","2020-10-01", "2020-11-21"))), 
+           y = c(-0.42, -0.42,-0.42,-0.42,-0.42), 
+           label = c("First Lockdown \n China", "Europe \n 1st Wave","USA Lockdown","Europe \n 2nd Wave", "Vaccine \n Announced"), 
+           color="black", size=3 , angle=0)
 
 
+
+
+
+    annotate("segment", x = as.POSIXct(as.Date(c("2020-01-23","2020-02-19","2020-10-26","2020-11-09" ))), 
+           xend = as.POSIXct(as.Date(c("2020-01-23","2020-02-19","2020-10-26","2020-11-09" ))), 
+           y = c(-0.2,-0.25,-0.38,-0.32), 
+           yend = c(-0.1,-0.15,-0.28,-0.22), colour = "darkgray", size=1, alpha=1, fill = 'red' )
+  
+  
+  annotate("segment", x = as.POSIXct(as.Date(c("2020-01-23","2020-02-19","2020-10-26","2020-11-09" ))), 
+           xend = as.POSIXct(as.Date(c("2020-01-23","2020-02-19","2020-10-26","2020-11-09" ))), 
+           y = c(-0.2,-0.25,-0.38,-0.32), 
+           yend = c(-0.1,-0.15,-0.28,-0.22), colour = "darkgray", size=1, alpha=1, arrow=arrow() , color = 'red' )
+
+
+```
+
+
+
+```{r}
+
+
+cols_1 = character()
+cols_2 = character()
+corr_list = double()
+
+i = 1
+for (col1 in colnames(ccf_df)){
+  j = 1
+  for (col2 in colnames(ccf_df)){
+    
+    
+ccf_values = ccf(ccf_df[rowSums(is.na(ccf_df[, i]))  == 0,i] , ccf_df[rowSums(is.na(ccf_df[, j]))  == 0,j])
+values = ccf_values[0][[1]][[1]]
+
+
+cols_1[[length(cols_1) + 1]] = col1
+cols_2[[length(cols_2) + 1]] = col2
+corr_list[[length(corr_list) + 1]] = values
+
+j = j+1 
+  }
+i = i +1 
+}
+
+
+plot_4 <-data.frame(cbind(cols_1 ,cols_2 , corr_list))%>% 
+  ggplot() + 
+    geom_tile(aes(x  = cols_1 , y = cols_2 , fill = as.double(corr_list))) + 
+   scale_fill_distiller(palette = "Blues" , 
+                        direction = 1) +
+  labs(x = '' , y = ' '  ) + 
+  guides(fill =  guide_colourbar(title = 'Correlation' , barheight = 15 , barwidth = 1))+
+  theme_ipsum() + 
+    theme(panel.grid.minor = element_blank() , panel.grid.major = element_blank()) +
+  theme( axis.line = element_line(), panel.grid.major = element_blank() , panel.grid.minor= element_blank(),  
+         plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 12) , 
+         ) +
+  labs(
+       subtitle = "Cross Correlation for the various indices in 2020 ")
+
+s
 ```
 
 
@@ -332,7 +369,7 @@ bubble_df <- originalData_process
 
 glimpse(plot_df2)
 
-plot_df2 %>% 
+plot_2 <- plot_df2 %>% 
   ggplot() +
   geom_point(aes(x = perc_drop , y = std , size = covidcases,  color = market) , alpha = 0.5) + 
   theme_minimal() + 
@@ -342,22 +379,24 @@ plot_df2 %>%
   # geom_label(mapping = aes(x = perc_drop , y = std ,  label = market , fill = market) 
   #            , direction = "both" , face = 'bold' ,nudge_x = 0,
   # nudge_y = 0.003, )+
-   geom_label_repel(mapping = aes(x = perc_drop , y = std ,  label = market , color = market) 
+   geom_label_repel(mapping = aes(x = perc_drop , y = std ,  label = market ) 
              , direction = "both" , face = 'bold' ,nudge_x = 0,
   nudge_y = 0.003, )+
   scale_x_continuous(labels = scales::percent ,limits = c(-0.32, -0.1) ) + 
-  scale_y_continuous(labels = scales::percent,limits = c(0.015, 0.045)) + 
+  scale_y_continuous(labels = scales::percent,limits = c(0.015, 0.04)) + 
   theme(legend.position =  'bottom') + 
    guides(color=guide_legend("market"), fill = FALSE) +
   theme_minimal() +
-  theme( axis.line = element_line(), panel.grid.major = element_blank() , panel.grid.minor= element_blank(),  plot.title = element_text(size = 10, face= "bold"), plot.subtitle = element_text(size = 9)) +
+  theme( axis.line = element_line(), panel.grid.major = element_blank() , panel.grid.minor= element_blank(),  
+         plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 12) , 
+         ) +
   labs(title = "Stonger financial markets for countries that kept Covid under control",
-       subtitle = "Percentage index drop vs volatility", 
+       subtitle = "Volatility vs The Percentage Drop in Index Value ", 
        y = "Volatility (index standard deviation)", x = "Percentage drop" , 
        size = 'Covid Cases per 100K')  +guides(colour=FALSE)
   
 
-
+plot_2
 
 ```
 
@@ -408,12 +447,12 @@ df_new <- append(temp_df , df_new)
 
 df_new$index <- c(1:10)
 
-df_new$fill_box <- c('no_color', 'no_color', 'no_color', 'no_color' ,'no_color' , 'no_color' ,'no_color', 'no_color' , 'no_color' , 'color')
+df_new$fill_box <- c('no_color', 'no_color', 'no_color', 'no_color' ,'no_color' , 'no_color' ,'no_color', 'no_color' , 'no_color' , 'COVID')
 
 
 
 
-data.frame(df_new) %>%
+plot_1 <- data.frame(df_new) %>%
   pivot_longer(c(1:6) , names_to = 'market' , values_to  = 'perc' ) %>% 
   ggplot() + 
   geom_col(aes(x = index, y = perc, fill = fill_box))+
@@ -426,13 +465,15 @@ theme_minimal() +
         legend.position = 'bottom' , axis.ticks.x = element_blank()) + 
   scale_y_continuous(label = scales::percent)  + 
   labs (title = "Covid sparked an alarming drop in Q1 of 2020",  
-  subtitle = "10 worst performing quarters per index",
+  subtitle = "10 worst performing quarters per index [COVID Quarter in Blue]",
        x = "",
-  y = "indeces") + 
-    theme(plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13))
+  y = "Percentage change") + 
+    theme(plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13) ,
+          axis.ticks.x = element_blank() , axis.text.x =  element_blank()) + 
+  guides(fill = FALSE)
 
 
-
+plot_1
   
 ```
 
@@ -456,125 +497,37 @@ full_year_2020[,i] <- (full_year_2020[ ,i]/inital_val)- 1
 
 }
 
-full_year_2020$avg_change <- rowSums(full_year_2020[, -1])/8
+full_year_2020$world_aggregate <- rowSums(full_year_2020[, -1])/8
 
 
 #plotting the graph 
 full_year_2020 %>% 
-  select(dates, s_p500 , avg_change) %>% 
+  select(dates, s_p500 , world_aggregate) %>% 
   pivot_longer(cols = 2:3 , names_to ='market' , values_to = 'pct_change' ) %>% 
   ggplot() +
   geom_line(aes(x = dates, y=pct_change, color = market) , size = 1.5 , alpha = 0.5) + 
-  geom_hline(yintercept = 0 , size = 2 ) + 
+  geom_hline(yintercept = 0 , size = 1 ) + 
   scale_y_continuous(labels =  scales::percent) + 
+  scale_color_manual(values = c('grey' , '#04449c'))+
   theme_minimal() + 
   theme(panel.grid.major.x =  element_blank() , 
         panel.grid.minor =  element_blank() , 
         panel.grid.major.y = element_line(size = 1),
         legend.position = 'bottom') + 
-  labs (title = "Financial markets worldwide in 2020 compared to the S&P500 performance",  
-  subtitle = "xxxxx0",
+  labs (subtitle = "Indices worldwide in 2020 compared to the S&P500 performance",  
+  title = "Financial Markets are on average aligned to the S&P500",
        x = "time",
-  y = "indeces",
-        caption = "tbccccc") + 
+  y = "indeces" , 
+  color = 'Index') + 
     theme(panel.background =element_blank(),
          panel.grid.major  = element_blank() , 
          panel.grid.minor = element_blank(),
          axis.ticks.x = element_blank(), 
          axis.ticks.y = element_blank(), 
-         plot.title = element_text(size = 15, face= "bold"), plot.subtitle = element_text(size = 13))
-
-
-```
-
-# covid world map 
-
-```{r}
-#importing dataset 
-library(gapminder)
-
-covid_1 <- read_csv('data/covid_jh.csv')
-covid_1<- clean_names(covid_1)
-
-covid <- covid_1[-1 ,c(319:320)] %>% 
-  rename('iso_a3' = 'iso_3166_1_alpha_3_codes') %>% 
-  group_by(iso_a3) %>% 
-  summarise(total = sum(x12_1_20))
-
-#extracting only the iso_a3 and total 
-map_covid <- covid %>% 
-  select(iso_a3 , total)
-
-
-
-#getting geometrty and isocodes 
-earth <- ne_countries(scale = 50, returnclass = "sf") %>%
-  select(admin, geometry, iso_a3)
-
-map_covid <- left_join(map_covid , earth , by = 'iso_a3') 
-map_covid <- map_covid %>% 
-  select(admin, total, geometry) %>%
-  sf::st_as_sf() 
-
-options(scipen = 999)
-
-map_covid  %>%
-  ggplot() +
-  geom_sf(aes(fill = total), size = 0.1, color = "white") +
-  coord_sf(crs = "+proj=longlat") + 
-  scale_fill_distiller( palette = "Blues", 
-                    direction = 1,
-                    labels = unit_format(unit = "M", scale = 1e-6),
-                    guide = guide_colorbar(
-                      title = "Number of cases",
-                      title.hjust = 0.5,
-                      direction = "horizontal",
-                      nrow = 1,
-                      keyheight = unit(3, units = "mm"),
-                      keywidth = unit(3, units = "mm"),
-                      title.position = "top"  ,
-                      barheight =  1.25 , barwidth = 15)) +
-  theme_minimal() +
-  theme(legend.direction = "horizontal",
-        legend.position = "bottom" , 
-        panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank()) +
-  labs(title = "",
-       subtitle = "Covid Cases Worldwide ")
-
-
-
+         plot.title = element_text(size = 13, face= "bold"), plot.subtitle = element_text(size = 13))
 
 
 ```
 
 
-
-```{r}
-map_covid  %>%
-  ggplot() +
-  geom_sf(aes(fill = log(total)), size = 0.1, color = "white") +
-  coord_sf(crs = "+proj=longlat") + 
-  scale_fill_distiller( palette = "Blues", 
-                    direction = 1,
-                    guide = guide_colorbar(
-                      title = "Number of cases[log]",
-                      title.hjust = 0.5,
-                      direction = "horizontal",
-                      nrow = 1,
-                      keyheight = unit(3, units = "mm"),
-                      keywidth = unit(3, units = "mm"),
-                      title.position = "top"  ,
-                      barheight =  1.25 , barwidth = 15)) +
-  theme_minimal() +
-  theme(legend.direction = "horizontal",
-        legend.position = "bottom" , 
-        panel.grid.major.y = element_blank() , panel.grid.minor.y = element_blank()) +
-  labs(title = "",
-       subtitle = "Total number of Covid Cases per country ")
-
-
-
-
-```
-
-
+# Add images 
