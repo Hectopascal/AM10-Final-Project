@@ -501,7 +501,7 @@ full_year_2020$world_aggregate <- rowSums(full_year_2020[, -1])/8
 
 
 #plotting the graph 
-full_year_2020 %>% 
+plot_5 <- full_year_2020 %>% 
   select(dates, s_p500 , world_aggregate) %>% 
   pivot_longer(cols = 2:3 , names_to ='market' , values_to = 'pct_change' ) %>% 
   ggplot() +
