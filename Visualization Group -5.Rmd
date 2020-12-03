@@ -1,5 +1,5 @@
 ---
-title: "Data Visualization Group Project"
+title: "Data Visualization Group Project: How Financial Markets Reacted to the Pandemic"
 author: "Study Group 5: Etra Bianco, Vasu Dev Puri, Himanshu Singh, Yi Yan Ng, Mengze Sun, Christian Gonder"
 date: "`r Sys.Date()`"
 output: 
@@ -49,21 +49,29 @@ library(reshape2)
 library(tidyverse)
 ```
 
-**Stock Market Analysis**
 
-Our agenda is to portray the impact COVID-19 has had on financial markets in 2020, visualizing the performance of different stock market indeces (SP500, FTSE100, HSI…) throughout the year and identifying the most significant shocks as well as drawing parallels with the events and world news that might have been the cause.
+# Introduction
 
-We intend also to conduct an analysis across geographies by creating a geospatial map of major indices around the world and compare the performance in those markets using a heat map.
+The Covid-19 pandemic is an unprecedented crisis challenging the lives and livelihoods of billions of people around the globe. As an indicator of the economic cycle, Study Group 5 analysed the impact of the Covid19 pandemic on stock markets in major economies. The purpose  of this analysis was to understand how the current economic crisis is different from previous shocks, both in its magnitiude and its recovery, as well as the underlying reasons.
 
-Furthermore, we intend to analyze the performance across industries and ascertain sectors that were counter-cyclical / robust. 
+**Methodology**
+Our Datasets 
+- Financial markets data: Downloaded from CapitalIQ, Bloomberg
+- Covid data: John Hopkins University Covid19 database
+- Background reading: Financial Times, The Economist and further research
 
-Additionally, we intend to compare the above to the market’s performance during the 2008 economic crisis and their respective revivals.
 
-For the purpose of this visualization we use Financial market data sourced from Capital IQ.
+**Process**
+- Data Collection 
+- Inspecting, Cleaning and Exploring Data 
+- Problem definition and scope clarification
+- Deep-Dive into subsections, e.g. drop, recovery, industry break-down
+- Model-building and visualizing findings
 
-(1)	A statement of the question or purpose. What problems or questions did you set out to analyse? What were the key issues raised?
 
-#Loading and Investigating the data
+Before get into our story we ICE the data below.
+
+# Loading and Investigating the data
 
 ```{r ,message = FALSE , warning=FALSE}
 
@@ -73,9 +81,6 @@ indeces <- read_excel("Data/indices_data.xls")
 
 
 ```
-
-
-
 
 
 
@@ -100,7 +105,7 @@ To clean the data we need to check:
 - empty values
 - cross column consistency 
 
-### Cleaning column names
+## Cleaning column names
 We first shorten the names of the columns in our data frame. Moreover, we run the clean names function to remove capital letters and add underscores to separate words. 
 ```{r clean names, message = FALSE , warning=FALSE}
 
@@ -118,7 +123,7 @@ originalData_process<-clean_names(originalData_process)
 ```
 
 
-### Initial data cleaning
+## Initial data cleaning
 
 Before we start looking at the contents of the data we remove empty columns and rows and want to remove duplicates if any.
 
@@ -132,7 +137,7 @@ dupes<-originalData_process%>%get_dupes(dates)
 
 ```
 
-### Missing data 
+## Missing data 
 
 As evident from the below, we have several missing values across the different indexes throughout our data frame, however, for the most part, these are on days where the stock exchange is closed eg. New Years (01/01) and other bank holidays and hence we can ignore them and proceed. 
 
@@ -149,11 +154,16 @@ data.frame(nas) %>%
 ```
 
 
+# The Story
+
+This study aims to present the findings of how COVID19 has impacted the economy as well as the stock market. For the past year in 2020, the economy has been hit by the covid pandemic, affecting numerous industries and sectors. Different parts of the world have been affected at varying levels, with the number of cases climbing quickly in certain regions. Although China was the first country to detect virus, it has performed well throughout the pandemic and was able to control the situation very quickly, resulting in a low number of cases per 100k population. Countries such as the US for example, has much larger number of cases per 100k population, showing a large disparity in the impact of covid.
 
 
-#Plot1:  Map for covid  
 
-```{r, message = FALSE , warning=FALSE}
+## COVID World map 
+
+
+```{r, message = FALSE , warning=FALSE , fig.width= 12 , fig.height= 8}
 
 #extracting populatuion
 library(wpp2019)
@@ -234,9 +244,10 @@ map_100k  %>%
 
 ```
 
-#Plot2: Timeline of all the indices 
+## Timeline of all the indices 
+Next, we visualize the performance of different stock market indeces (SP500, FTSE100, HSI…) throughout 2020, drawing parallels with the events and world news that were taking place at that point in time.
 
-```{r ,message = FALSE , warning=FALSE}
+```{r ,message = FALSE , warning=FALSE , fig.width= 12 , fig.height= 8}
 ### USA , ftse , germany during covid 
 #limit data to 2020 jan, feb march 
 early_covid <- originalData_process %>% 
@@ -297,7 +308,7 @@ plot_3
 ```
 
 
-## Cross Correlation Matrix
+### Cross Correlation Matrix
 
 
 ```{r , message = FALSE , warning=FALSE}
@@ -332,7 +343,7 @@ i = i +1
 ```
 
 
-```{r}
+```{r , message = FALSE , warning=FALSE}
 #making correlation heatmap
 plot_4 <-data.frame(cbind(cols_1 ,cols_2 , corr_list))%>% 
   ggplot() + 
@@ -354,10 +365,10 @@ plot_4
 ```
 
 
-# plot 3  volatility vs drop wiht size of the stock market being the size of the circle/the total value lost 
+## volatility vs Drop
 
 
-```{r , fig.width= 12, fig.height= 8}
+```{r , fig.width= 12, fig.height= 8 , message = FALSE , warning=FALSE}
 # loading original dataframe to a new one to make graphs
 bubble_df <- originalData_process 
 
@@ -377,7 +388,6 @@ bubble_df <- originalData_process
 # adding covid cases to illustrate the size of bubbles
   plot_df2$covidcases =c(685.708, 1306.549, 3740.9595, 2420.36, 3403.425, 4145.376, 6.01331, 119.37083 )
 
-glimpse(plot_df2)
 
 # making the plot showing Volatility vs The Percentage Drop in Index Value.
 # the size of the bubble means the number of cases.
@@ -415,9 +425,9 @@ plot_2
 
 
 
-# Plot 4:comparing negative quarters for each market. 
+##  Comparing negative quarters for each market
 
-```{r ,message = FALSE , warning=FALSE}
+```{r ,message = FALSE , warning=FALSE , fig.width= 12 , fig.height= 8}
 library(scales)
 library(zoo)
 #creating the percentage drops for each quarters 
@@ -492,9 +502,12 @@ plot_1
 ```
 
 
-# plot 6 the aggregate performance throughout the year [average performance for the full year]
 
-```{r , message = FALSE , warning=FALSE}
+## The Aggregate vs S&P performance throughout the year 
+
+During the data exploration phase, we noted that major indices of the world mirror the S&P 500. Hence, we chose to focus on the S&P 500 solely. Within US as well, we had to be selective when choosing which indices to incorporate. For example, we made the conscious decision to include the S&P 500 over the DOW Jones / NASDAQ as it was a better-balanced index due to varied constituents from different sectors.
+
+```{r , message = FALSE , warning=FALSE ,fig.width= 12 , fig.height= 8}
 #chekcing for total number rows wiht na values 
 originalData_process[rowSums(is.na(originalData_process[, -1])) > 0,]
 #total of 11114 rows which is ~20% so could use the prevous datts
@@ -546,10 +559,10 @@ plot_5
 ```
 
 
-#Money Supply graph
+## Money Supply graph
 
 
-```{r, message = FALSE , warning=FALSE}
+```{r, message = FALSE , warning=FALSE, fig.width= 12 , fig.height= 8}
 #importing the money supply graph
 money_supp <- read_xlsx('Data/Money Supply M.xlsx')
 money_supp <- clean_names(money_supp)
@@ -605,9 +618,11 @@ plot_6
 
 
 
-# Add images 
+## Drawdown 
 
 ![S&P500-% correction from highs](S&P500-% correction from highs.png)
+
+## Composition Changes for USA Stock Market
 
 ![Sector composition of the S&P 500](Sector composition of the S&P 500.png)
 
@@ -615,7 +630,7 @@ plot_6
 
 ![Changes in percentage composition of the S&P500 by sector](Changes in percentage composition of the S&P500 by sector.png)
 
-# Sentiment Analysis
+## Sentiment Analysis
 
 ```{r}
 
@@ -699,3 +714,12 @@ Overall, the media sentiment for COVID has an increasing trend through the year,
 Compared to the last crisis, in particular the recession in 2008/2009, COVID has had a much faster economic recovery. The statements in 2020 had much less negative statements compared to those released in 2008 and 2009, as shown in the graph. During the previous crisis, although there were policies and agreements rolled out to support the economy, there was still a large amount of uncertainty in regards to economic outlook which resulted in more negative sentiment overall. The average negative sentiment score for 2020 was 0.042 which was significantly lower than the year 2008 which had a score of 0.074 in comparison.
 
 
+
+# Conclusion
+
+While Covid19 spread dissimilarity across countries, financial markets reacted in unison to the 2020 recession. However, the evolution of the market has been different across geographies as, for example, effective crisis management facilitated the recovery for come countries. Moreover, interestingly, the recovery from the 2020 recession followed a V-shape and was faster than in previous downturns. In narrowing down our focus on the factors that contributed to the recovery we looked at the USA specifically and found that the growth of the technology sector within the S&P500 largely contributed to the quick recovery in the financial markets. Another aspect that we investigated was the sentiment of financial institutions and the media regarding the pandemic, as this can influence confidence levels in the economy and have wide-reaching implications. From our sentiment analysis we noted a relatively lower negativity in the statements by the US Federal Reserve when compared to those released during the crisis of 2008 and also noted an increase in positivity in the media. We thus conclude that the high share of technology, the relatively favourable sentiment and the high liquidity in the market have contributed to a speedy recovery.   
+
+**Discussion & Critique**
+
+- Vast research topic: Finding the focus was challenging. 
+- Further indices & index-specific deep dives could have been relevant and insightful.For example, included the S&P 500 over the DOW Jones / NASDAQ as it was a better-balanced index due to varied constituents from different sectors. However, this is also a limiting condition since we did not conduct the same level of data exploration on other indices
