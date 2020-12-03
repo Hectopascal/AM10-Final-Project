@@ -543,3 +543,7 @@ plot_5
 
 
 # Add images 
+![S&P500-% correction from highs](S&P500-% correction from highs.png)
+![Sector composition of the S&P 500](Sector composition of the S&P 500.png)
+![Percentage change in S&P500 market capitalization per sector](Percentage change in S&P500 market capitalization per sector.png)
+![Changes in percentage composition of the S&P500 by sector](Changes in percentage composition of the S&P500 by sector.png)
