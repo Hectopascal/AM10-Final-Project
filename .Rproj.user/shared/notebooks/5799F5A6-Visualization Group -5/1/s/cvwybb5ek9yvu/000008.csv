@@ -1,0 +1,3 @@
+"0",""
+"0","#cross correlation graph "
+"0","ccf(full_year_2020$avg_change, full_year_2020$s_p500, ylab = ""Cross-correlation"")"

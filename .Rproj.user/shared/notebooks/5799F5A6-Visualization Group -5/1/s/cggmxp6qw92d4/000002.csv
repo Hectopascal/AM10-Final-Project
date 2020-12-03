@@ -1,0 +1,15 @@
+"0","plot_df2 %>% 
+  ggplot() +
+  geom_point(aes(x = perc_drop , y = std , size = last_val,  fill = market), shape = 21 , alpha = 0.5) + 
+  theme_minimal() + 
+  scale_size(range = c(6,25)) + 
+  geom_label_repel(mapping = aes(x = perc_drop , y = std ,  label = market) , 
+                   force = 20 , direction = ""both"" , face = 'bold' , )+
+  scale_x_continuous(labels = scales::percent) + 
+  scale_y_continuous(labels = scales::percent) + 
+  theme(panel.grid.minor =  element_blank() , 
+        panel.grid.major = element_blank(),
+        legend.position =  'bottom') + 
+   guides(color=guide_legend(""market""), fill = FALSE)
+"
+"2","Ignoring unknown parameters: face"

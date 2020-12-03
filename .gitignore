@@ -1,4 +1,5 @@
 
+*.json
 *.png
 *.metadata
 *.snapshot
@@ -10,3 +11,4 @@
 .Rproj.user/487562FC/saved_source_markers
 .Rproj.user/
 .Rproj.user/shared/
+

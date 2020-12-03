@@ -1,0 +1,15 @@
+"0","data.frame(nas) %>% 
+  arrange(desc(nas)) %>% 
+  rename('Number of NAa' = 'nas') %>% 
+  kbl() %>% 
+  kable_styling()
+"
+"2","over-long path"
+"2","over-long path"
+"2","over-long path"
+"2","over-long path"
+"2","over-long path"
+"2","over-long path"
+"2","over-long path"
+"2","over-long path"
+"2","over-long path"

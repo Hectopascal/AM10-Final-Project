@@ -1,0 +1,2 @@
+"0","#chekcing for total number rows wiht na values "
+"0","originalData_process[rowSums(is.na(originalData_process[, -1])) > 0,]"
